@@ -2,7 +2,8 @@
   <div class="post" @click="redirect">
       <img :src="require(`@/assets/${img}`)">
       <h2>{{title}}</h2>
-      <bn>{{body}}</bn>
+      <div v-if="showBody">{{body}}</div>
+      <div v-else>{{body.substring(0,140)}}...</div>
       <h4>{{date}}</h4>
   </div>
 </template>
@@ -10,7 +11,7 @@
 export default {
   name: "vpost",
   props: {
-    fileName: {
+    permalink: {
       type: String
     },
     img: {
@@ -24,11 +25,14 @@ export default {
     },
     date: {
       type: String
+    },
+    showBody: {
+      type: Boolean
     }
   },
   methods: {
     redirect() {
-      this.$router.push(`posts/${this.fileName}`);
+      this.$router.push(`posts/${this.permalink}`);
     },
   }
 }

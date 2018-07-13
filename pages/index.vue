@@ -1,18 +1,12 @@
 <template>
   <section class="container">
     <div class="tube">
-      <vpost v-if="savoury" fileName="mushroom-soup" title="Mushroom Soup" body="Recipe..." img="1.png" date="12.12.18"/>
-      <vpost v-if="sweet" title="Victoria Sponge" body="Recipe..." img="2.png" date="14.12.18"/>
     </div>
   </section>
 </template>
 
 <script>
-import vpost from '~/components/vpost.vue'
 export default {
-  components: {
-    vpost
-  },
   data() {
     return {
       savoury: true,
