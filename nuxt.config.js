@@ -34,5 +34,16 @@ module.exports = {
         })
       }
     }
+  },
+  modules: [
+    '@nuxtjs/markdownit'
+  ],
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    injected: true,
+    linkify: true,
+    breaks: true,
   }
 }
