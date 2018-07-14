@@ -1,6 +1,6 @@
 <template>
-  <div class="header">
-    <button @click="top">Top</button>
+  <div class="footer">
+    <div class="navLink" @click="top">Top</div>
   </div>
 </template>
 
@@ -17,12 +17,13 @@ export default {
 
 
 <style>
-.header {
+.footer {
   width: 100%;
   height: 70px;
   background: #f4f4f4;
-  margin: 0px 0px 20px 0px;
-  padding: 0px
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
 </style>
 

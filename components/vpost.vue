@@ -62,7 +62,6 @@ export default {
   max-width: 700px;
   text-align: left;
   font-size: 16px;
-  margin-bottom: 60px;
 }
 img {
   width: 100%;
