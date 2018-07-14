@@ -1,43 +1,40 @@
 <template>
   <vpost
-    :permalink="permalink"
-    :bodyHtml="bodyHtml"
-    :previewHtml="previewHtml"
+    :title="title"
+    :date="date"
+    :description="description"
     :img="img"
-    :preview="preview"
+    :bodyHtml="bodyHtml"
+    :permalink="permalink"
+    :collapse="collapse"
   />
 </template>
 
 <script>
 import vpost from "~/components/vpost.vue"
 import body from "~/static/content/mushroom-soup.md"
-import preview from "~/static/content/preview/mushroom-soup.md"
+import meta from "~/static/meta/mushroom-soup.js"
 
 export default {
   data() {
     return {
-      title: "Mushroom Soup",
+      title: meta.title,
+      date: meta.date,
+      description: meta.description,
+      bodyHtml: body,
+      permalink: meta.permalink,
     }
   },
   computed: {
-    permalink() {
-      return this.title.toLowerCase().replace(/ /g, '-')
-    },
     img() {
       return `${this.permalink}.png`
-    },
-    bodyHtml() {
-      return body
-    },
-    previewHtml() {
-      return preview
     }
   },
   components: {
     vpost
   },
   props: {
-    preview: {
+    collapse: {
       type: Boolean,
       default: false
     }

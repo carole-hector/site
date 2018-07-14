@@ -1,29 +1,48 @@
 <template>
   <div class="post" @click="redirect">
-      <img :src="require(`@/assets/${img}`)">
-      <div class="text">
-        <div v-if="preview" v-html="previewHtml"></div>
-        <div v-else v-html="bodyHtml"></div>
-      </div>
+
+        <div v-if="collapse">
+          <div class ="border">
+            <img :src="require(`@/assets/${img}`)"/>
+            <div class="padding">
+              <h3>{{ title }}</h3>
+              <div>{{ description }}</div>
+              <h5>{{ date }}</h5>
+            </div>
+          </div>
+        </div>
+
+        <div v-else>
+          <div class="center"><h1>{{ title }}</h1></div>
+          <img :src="require(`@/assets/${img}`)"/>
+          <div class="padding" v-html="bodyHtml"></div>
+        </div>
+
   </div>
 </template>
 <script>
 export default {
   name: "vpost",
   props: {
-    permalink: {
+    title: {
+      type: String
+    },
+    description: {
+      type: String
+    },
+    date: {
       type: String
     },
     img: {
       type: String
     },
+    permalink: {
+      type: String
+    },
     bodyHtml: {
       type: String
     },
-    previewHtml: {
-      type: String
-    },
-    preview: {
+    collapse: {
       type: Boolean
     }
   },
@@ -39,16 +58,24 @@ export default {
 
 <style>
 .post {
-  max-width: 700px;
   width: 100%;
-  border: solid 1px;
+  max-width: 700px;
   text-align: left;
-}
-.text {
-  padding:20px;
+  font-size: 16px;
+  margin-bottom: 60px;
 }
 img {
-  max-width: 700px;
   width: 100%;
+  max-width: 700px;
+}
+.padding {
+  padding: 20px;
+}
+.border {
+  border: solid 1px;
+}
+.center {
+  text-align: center;
+  font-size: 20px;
 }
 </style>

@@ -14,8 +14,7 @@
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.1",
-    "nuxt": "^1.0.0",
-    "showdown": "^1.8.6"
+    "nuxt": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
