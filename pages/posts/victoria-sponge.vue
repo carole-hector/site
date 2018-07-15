@@ -16,6 +16,7 @@ import body from "~/static/content/victoria-sponge.md"
 import meta from "~/static/meta/victoria-sponge.js"
 
 export default {
+  name: "victoria-sponge",
   data() {
     return {
       title: meta.title,

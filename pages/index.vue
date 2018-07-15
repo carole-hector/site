@@ -1,30 +1,23 @@
 <template>
   <section class="container">
       <div class="tube">
-        <mushroomSoup v-if="show('savoury')" collapse/>
-        <victoriaSponge v-if="show('sweet')" collapse/>
+        <mushroom-soup v-if="show('savoury, mushroom')" collapse/>
+        <victoria-sponge v-if="show('sweet, cake')" collapse/>
+        <mushroom-soup v-if="show('savoury, mushroom')" collapse/>
+        <victoria-sponge v-if="show('sweet, cake')" collapse/>
+        <mushroom-soup v-if="show('savoury, mushroom')" collapse/>
+        <victoria-sponge v-if="show('sweet, cake')" collapse/>
       </div>
   </section>
 </template>
 
 <script>
-import mushroomSoup from "~/pages/posts/mushroom-soup.vue"
-import victoriaSponge from "~/pages/posts/victoria-sponge.vue"
 export default {
-  components: {
-    mushroomSoup,
-    victoriaSponge
-  },
   methods: {
     show(v) {
-      return this.category === "all"
+      return this.$store.state.searchValue === "all"
       ? true
-      : v === this.category
-    }
-  },
-  computed: {
-    category() {
-      return this.$store.state.headerValue
+      : v.includes(this.$store.state.searchValue)
     }
   }
 }

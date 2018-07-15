@@ -1,10 +1,11 @@
 <template>
   <div class="header">
 
-      <div class="navLink" @click="nav('all')">About</div>
-      <div class="navLink" @click="nav('sweet')">Sweet</div>
-      <div class="navLink" @click="nav('savoury')">Savoury</div>
+      <div class="navLink" @click="clickNav('all')">About</div>
+      <div class="navLink" @click="clickNav('sweet')">Sweet</div>
+      <div class="navLink" @click="clickNav('savoury')">Savoury</div>
       <div class="navLogo" @click="nav('all')">Carole Hector</div>
+      <input class="navSearch" v-model="search"/>
 
   </div>
 </template>
@@ -12,10 +13,24 @@
 <script>
 export default {
   name: "vpost",
+  data() {
+    return {
+      search: ""
+    }
+  },
   methods: {
     nav(v) {
-      this.$store.commit('headerValue', v)
+      this.$store.commit('searchValue', v)
       this.$route.path === "/" ? null : this.$router.replace("/")
+    },
+    clickNav(v) {
+      this.search = ""
+      this.nav(v)
+    }
+  },
+  watch: {
+    search(v) {
+        this.nav(v)
     }
   }
 }
@@ -46,6 +61,9 @@ export default {
   left: 50%;
   position: absolute;
   font-size: 30px;
+}
+.navSearch {
+  margin-left: 20px;
 }
 
 

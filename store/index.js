@@ -3,12 +3,12 @@ import Vuex from 'vuex'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      headerValue: "all",
+      searchValue: "all",
     },
     mutations: {
-      headerValue (state, v) {
-        state.headerValue = v
-        console.log(state.headerValue)
+      searchValue (state, v) {
+        state.searchValue = v
+        console.log(state.searchValue)
       }
     }
   })
