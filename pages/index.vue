@@ -19,14 +19,13 @@ export default {
       ? true
       : v.includes(this.$store.state.searchValue)
     }
+  },
+   computed: {
   }
 }
 </script>
 
 <style>
-.container {
-  border: none
-}
 .tube {
   width: 100%;
   max-width: 700px;

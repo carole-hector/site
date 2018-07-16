@@ -1,23 +1,20 @@
 <template>
   <div class="post" @click="redirect">
-
         <div v-if="collapse">
           <div class ="border">
             <img :src="require(`@/assets/${img}`)"/>
             <div class="padding">
               <h3>{{ title }}</h3>
-              <div>{{ description }}</div>
+              <div class="text">{{ description }}</div>
               <h5>{{ date }}</h5>
             </div>
           </div>
         </div>
-
         <div v-else>
           <div class="center"><h1>{{ title }}</h1></div>
           <img :src="require(`@/assets/${img}`)"/>
-          <div class="padding" v-html="bodyHtml"></div>
+          <div class="padding text" v-html="bodyHtml"></div>
         </div>
-
   </div>
 </template>
 <script>
@@ -48,6 +45,7 @@ export default {
   },
   methods: {
     redirect() {
+      this.$store.commit('hideSearchBar')
       this.$route.path === `/posts/${this.permalink}`
       ? this.$router.replace("/")
       : this.$router.replace(`posts/${this.permalink}`)
@@ -57,9 +55,9 @@ export default {
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=maitree');
+@import url('https://fonts.googleapis.com/css?family=quattrocento');
 .post {
-  width: 100%;
-  max-width: 700px;
   text-align: left;
   font-size: 16px;
 }
@@ -72,9 +70,14 @@ img {
 }
 .border {
   border: solid 1px;
+  border-color: #e0e0e0;
 }
 .center {
   text-align: center;
   font-size: 20px;
+}
+.text {
+font-family: "quattrocento";
+font-size: 18px;
 }
 </style>

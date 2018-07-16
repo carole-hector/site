@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     ]
   },
   /*
@@ -44,5 +44,6 @@ module.exports = {
     linkify: true,
     breaks: true,
   },
-  plugins: ['~/plugins/vue.js']
+  plugins: ['~/plugins/vue.js'],
+  css: ['@/assets/css/main.css'],
 }
