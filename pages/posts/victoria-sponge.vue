@@ -17,7 +17,6 @@ import meta from "~/static/meta/victoria-sponge.js"
 
 export default {
   name: "victoria-sponge",
-  scrollToTop: true,
   data() {
     return {
       title: meta.title,

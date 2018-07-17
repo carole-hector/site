@@ -19,8 +19,6 @@ export default {
       ? true
       : v.includes(this.$store.state.searchValue)
     }
-  },
-   computed: {
   }
 }
 </script>

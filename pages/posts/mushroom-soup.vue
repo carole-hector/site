@@ -17,7 +17,6 @@ import meta from "~/static/meta/mushroom-soup.js"
 
 export default {
   name: "mushroom-soup",
-  scrollToTop: true,
   data() {
     return {
       title: meta.title,

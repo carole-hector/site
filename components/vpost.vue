@@ -1,6 +1,6 @@
 <template>
-  <div class="post" @click="redirect">
-        <div v-if="collapse">
+  <div class="post">
+          <nuxt-link v-if="collapse" class="post" :to="`posts/${this.permalink}`">
           <div class ="border">
             <img :src="require(`@/assets/${img}`)"/>
             <div class="padding">
@@ -9,13 +9,14 @@
               <h5>{{ date }}</h5>
             </div>
           </div>
-        </div>
-        <div v-else>
+          </nuxt-link>
+        <nuxt-link v-else class="post" to="/">
           <div class="center"><h1>{{ title }}</h1></div>
           <img :src="require(`@/assets/${img}`)"/>
           <div class="padding text" v-html="bodyHtml"></div>
-        </div>
-  </div>
+        </nuxt-link>
+   </div>
+
 </template>
 <script>
 export default {
@@ -43,19 +44,10 @@ export default {
       type: Boolean
     }
   },
-  methods: {
-    redirect() {
-      this.$store.commit('hideSearchBar')
-      this.$route.path === `/posts/${this.permalink}`
-      ? this.$router.replace("/")
-      : this.$router.replace(`posts/${this.permalink}`)
-    },
-  }
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=maitree');
 @import url('https://fonts.googleapis.com/css?family=quattrocento');
 .post {
   text-align: left;
@@ -79,5 +71,9 @@ img {
 .text {
 font-family: "quattrocento";
 font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: black
 }
 </style>

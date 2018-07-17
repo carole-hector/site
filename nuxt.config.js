@@ -45,5 +45,5 @@ module.exports = {
     breaks: true,
   },
   plugins: ['~/plugins/vue.js'],
-  css: ['@/assets/css/main.css'],
+  css: ['~/assets/css/main.css']
 }
