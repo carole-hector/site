@@ -8,11 +8,11 @@
 
 <script>
 import vpost from "~/components/vpost.vue"
-import body from "~/static/content/victoria-sponge.md"
-import meta from "~/static/meta/victoria-sponge.js"
+import body from "~/static/content/strawberry-frangipane.md"
+import meta from "~/static/meta/strawberry-frangipane.js"
 
 export default {
-  name: "victoria-sponge",
+  name: "strawberry-frangipane",
   props: {
     collapse: {
       type: Boolean,
