@@ -35,7 +35,7 @@ export default {
   justify-content: center;
   min-height: 100px;
 }
-input {
+.search-bar-container input {
   width: 80%;
   height: 30px;
   font-size: 16px;

@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="index-container">
       <div class="index-tube">
         <div v-for="post in posts" :key="post.permalink">
           <vpost-preview :post="post"/>
@@ -84,6 +84,9 @@ export default {
 }
 .index-tube > * {
   margin-bottom: 60px;
+  width: 300px;
+}
+.index-tube img {
   width: 300px;
 }
 </style>

@@ -40,12 +40,11 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=quattrocento');
 .post {
   text-align: left;
   font-size: 16px;
 }
-img {
+.post img {
   width: 100%;
   max-width: 700px;
 }
@@ -57,10 +56,9 @@ img {
   font-size: 20px;
 }
 .post-text {
-font-family: "quattrocento";
 font-size: 18px;
 }
-a {
+.post a {
   text-decoration: none;
   color: black
 }

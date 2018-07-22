@@ -37,7 +37,6 @@ export default {
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Josefin+Slab');
 .header {
   width: 100%;
   min-height: 100px;
@@ -64,13 +63,11 @@ export default {
   cursor: pointer;
 }
 .header-nav-logo {
-  font-size: 60px;
-  font-family: "Josefin Slab";
+  font-size: 50px;
 }
 .header-nav-logo:hover {
   cursor: pointer
 }
-
 .header-left {
  display: flex;
  flex-wrap: wrap;
