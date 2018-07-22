@@ -42,6 +42,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 20px;
 }
 .footerInside {
   width: 300px;

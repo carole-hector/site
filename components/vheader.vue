@@ -1,16 +1,16 @@
 <template>
 <div>
    <div class="header">
-      <div class="left box">
+      <div class="header-left">
         <div></div>
-        <div class="navLink" @click="clickNav('all')">About</div>
-        <div class="navLink" @click="clickNav('sweet')">Sweet</div>
-        <div class="navLink" @click="clickNav('savoury')">Savoury</div>
+        <div class="header-nav-link" @click="clickNav('all')">About</div>
+        <div class="header-nav-link" @click="clickNav('sweet')">Sweet</div>
+        <div class="header-nav-link" @click="clickNav('savoury')">Savoury</div>
       </div>
-      <div class="middle box">
-        <div class="navLogo" @click="nav('all')">Carole Hector</div>
+      <div class="header-middle">
+        <div class="header-nav-logo" @click="nav('all')">Carole Hector</div>
       </div>
-      <div class="right box">
+      <div class="header-right">
         <v-search-bar/>
       </div>
   </div>
@@ -45,33 +45,33 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .header > * {
   padding-top: 20px;
   text-align: center;
-}
-.navLink {
-  text-decoration: underline;
-}
-.navLink:hover {
-  color: red;
-  cursor: pointer;
-}
-.navLogo {
-  font-size: 60px;
-  font-family: "Josefin Slab";
-}
-.navLogo:hover {
-  cursor: pointer
-}
-.box {
-  border: solid 1px;
+   border: solid 1px;
   align-items: center;
   justify-content: space-between;
   max-width: 350px;
   min-width: 250px;
 }
-.left {
+.header-nav-link {
+  text-decoration: underline;
+}
+.header-nav-link:hover {
+  color: red;
+  cursor: pointer;
+}
+.header-nav-logo {
+  font-size: 60px;
+  font-family: "Josefin Slab";
+}
+.header-nav-logo:hover {
+  cursor: pointer
+}
+
+.header-left {
  display: flex;
  flex-wrap: wrap;
 }
@@ -81,13 +81,13 @@ export default {
     align-items: center;
     justify-content: center;
   }
-  .navLogo {
+  .header-nav-logo {
     font-size: 40px;
   }
-  .left {
+  .header-left {
     display: none;
   }
-  .right {
+  .header-right {
     display: none;
   }
 }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-search-bar v-if="showSearchBar" class="mobileSearchBar"/>
-    <vheader v-else class="header"/>
+    <vheader v-else />
     <nuxt/>
     <vfooter/>
   </div>
@@ -33,14 +33,5 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-}
-.header {
-  margin-bottom: 20px;
-}
-.mobileSearchBar{
-  min-height: 100px;
-}
-.footer {
-  margin-top: 20px;
 }
 </style>

@@ -1,23 +1,11 @@
 <template>
   <div class="post">
-        <div v-if="collapse">
-          <nuxt-link v-if="show" class="post" :to="`posts/${this.permalink}`">
-            <div class ="border">
-              <img :src="require(`@/assets/png/${img}`)"/>
-              <div class="padding">
-                <h3>{{ title }}</h3>
-                <div class="text">{{ description }}</div>
-                <h5>{{ date }}</h5>
-              </div>
-            </div>
-          </nuxt-link>
-        </div>
-        <nuxt-link v-else class="post" to="/">
-          <div class="center"><h1>{{ title }}</h1></div>
-          <img :src="require(`@/assets/png/${img}`)"/>
-          <div class="padding text" v-html="bodyHtml"></div>
-        </nuxt-link>
-   </div>
+    <nuxt-link class="post" to="/">
+      <div class="post-center"><h1>{{ title }}</h1></div>
+      <img :src="require(`@/assets/png/${img}`)"/>
+      <div class="post-padding post-text" v-html="bodyHtml"></div>
+    </nuxt-link>
+  </div>
 
 </template>
 <script>
@@ -46,12 +34,6 @@ export default {
   computed: {
     img() {
       return `${this.permalink}.png`
-    },
-    show() {
-      const searchValue = this.$store.state.searchValue
-      return searchValue === "all"
-        ? true
-        : this.meta.tags.includes(searchValue)
     }
   }
 }
@@ -67,18 +49,14 @@ img {
   width: 100%;
   max-width: 700px;
 }
-.padding {
+.post-padding {
   padding: 20px;
 }
-.border {
-  border: solid 1px;
-  border-color: #e0e0e0;
-}
-.center {
+.post-center {
   text-align: center;
   font-size: 20px;
 }
-.text {
+.post-text {
 font-family: "quattrocento";
 font-size: 18px;
 }

@@ -1,5 +1,6 @@
 import Vue from "vue"
 import vpost from "~/components/vpost.vue"
+import vpostPreview from "~/components/vpost-preview.vue"
 import vheader from "~/components/vheader.vue"
 import vfooter from "~/components/vfooter.vue"
 import vsearchBar from "~/components/vsearch-bar.vue"
@@ -11,6 +12,7 @@ import strawberryFrangipane from "~/pages/posts/strawberry-frangipane.vue"
 
 
 Vue.component(vpost.name, vpost)
+Vue.component(vpostPreview.name, vpostPreview)
 Vue.component(vheader.name, vheader)
 Vue.component(vfooter.name, vfooter)
 Vue.component(vsearchBar.name, vsearchBar)
