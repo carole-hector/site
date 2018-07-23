@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import vpost from "~/components/vpost.vue"
+import vpost from "~/components/v-post.vue"
 export default {
   components: {
     vpost
@@ -28,5 +28,4 @@ export default {
   max-width: 700px;
   margin: auto;
 }
-
 </style>

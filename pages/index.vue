@@ -1,73 +1,27 @@
 <template>
   <section class="index-container">
       <div class="index-tube">
-        <div v-for="post in posts" :key="post.permalink">
-          <vpost-preview :post="post"/>
+        <div v-for="post in filteredPosts" :key="post.permalink">
+          <v-post-preview :post="post"/>
         </div>
       </div>
   </section>
 </template>
 
 <script>
+import meta from "~/static/meta/all-posts.js"
 export default {
   name: "index",
   data() {
     return {
-      posts: [{
-        permalink: "mushroom-soup",
-        title: "Mushroom Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      }, {
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      },
-      {
-        permalink: "strawberry-frangipane",
-        title: "Strawberry Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom" ,"hello"]
-      },{
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      },{
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      },{
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      },{
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      },{
-        permalink: "victoria-sponge",
-        title: "Victoria Soup",
-        description: "This mushroom soup is homemade and really nice. Nice oregano finish.",
-        date: "12.08.16",
-        tags: ["savoury", "mushroom", "soup"]
-      }]
+      posts: meta
     }
   },
-   methods: {
-    show(v) { // this is not the right way. The map "posts" should get filtered.
-      return v.tags[2] === "soup"
+  computed: {
+    filteredPosts() {
+      const searchValue = this.$store.searchValue
+      // const filteredArray = this.posts.map((v) => v.tags.contains(searchValue))
+      return this.posts
     }
   }
 }

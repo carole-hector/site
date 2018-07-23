@@ -1,11 +1,11 @@
 <template>
-  <div class="post-preview">
-          <nuxt-link class="post" :to="`posts/${post.permalink}`">
-            <div class ="post-preview-border">
+  <div class="v-post-preview">
+          <nuxt-link :to="`posts/${post.permalink}`">
+            <div class ="v-post-preview-border">
               <img :src="require(`@/assets/png/${post.permalink}.png`)"/>
-              <div class="post-preview-padding">
+              <div class="v-post-preview-padding">
                 <h3>{{ post.title }}</h3>
-                <div class="post-preview-text">{{ post.description }}</div>
+                <div>{{ post.description }}</div>
                 <h5>{{ post.date }}</h5>
               </div>
             </div>
@@ -14,7 +14,7 @@
 </template>
 <script>
 export default {
-  name: "vpost-preview",
+  name: "v-post-preview",
   props: {
     post: {
       type: Object
@@ -24,21 +24,18 @@ export default {
 </script>
 
 <style>
-.post-preview {
+.v-post-preview {
   text-align: left;
-  font-size: 16px;
+  font-size: 18px;
 }
-.post-preview-padding {
+.v-post-preview-padding {
   padding: 20px;
 }
-.post-preview-border {
+.v-post-preview-border {
   border: solid 1px;
   border-color: #e0e0e0;
 }
-.post-preview-text {
-font-size: 18px;
-}
-.post-preview a {
+.v-post-preview a {
   text-decoration: none;
   color: black
 }

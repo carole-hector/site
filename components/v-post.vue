@@ -1,25 +1,22 @@
 <template>
-  <div class="post">
-    <nuxt-link class="post" to="/">
-      <div class="post-center"><h1>{{ title }}</h1></div>
+  <div class="v-post">
+    <nuxt-link class="v-post" to="/">
+      <div class="v-post-center"><h1>{{ title }}</h1></div>
       <img :src="require(`@/assets/png/${img}`)"/>
-      <div class="post-padding post-text" v-html="bodyHtml"></div>
+      <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
     </nuxt-link>
   </div>
 
 </template>
 <script>
 export default {
-  name: "vpost",
+  name: "v-post",
   props: {
     body: {
       type: String
     },
     meta: {
       type: Object
-    },
-    collapse: {
-      type: Boolean
     }
   },
   data() {
@@ -40,25 +37,25 @@ export default {
 </script>
 
 <style>
-.post {
+.v-post {
   text-align: left;
   font-size: 16px;
 }
-.post img {
+.v-post img {
   width: 100%;
   max-width: 700px;
 }
-.post-padding {
+.v-post-padding {
   padding: 20px;
 }
-.post-center {
+.v-post-center {
   text-align: center;
   font-size: 20px;
 }
-.post-text {
+.v-post-text {
 font-size: 18px;
 }
-.post a {
+.v-post a {
   text-decoration: none;
   color: black
 }

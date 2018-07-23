@@ -1,5 +1,5 @@
 <template>
-  <div class ="search-bar-container">
+  <div class ="v-search-bar-container">
   <input v-model="search"/>
   </div>
 </template>
@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style>
-.search-bar-container{
+.v-search-bar-container {
   width: 100%;
   height: 40px;
   display: flex;
@@ -35,7 +35,7 @@ export default {
   justify-content: center;
   min-height: 100px;
 }
-.search-bar-container input {
+.v-search-bar-container input {
   width: 80%;
   height: 30px;
   font-size: 16px;

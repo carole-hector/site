@@ -1,16 +1,16 @@
 <template>
   <div>
-    <v-search-bar v-if="showSearchBar" class="mobileSearchBar"/>
-    <vheader v-else />
+    <v-search-bar v-if="showSearchBar"/>
+    <v-header v-else />
     <nuxt/>
-    <vfooter/>
+    <v-footer/>
   </div>
 </template>
 
 <script>
 
-import vheader from '~/components/vheader'
-import vfooter from '~/components/vfooter'
+import vheader from '~/components/v-header'
+import vfooter from '~/components/v-footer'
 export default {
   components: {
     vheader,

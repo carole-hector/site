@@ -1,16 +1,16 @@
 <template>
 <div>
-   <div class="header">
-      <div class="header-left">
+   <div class="v-header">
+      <div class="v-header-left">
         <div></div>
-        <div class="header-nav-link" @click="clickNav('all')">About</div>
-        <div class="header-nav-link" @click="clickNav('sweet')">Sweet</div>
-        <div class="header-nav-link" @click="clickNav('savoury')">Savoury</div>
+        <div class="v-header-nav-link" @click="clickNav('all')">About</div>
+        <div class="v-header-nav-link" @click="clickNav('sweet')">Sweet</div>
+        <div class="v-header-nav-link" @click="clickNav('savoury')">Savoury</div>
       </div>
-      <div class="header-middle">
-        <div class="header-nav-logo" @click="nav('all')">Carole Hector</div>
+      <div class="v-header-middle">
+        <div class="v-header-nav-logo" @click="nav('all')">Carole Hector</div>
       </div>
-      <div class="header-right">
+      <div class="v-header-right">
         <v-search-bar/>
       </div>
   </div>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "vpost",
+  name: "v-header",
   methods: {
     nav(v) {
       this.$store.commit('searchValue', v)
@@ -37,7 +37,7 @@ export default {
 
 
 <style>
-.header {
+.v-header {
   width: 100%;
   min-height: 100px;
   background: #f4f4f4;
@@ -46,7 +46,7 @@ export default {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.header > * {
+.v-header > * {
   padding-top: 20px;
   text-align: center;
    border: solid 1px;
@@ -55,36 +55,36 @@ export default {
   max-width: 350px;
   min-width: 250px;
 }
-.header-nav-link {
+.v-header-nav-link {
   text-decoration: underline;
 }
-.header-nav-link:hover {
+.v-header-nav-link:hover {
   color: red;
   cursor: pointer;
 }
-.header-nav-logo {
+.v-header-nav-logo {
   font-size: 50px;
 }
-.header-nav-logo:hover {
+.v-header-nav-logo:hover {
   cursor: pointer
 }
-.header-left {
+.v-header-left {
  display: flex;
  flex-wrap: wrap;
 }
 @media only screen and (max-width: 900px) {
-  .header {
+  .v-header {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .header-nav-logo {
+  .v-header-nav-logo {
     font-size: 40px;
   }
-  .header-left {
+  .v-header-left {
     display: none;
   }
-  .header-right {
+  .v-header-right {
     display: none;
   }
 }

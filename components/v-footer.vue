@@ -1,7 +1,7 @@
 <template>
-  <div class="footer">
-    <div class="footerInside">
-      <div @click="clickNav('sweet')"><v-sweet-icon /></div>
+  <div class="v-footer">
+    <div class="v-footer-inside">
+      <div @click="clickNav('sweet')"><v-sweet-icon/></div>
       <div @click="clickNav('savoury')"><v-sweet-icon/></div>
       <div @click="showSearchBar"><v-search-icon/></div>
     </div>
@@ -10,12 +10,7 @@
 
 <script>
 export default {
-  name: "vpost",
-  methods: {
-    top() {
-      window.scrollTo(0,0)
-    }
-  },
+  name: "v-footer",
   methods: {
     nav(v) {
       this.$store.commit('searchValue', v)
@@ -35,7 +30,7 @@ export default {
 </script>
 
 <style>
-.footer {
+.v-footer {
   width: 100%;
   height: 70px;
   background: #f4f4f4;
@@ -44,23 +39,14 @@ export default {
   justify-content: center;
   margin-top: 20px;
 }
-.footerInside {
+.v-footer-inside {
   width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.footerBox {
-  width: 30%;
-  border: 1px solid;
-  text-align: center;
-}
-.footerSearch {
-  text-align: left;
-  min-width: 120px;
-}
 @media only screen and (max-width: 900px) {
-   .footer {
+   .v-footer {
     position: fixed;
     bottom: 0pt;
     left: 0pt;
