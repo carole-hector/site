@@ -12,15 +12,10 @@ export default {
       search: ""
     }
   },
-  methods: {
-     commitSearch(v) {
-      this.$store.commit('searchValue', v)
-      this.$route.path === "/" ? null : this.$router.replace("/")
-    }
-  },
   watch: {
     search(v) {
-        this.commitSearch(v)
+      this.$store.commit('searchValue', v)
+      this.$router.replace("/")
     }
   }
 }

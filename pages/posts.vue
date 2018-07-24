@@ -1,6 +1,6 @@
 <template>
   <section class="posts-container">
-    <div class="posts-tube">
+    <div class="posts-tube main-max-width">
      <nuxt-child/>
     </div>
   </section>
@@ -25,7 +25,6 @@ export default {
 }
 .posts-tube {
   width: 100%;
-  max-width: 700px;
   margin: auto;
 }
 </style>

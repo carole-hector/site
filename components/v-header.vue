@@ -3,7 +3,7 @@
    <div class="v-header main-cover">
       <div class="v-header-left">
         <div></div>
-        <div class="v-header-nav-link main-hover" @click="nav('')">About</div>
+        <div class="v-header-nav-link main-hover" @click="nav('about')">About</div>
         <div class="v-header-nav-link main-hover" @click="nav('sweet')">Sweet</div>
         <div class="v-header-nav-link main-hover" @click="nav('savoury')">Savoury</div>
       </div>

@@ -1,5 +1,7 @@
 <template>
   <section class="index-container">
+      <h2 v-if="show('sweet')">Sweet</h2>
+      <h2 v-if="show('savoury')">Savoury</h2>
       <div class="index-tube">
         <div v-for="post in filteredPosts" :key="post.permalink">
           <v-post-preview :post="post"/>
@@ -28,12 +30,18 @@ export default {
       return p.tags.includes(s) ||
              p.title.includes(s) ||
              p.description.includes(s)
+    },
+    show(v) {
+      return v === this.$store.state.searchValue
     }
   }
 }
 </script>
 
 <style>
+.index-container > h2 {
+  text-align: center;
+}
 .index-tube {
   width: 100%;
   max-width: 1000px;

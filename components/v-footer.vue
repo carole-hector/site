@@ -1,11 +1,11 @@
 <template>
   <div class="v-footer main-cover">
-    <div class="v-footer-inside">
-      <div @click="clickNav('')"><v-home-icon/></div>
+    <div class="v-footer-inside main-max-width">
+      <div @click="nav('')"><v-home-icon/></div>
       <div @click="showSearchBar"><v-search-icon/></div>
-      <div @click="clickNav('sweet')"><v-sweet-icon/></div>
-      <div @click="clickNav('savoury')"><v-savoury-icon/></div>
-      <div @click="clickNav('savoury')"><v-user-icon/></div>
+      <div @click="nav('sweet')"><v-sweet-icon/></div>
+      <div @click="nav('savoury')"><v-savoury-icon/></div>
+      <div @click="nav('about')"><v-user-icon/></div>
     </div>
   </div>
 </template>
@@ -15,16 +15,14 @@ export default {
   name: "v-footer",
   methods: {
     nav(v) {
-      this.$store.commit('searchValue', v)
-      this.$route.path === "/" ? null : this.$router.replace("/")
-    },
-    clickNav(v) {
       this.$store.commit('hideSearchBar')
-      this.nav(v)
+      this.$store.commit('searchValue', v)
+      this.$router.replace("/")
       window.scrollTo(0,0)
     },
     showSearchBar() {
       this.$store.commit('showSearchBar')
+      this.$store.commit('searchValue', "")
       window.scrollTo(0,0)
     }
   }
@@ -41,7 +39,7 @@ export default {
   margin-top: 20px;
 }
 .v-footer-inside {
-  width: 300px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
