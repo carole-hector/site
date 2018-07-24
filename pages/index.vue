@@ -9,19 +9,25 @@
 </template>
 
 <script>
-import meta from "~/static/meta/all-posts.js"
+import all from "~/static/meta/all.js"
 export default {
   name: "index",
   data() {
     return {
-      posts: meta
+      posts: all
     }
   },
   computed: {
     filteredPosts() {
-      const searchValue = this.$store.searchValue
-      // const filteredArray = this.posts.map((v) => v.tags.contains(searchValue))
-      return this.posts
+      const s = this.$store.state.searchValue
+      return s === "" ? this.posts : this.posts.filter((p) => this.search(p,s))
+    }
+  },
+  methods: {
+    search(p, s) {
+      return p.tags.includes(s) ||
+             p.title.includes(s) ||
+             p.description.includes(s)
     }
   }
 }

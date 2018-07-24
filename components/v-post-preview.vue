@@ -1,5 +1,5 @@
 <template>
-  <div class="v-post-preview">
+  <div class="v-post-preview main-font-size">
           <nuxt-link :to="`posts/${post.permalink}`">
             <div class ="v-post-preview-border">
               <img :src="require(`@/assets/png/${post.permalink}.png`)"/>
@@ -26,7 +26,6 @@ export default {
 <style>
 .v-post-preview {
   text-align: left;
-  font-size: 18px;
 }
 .v-post-preview-padding {
   padding: 20px;

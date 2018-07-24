@@ -44,5 +44,5 @@ module.exports = {
     linkify: true,
     breaks: true,
   },
-  plugins: ['~/plugins/vue.js']
+  plugins: ['~/plugins/vue.js', '~assets/styles/main.css']
 }

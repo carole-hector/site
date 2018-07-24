@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 const createStore = () => {
   return new Vuex.Store({
     state: {
-      searchValue: "all",
+      searchValue: "",
       showSearchBar: false
     },
     mutations: {

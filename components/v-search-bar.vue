@@ -1,6 +1,6 @@
 <template>
   <div class ="v-search-bar-container">
-  <input v-model="search"/>
+  <input class="main-search-bar" v-model="search"/>
   </div>
 </template>
 
@@ -38,10 +38,7 @@ export default {
 .v-search-bar-container input {
   width: 80%;
   height: 30px;
-  font-size: 16px;
   border-radius: 8px;
-  background: #f8f8f8;
-  border-color: #f5f4f4;
   border: 1px solid;
 }
 </style>

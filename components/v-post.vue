@@ -1,5 +1,5 @@
 <template>
-  <div class="v-post">
+  <div class="v-post main-font-size">
     <nuxt-link class="v-post" to="/">
       <div class="v-post-center"><h1>{{ title }}</h1></div>
       <img :src="require(`@/assets/png/${img}`)"/>
@@ -39,7 +39,6 @@ export default {
 <style>
 .v-post {
   text-align: left;
-  font-size: 16px;
 }
 .v-post img {
   width: 100%;
@@ -50,10 +49,6 @@ export default {
 }
 .v-post-center {
   text-align: center;
-  font-size: 20px;
-}
-.v-post-text {
-font-size: 18px;
 }
 .v-post a {
   text-decoration: none;

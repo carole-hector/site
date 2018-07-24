@@ -1,14 +1,14 @@
 <template>
 <div>
-   <div class="v-header">
+   <div class="v-header main-cover">
       <div class="v-header-left">
         <div></div>
-        <div class="v-header-nav-link" @click="clickNav('all')">About</div>
-        <div class="v-header-nav-link" @click="clickNav('sweet')">Sweet</div>
-        <div class="v-header-nav-link" @click="clickNav('savoury')">Savoury</div>
+        <div class="v-header-nav-link main-hover" @click="nav('')">About</div>
+        <div class="v-header-nav-link main-hover" @click="nav('sweet')">Sweet</div>
+        <div class="v-header-nav-link main-hover" @click="nav('savoury')">Savoury</div>
       </div>
       <div class="v-header-middle">
-        <div class="v-header-nav-logo" @click="nav('all')">Carole Hector</div>
+        <div class="v-header-nav-logo" @click="nav('')">Carole Hector</div>
       </div>
       <div class="v-header-right">
         <v-search-bar/>
@@ -23,13 +23,9 @@ export default {
   name: "v-header",
   methods: {
     nav(v) {
-      this.$store.commit('searchValue', v)
-      this.$route.path === "/" ? null : this.$router.replace("/")
-    },
-    clickNav(v) {
       this.$store.commit('hideSearchBar')
-      this.search = ""
-      this.nav(v)
+      this.$store.commit('searchValue', v)
+      this.$router.replace("/")
     }
   }
 }
@@ -40,7 +36,6 @@ export default {
 .v-header {
   width: 100%;
   min-height: 100px;
-  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -59,7 +54,6 @@ export default {
   text-decoration: underline;
 }
 .v-header-nav-link:hover {
-  color: red;
   cursor: pointer;
 }
 .v-header-nav-logo {

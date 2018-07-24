@@ -1,5 +1,5 @@
 <template>
-  <div class="v-footer">
+  <div class="v-footer main-cover">
     <div class="v-footer-inside">
       <div @click="clickNav('sweet')"><v-sweet-icon/></div>
       <div @click="clickNav('savoury')"><v-sweet-icon/></div>
@@ -33,7 +33,6 @@ export default {
 .v-footer {
   width: 100%;
   height: 70px;
-  background: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: center;
