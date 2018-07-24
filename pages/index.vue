@@ -44,9 +44,13 @@ export default {
 }
 .index-tube > * {
   margin-bottom: 60px;
-  width: 300px;
+  width: 100%;
+  max-width: 320px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
 .index-tube img {
-  width: 300px;
+  width: 100%;
+  max-width: 320px;
 }
 </style>

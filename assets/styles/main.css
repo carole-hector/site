@@ -6,10 +6,10 @@ html {
   font-size: 18px;
 }
 .main-cover {
-  background: #f4f4f4
+  background: white
 }
 .main-hover:hover {
-  color: blue;
+  /* color: white */
 }
 .main-search-bar {
   background: #f8f8f8;

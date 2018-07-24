@@ -38,20 +38,20 @@ export default {
   min-height: 100px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 .v-header > * {
   padding-top: 20px;
   text-align: center;
-   border: solid 1px;
   align-items: center;
   justify-content: space-between;
   max-width: 350px;
   min-width: 250px;
 }
 .v-header-nav-link {
-  text-decoration: underline;
+  font-weight:bold;
+  font-size: 18px
 }
 .v-header-nav-link:hover {
   cursor: pointer;

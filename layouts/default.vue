@@ -2,7 +2,7 @@
   <div>
     <v-search-bar v-if="showSearchBar"/>
     <v-header v-else />
-    <nuxt/>
+    <nuxt style="margin-bottom: 40px"/>
     <v-footer/>
   </div>
 </template>

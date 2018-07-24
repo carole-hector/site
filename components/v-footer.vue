@@ -1,9 +1,11 @@
 <template>
   <div class="v-footer main-cover">
     <div class="v-footer-inside">
-      <div @click="clickNav('sweet')"><v-sweet-icon/></div>
-      <div @click="clickNav('savoury')"><v-sweet-icon/></div>
+      <div @click="clickNav('')"><v-home-icon/></div>
       <div @click="showSearchBar"><v-search-icon/></div>
+      <div @click="clickNav('sweet')"><v-sweet-icon/></div>
+      <div @click="clickNav('savoury')"><v-savoury-icon/></div>
+      <div @click="clickNav('savoury')"><v-user-icon/></div>
     </div>
   </div>
 </template>
@@ -42,7 +44,7 @@ export default {
   width: 300px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media only screen and (max-width: 900px) {
    .v-footer {
