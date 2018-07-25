@@ -1,11 +1,11 @@
 <template>
   <div class="v-footer main-cover">
-    <div class="v-footer-inside main-max-width">
+    <div class="v-footer-inside main-posts-max-width">
       <div @click="nav('')"><v-home-icon/></div>
       <div @click="showSearchBar"><v-search-icon/></div>
       <div @click="nav('sweet')"><v-sweet-icon/></div>
       <div @click="nav('savoury')"><v-savoury-icon/></div>
-      <div @click="nav('about')"><v-user-icon/></div>
+      <nuxt-link to="/about"><v-user-icon/></nuxt-link>
     </div>
   </div>
 </template>
@@ -43,6 +43,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+.v-footer-inside > *:hover {
+  cursor: pointer;
 }
 @media only screen and (max-width: 900px) {
    .v-footer {

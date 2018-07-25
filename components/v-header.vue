@@ -2,8 +2,7 @@
 <div>
    <div class="v-header main-cover">
       <div class="v-header-left">
-        <div></div>
-        <div class="v-header-nav-link main-hover" @click="nav('about')">About</div>
+        <nuxt-link class="v-header-nav-link main-hover" to="/about">About</nuxt-link>
         <div class="v-header-nav-link main-hover" @click="nav('sweet')">Sweet</div>
         <div class="v-header-nav-link main-hover" @click="nav('savoury')">Savoury</div>
       </div>
@@ -45,13 +44,16 @@ export default {
   padding-top: 20px;
   text-align: center;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   max-width: 350px;
   min-width: 250px;
 }
 .v-header-nav-link {
-  font-weight:bold;
   font-size: 18px
+}
+.v-header-left a {
+  text-decoration: none;
+  color: black
 }
 .v-header-nav-link:hover {
   cursor: pointer;

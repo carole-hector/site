@@ -1,6 +1,6 @@
 <template>
   <section class="posts-container">
-    <div class="posts-tube main-max-width">
+    <div class="posts-tube main-posts-max-width">
      <nuxt-child/>
     </div>
   </section>

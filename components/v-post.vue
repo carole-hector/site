@@ -1,6 +1,6 @@
 <template>
   <div class="v-post main-font-size">
-    <nuxt-link class="v-post main-max-width" to="/">
+    <nuxt-link class="v-post main-posts-max-width" to="/">
       <div class="v-post-center"><h1>{{ title }}</h1></div>
       <img :src="require(`@/assets/png/${img}`)"/>
       <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
