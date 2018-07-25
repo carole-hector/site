@@ -8,6 +8,7 @@
       <div v-html="body"></div>
     </div>
   </div>
+  <div class="about-contact">Instagram, Telegram, Email</div>
 </section>
 </template>
 
@@ -38,5 +39,10 @@ export default {
   max-width: 400px;
   margin-left: 5px;
   margin-right: 5px;
+}
+.about-contact {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
 }
 </style>

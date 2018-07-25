@@ -1,7 +1,6 @@
 <template>
   <section class="index-container">
-      <h2 v-if="show('sweet')">Sweet</h2>
-      <h2 v-if="show('savoury')">Savoury</h2>
+      <h2 v-if="$store.state.searchValue">{{capitaliseFirst($store.state.searchValue)}}</h2>
       <div class="index-tube">
         <div v-for="post in filteredPosts" :key="post.permalink">
           <v-post-preview :post="post"/>
@@ -21,18 +20,21 @@ export default {
   },
   computed: {
     filteredPosts() {
-      const s = this.$store.state.searchValue
-      return s === "" ? this.posts : this.posts.filter((p) => this.search(p,s))
+      const v = this.$store.state.searchValue
+      return v === "" ? this.posts : this.posts.filter((p) => this.search(p,v))
     }
   },
   methods: {
-    search(p, s) {
-      return p.tags.includes(s) ||
-             p.title.includes(s) ||
-             p.description.includes(s)
+    capitaliseFirst(v) {
+      return v.charAt(0).toUpperCase() + v.toLowerCase().slice(1);
     },
-    show(v) {
-      return v === this.$store.state.searchValue
+    search(p, v) { // if this becomes slow, reduce to tag search
+      const u = this.capitaliseFirst(v)
+      const w = v.toLowerCase()
+      function includes(p, u, v, w) {
+        return p.includes(v) || p.includes(u) || p.includes(w)
+      }
+      return includes(p.tags, u, v, w) || includes(p.title, u, v, w) || includes(p.description, u, v, w)
     }
   }
 }
