@@ -1,52 +1,52 @@
 <template>
   <div>
-    <nuxt/>
+    <v-search-bar v-if="searchBar" showHome @home="nav('')"/>
+    <v-header v-else @nav="nav"/>
+    <nuxt style="margin-bottom: 40px"/>
+    <v-footer @nav="nav" @showSearchBar="showSearchBar"/>
   </div>
 </template>
 
+<script>
+
+import vheader from '~/components/v-header'
+import vfooter from '~/components/v-footer'
+export default {
+  components: {
+    vheader,
+    vfooter,
+  },
+  data() {
+    return {
+      searchBar: false
+    }
+  },
+  methods: {
+    nav(v) {
+      this.searchBar = false
+      this.$store.commit('searchValue', v)
+      this.$router.replace("/")
+    },
+    showSearchBar() {
+      this.searchBar = true
+      this.$store.commit('searchValue', "")
+      window.scrollTo(0,0)
+    }
+  },
+   mounted() {
+    this.$store.dispatch("fetchLikes")
+  }
+}
+</script>
+
 <style>
 html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
 }
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+body {
+  background: #F8F8F8;
 }
 </style>

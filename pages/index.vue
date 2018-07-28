@@ -1,64 +1,66 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        carole
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green">Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey">GitHub</a>
+  <section class="index-container">
+      <h2 v-if="$store.state.searchValue">{{capitaliseFirst($store.state.searchValue)}}</h2>
+      <!-- <script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-post="durov/68" data-width="90%"></script> -->
+      <div class="index-tube">
+        <div v-for="post in filteredPosts" :key="post.permalink">
+          <v-post-preview :post="post"/>
+        </div>
       </div>
-    </div>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
-
+import all from "~/static/meta/all.js"
 export default {
-  components: {
-    AppLogo
+  name: "index",
+  data() {
+    return {
+      posts: all
+    }
+  },
+  computed: {
+    filteredPosts() {
+      const v = this.$store.state.searchValue
+      return v === "" ? this.posts : this.posts.filter((p) => this.search(p,v))
+    }
+  },
+  methods: {
+    capitaliseFirst(v) {
+      return v.charAt(0).toUpperCase() + v.toLowerCase().slice(1);
+    },
+    search(p, v) { // if this becomes slow, reduce to tag only search
+      const u = this.capitaliseFirst(v)
+      const w = v.toLowerCase()
+      function includes(p, u, v, w) {
+        return p.includes(v) || p.includes(u) || p.includes(w)
+      }
+      return includes(p.tags, u, v, w) || includes(p.title, u, v, w) || includes(p.description, u, v, w)
+    }
   }
 }
 </script>
 
 <style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.index-container > h2 {
   text-align: center;
 }
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.index-tube {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.index-tube > * {
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 320px;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-
-.links {
-  padding-top: 15px;
+.index-tube img {
+  max-width: 320px;
 }
 </style>
