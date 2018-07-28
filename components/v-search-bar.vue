@@ -1,6 +1,7 @@
 <template>
   <div class ="v-search-bar-container">
-  <input class="main-search-bar" v-model="search"/>
+    <v-search-icon style="fill:#e0e0e0"/>
+    <input class="main-search-bar" v-model="search"/>
   </div>
 </template>
 
@@ -30,10 +31,12 @@ export default {
   justify-content: center;
   min-height: 100px;
 }
+.v-search-bar-container > * {
+  min-width: 40px;
+}
 .v-search-bar-container input {
   width: 80%;
   height: 30px;
   border-radius: 8px;
-  border: 1px solid;
 }
 </style>

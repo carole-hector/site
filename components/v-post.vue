@@ -1,13 +1,13 @@
 <template>
   <div class="v-post main-font-size">
-    <div class="v-post main-posts-max-width">
+    <nuxt-link class="v-post main-posts-max-width" to="/">
       <div class="v-post-center">
         <h1 class="v-post-title">{{ title }}</h1>
       </div>
       <v-likes-counter :permalink="meta.permalink" class="v-post-likes-counter"/>
       <img :src="require(`@/assets/png/${img}`)"/>
       <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
-    </div>
+    </nuxt-link>
   </div>
 
 </template>

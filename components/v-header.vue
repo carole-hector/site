@@ -1,6 +1,6 @@
 <template>
 <div>
-   <div class="v-header main-cover">
+   <div class="v-header main-header-color">
       <div class="v-header-left">
         <nuxt-link class="v-header-nav-link main-hover" to="/about">About</nuxt-link>
         <div class="v-header-nav-link main-hover" @click="nav('sweet')">Sweet</div>
@@ -34,14 +34,13 @@ export default {
 <style>
 .v-header {
   width: 100%;
-  min-height: 100px;
+  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin-bottom: 20px;
 }
 .v-header > * {
-  padding-top: 20px;
   text-align: center;
   align-items: center;
   justify-content: space-around;

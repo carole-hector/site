@@ -29,6 +29,7 @@ export default {
 <style>
 .v-post-preview {
   text-align: left;
+  background: white;
 }
 .v-post-preview-padding {
   padding: 20px;

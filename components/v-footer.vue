@@ -1,5 +1,5 @@
 <template>
-  <div class="v-footer main-cover">
+  <div class="v-footer main-footer-color">
     <div class="v-footer-inside main-posts-max-width">
       <div @click="nav('')"><v-home-icon/>Home</div>
       <div @click="showSearchBar"><v-search-icon/>Search</div>

@@ -24,12 +24,14 @@ const createStore = () => {
     },
     actions: {
       async fetchLikes({ commit }) {
-        const response = await this.$axios.$get(LIKES_GETTER_URL)
-        const keys = response.values[0]
-        const values = response.values[1]
-        let likes = {};
-        keys.forEach((key, i) => likes[key] = Number(values[i]))
-        commit("setLikes", likes)
+        if(!this.state.likes) {
+          const response = await this.$axios.$get(LIKES_GETTER_URL)
+          const keys = response.values[0]
+          const values = response.values[1]
+          let likes = {};
+          keys.forEach((key, i) => likes[key] = Number(values[i]))
+          commit("setLikes", likes)
+        }
       },
       async addItem({ commit }, permalink) {
         await this.$axios.get(`${LIKES_SETTER_URL}?item=${permalink}`)

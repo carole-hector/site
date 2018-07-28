@@ -9,15 +9,19 @@ img {
 .main-font-size {
   font-size: 18px;
 }
-.main-cover {
+.main-header-color {
   background: white
+}
+.main-footer-color {
+  background: #F8F8F8
 }
 .main-hover:hover {
   color: #777777
 }
 .main-search-bar {
-  background: white;
-  border-color: #f5f4f4;
+  background: #F8F8F8;
+  border: solid 1px;
+  border-color: #e0e0e0;
 }
 .main-posts-max-width {
   max-width: 700px;

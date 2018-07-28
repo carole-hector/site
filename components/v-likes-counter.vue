@@ -1,6 +1,6 @@
 <template>
-  <div class ="v-likes-counter-container">
-    <div v-if="likes" class="main-clickable" @click="incrementLikes"><v-love-icon/></div>
+  <div class="v-likes-counter-container main-clickable" @click.prevent="incrementLikes">
+    <div v-if="likes"><v-love-icon/></div>
     <h5>{{ likes }}</h5>
   </div>
 </template>
@@ -53,5 +53,12 @@ var lockingFunction = function (callback) {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 </style>

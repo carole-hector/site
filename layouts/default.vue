@@ -34,4 +34,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+body {
+  background: #F8F8F8;
+}
 </style>
