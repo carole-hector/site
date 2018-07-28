@@ -2,13 +2,9 @@
   <div class="v-post main-font-size">
     <div class="v-post main-posts-max-width">
       <div class="v-post-center">
-        <div class="v-post-title-side">
-        </div>
         <h1 class="v-post-title">{{ title }}</h1>
-        <div class="v-post-title-side">
-          <v-likes-counter :permalink="meta.permalink" class="v-post-likes-counter"/>
-        </div>
       </div>
+      <v-likes-counter :permalink="meta.permalink" class="v-post-likes-counter"/>
       <img :src="require(`@/assets/png/${img}`)"/>
       <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
     </div>
@@ -54,9 +50,13 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: center;
 }
-.v-post-title-side {
-  width: 100px;
+.v-post-title {
+  margin: auto;
+}
+.v-post-likes-counter {
+  margin: auto;
 }
 .v-post a {
   text-decoration: none;

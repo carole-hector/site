@@ -20,6 +20,9 @@ export default {
       showSearchBar() {
       return this.$store.state.searchBar
     }
+  },
+   mounted() {
+    this.$store.dispatch("fetchLikes")
   }
 }
 </script>

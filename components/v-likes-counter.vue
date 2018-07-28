@@ -1,7 +1,7 @@
 <template>
   <div class ="v-likes-counter-container">
-    <div @click="incrementLikes"><v-home-icon/></div>
-    <div>{{ likes }}</div>
+    <div v-if="likes" class="main-clickable" @click="incrementLikes"><v-love-icon/></div>
+    <h5>{{ likes }}</h5>
   </div>
 </template>
 
@@ -13,29 +13,37 @@ export default {
       type: String
     }
   },
-  data() {
-    return {
-      offline: 0
-    }
-  },
   computed: {
     likes() {
       const likes = this.$store.state.likes
       if(likes) {
         const thisLikes = Number(likes[this.permalink])
         thisLikes ? null : this.$store.dispatch("addItem", this.permalink)
-        return this.offline ? thisLikes + this.offline : thisLikes
+        return thisLikes
       }
     }
   },
   methods: {
     async incrementLikes() {
-      this.offline++
       await this.$store.dispatch("incrementItem", this.permalink)
-      await this.$store.dispatch("fetchLikes")
-      this.offline = 0
     }
   }
+}
+
+
+var functionLock = false;
+var functionCallbacks = [];
+var lockingFunction = function (callback) {
+    if (functionLock) {
+        functionCallbacks.push(callback);
+    } else {
+        $.longRunning(function(response) {
+             while(functionCallbacks.length){
+                 var thisCallback = functionCallbacks.pop();
+                 thisCallback(response);
+             }
+        });
+    }
 }
 </script>
 
