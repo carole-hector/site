@@ -15,13 +15,13 @@ export default {
   name: "v-footer",
   methods: {
     nav(v) {
-      this.$store.commit('hideSearchBar')
+      this.$store.commit('searchBar', false)
       this.$store.commit('searchValue', v)
       this.$router.replace("/")
       window.scrollTo(0,0)
     },
     showSearchBar() {
-      this.$store.commit('showSearchBar')
+      this.$store.commit('searchBar', true)
       this.$store.commit('searchValue', "")
       window.scrollTo(0,0)
     }

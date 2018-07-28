@@ -37,6 +37,9 @@ export default {
       }
       return includes(p.tags, u, v, w) || includes(p.title, u, v, w) || includes(p.description, u, v, w)
     }
+  },
+  mounted() {
+    this.$store.dispatch("fetchLikes")
   }
 }
 </script>

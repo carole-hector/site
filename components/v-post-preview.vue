@@ -6,7 +6,10 @@
               <div class="v-post-preview-padding">
                 <h3>{{ post.title }}</h3>
                 <div>{{ post.description }}</div>
-                <h5>{{ post.date }}</h5>
+                <div class="v-post-preview-bottom">
+                  <h5>{{ post.date }}</h5>
+                  <v-likes-counter :permalink="post.permalink"/>
+                </div>
               </div>
             </div>
           </nuxt-link>
@@ -33,6 +36,11 @@ export default {
 .v-post-preview-border {
   border: solid 1px;
   border-color: #e0e0e0;
+}
+.v-post-preview-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .v-post-preview a {
   text-decoration: none;

@@ -18,7 +18,7 @@ export default {
   },
   computed: {
       showSearchBar() {
-      return this.$store.state.showSearchBar
+      return this.$store.state.searchBar
     }
   }
 }

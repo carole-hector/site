@@ -36,7 +36,8 @@ module.exports = {
     }
   },
   modules: [
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/axios'
   ],
   markdownit: {
     preset: 'default',

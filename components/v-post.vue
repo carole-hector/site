@@ -1,10 +1,17 @@
 <template>
   <div class="v-post main-font-size">
-    <nuxt-link class="v-post main-posts-max-width" to="/">
-      <div class="v-post-center"><h1>{{ title }}</h1></div>
+    <div class="v-post main-posts-max-width">
+      <div class="v-post-center">
+        <div class="v-post-title-side">
+        </div>
+        <h1 class="v-post-title">{{ title }}</h1>
+        <div class="v-post-title-side">
+          <v-likes-counter :permalink="meta.permalink" class="v-post-likes-counter"/>
+        </div>
+      </div>
       <img :src="require(`@/assets/png/${img}`)"/>
       <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
-    </nuxt-link>
+    </div>
   </div>
 
 </template>
@@ -44,7 +51,12 @@ export default {
   padding: 20px;
 }
 .v-post-center {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.v-post-title-side {
+  width: 100px;
 }
 .v-post a {
   text-decoration: none;

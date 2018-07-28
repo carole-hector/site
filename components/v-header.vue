@@ -22,7 +22,7 @@ export default {
   name: "v-header",
   methods: {
     nav(v) {
-      this.$store.commit('hideSearchBar')
+      this.$store.commit('searchBar', false)
       this.$store.commit('searchValue', v)
       this.$router.replace("/")
     }
