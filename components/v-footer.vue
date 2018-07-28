@@ -1,10 +1,10 @@
 <template>
   <div class="v-footer main-footer-color">
     <div class="v-footer-inside main-posts-max-width">
-      <div @click="nav('')"><v-home-icon/>Home</div>
-      <div @click="showSearchBar"><v-search-icon/>Search</div>
-      <div @click="nav('sweet')"><v-sweet-icon/>Sweet</div>
-      <div @click="nav('savoury')"><v-savoury-icon/>Savoury</div>
+      <div @click="$emit('nav','')"><v-home-icon/>Home</div>
+      <div @click="$emit('showSearchBar')"><v-search-icon/>Search</div>
+      <div @click="$emit('nav','sweet')"><v-sweet-icon/>Sweet</div>
+      <div @click="$emit('nav','savoury')"><v-savoury-icon/>Savoury</div>
       <nuxt-link to="/about"><v-user-icon/>About</nuxt-link>
     </div>
   </div>
@@ -13,19 +13,6 @@
 <script>
 export default {
   name: "v-footer",
-  methods: {
-    nav(v) {
-      this.$store.commit('searchBar', false)
-      this.$store.commit('searchValue', v)
-      this.$router.replace("/")
-      window.scrollTo(0,0)
-    },
-    showSearchBar() {
-      this.$store.commit('searchBar', true)
-      this.$store.commit('searchValue', "")
-      window.scrollTo(0,0)
-    }
-  }
 }
 </script>
 

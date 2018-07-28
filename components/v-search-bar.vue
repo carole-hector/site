@@ -1,6 +1,7 @@
 <template>
   <div class ="v-search-bar-container">
-    <v-search-icon style="fill:#e0e0e0"/>
+    <div v-if="showHome" class="main-clickable" @click="$emit('home')"><v-home-icon color="fill:#e0e0e0"/></div>
+    <v-search-icon color="fill:#e0e0e0"/>
     <input class="main-search-bar" v-model="search"/>
   </div>
 </template>
@@ -11,6 +12,11 @@ export default {
   data() {
     return {
       search: ""
+    }
+  },
+  props: {
+    showHome: {
+      type: Boolean
     }
   },
   watch: {

@@ -3,11 +3,11 @@
    <div class="v-header main-header-color">
       <div class="v-header-left">
         <nuxt-link class="v-header-nav-link main-hover" to="/about">About</nuxt-link>
-        <div class="v-header-nav-link main-hover" @click="nav('sweet')">Sweet</div>
-        <div class="v-header-nav-link main-hover" @click="nav('savoury')">Savoury</div>
+        <div class="v-header-nav-link main-hover" @click="$emit('nav','sweet')">Sweet</div>
+        <div class="v-header-nav-link main-hover" @click="$emit('nav','savoury')">Savoury</div>
       </div>
       <div class="v-header-middle">
-        <div class="v-header-nav-logo" @click="nav('')">Carole Hector</div>
+        <div class="v-header-nav-logo" @click="$emit('nav','')">Carole Hector</div>
       </div>
       <div class="v-header-right">
         <v-search-bar/>
@@ -20,13 +20,6 @@
 <script>
 export default {
   name: "v-header",
-  methods: {
-    nav(v) {
-      this.$store.commit('searchBar', false)
-      this.$store.commit('searchValue', v)
-      this.$router.replace("/")
-    }
-  }
 }
 </script>
 

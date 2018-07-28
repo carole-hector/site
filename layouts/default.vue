@@ -1,9 +1,9 @@
 <template>
   <div>
-    <v-search-bar v-if="showSearchBar"/>
-    <v-header v-else />
+    <v-search-bar v-if="searchBar" showHome @home="nav('')"/>
+    <v-header v-else @nav="nav"/>
     <nuxt style="margin-bottom: 40px"/>
-    <v-footer/>
+    <v-footer @nav="nav" @showSearchBar="showSearchBar"/>
   </div>
 </template>
 
@@ -16,9 +16,21 @@ export default {
     vheader,
     vfooter,
   },
-  computed: {
-      showSearchBar() {
-      return this.$store.state.searchBar
+  data() {
+    return {
+      searchBar: false
+    }
+  },
+  methods: {
+    nav(v) {
+      this.searchBar = false
+      this.$store.commit('searchValue', v)
+      this.$router.replace("/")
+    },
+    showSearchBar() {
+      this.searchBar = true
+      this.$store.commit('searchValue', "")
+      window.scrollTo(0,0)
     }
   },
    mounted() {
