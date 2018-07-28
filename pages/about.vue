@@ -2,16 +2,14 @@
 <section class="about">
   <div class="about-columns">
     <div class="about-left">
-      <img :src="require(`@/assets/png/mushroom-soup.png`)"/>
+      <img :src="require(`@/assets/png/carolehector.png`)"/>
     </div>
     <div class="about-right">
       <div v-html="body"></div>
+      <a class="main-styled-link" href="https://instagram.com/carolehector" target="_blank">Instagram</a>
     </div>
   </div>
   <div class="about-contact">
-    <div>Instagram</div>
-    <div>Telegram</div>
-    <div>Email</div>
   </div>
 </section>
 </template>
@@ -38,19 +36,20 @@ export default {
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.about-columns * {
+.about-columns > * {
   width: 100%;
   max-width: 400px;
-  margin-left: 5px;
-  margin-right: 5px;
+}
+.about-right {
+  margin: 20px;
 }
 .about-contact {
-  margin: auto;
+  margin: 40px auto 0px auto;
   width: 100%;
   max-width: 300px;
   text-align: center;
   display: flex;
   align: center;
-  justify-content: space-around
+  justify-content: space-around;
 }
 </style>

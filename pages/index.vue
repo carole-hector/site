@@ -1,6 +1,7 @@
 <template>
   <section class="index-container">
       <h2 v-if="$store.state.searchValue">{{capitaliseFirst($store.state.searchValue)}}</h2>
+      <!-- <script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-post="durov/68" data-width="90%"></script> -->
       <div class="index-tube">
         <div v-for="post in filteredPosts" :key="post.permalink">
           <v-post-preview :post="post"/>
@@ -28,7 +29,7 @@ export default {
     capitaliseFirst(v) {
       return v.charAt(0).toUpperCase() + v.toLowerCase().slice(1);
     },
-    search(p, v) { // if this becomes slow, reduce to tag search
+    search(p, v) { // if this becomes slow, reduce to tag only search
       const u = this.capitaliseFirst(v)
       const w = v.toLowerCase()
       function includes(p, u, v, w) {
@@ -60,7 +61,6 @@ export default {
   margin-left: 5px;
 }
 .index-tube img {
-  width: 100%;
   max-width: 320px;
 }
 </style>

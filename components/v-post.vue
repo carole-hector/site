@@ -40,9 +40,6 @@ export default {
 .v-post {
   text-align: left;
 }
-.v-post img {
-  width: 100%;
-}
 .v-post-padding {
   padding: 20px;
 }
