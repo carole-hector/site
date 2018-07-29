@@ -19,10 +19,11 @@ export default {
 <style>
 .v-footer {
   width: 100%;
-  height: 70px;
+  height: 80px;
   margin-top: 20px;
   display: flex;
-  align: center
+  align: center;
+  border-top: solid 1px #e0e0e0;
 }
 .v-footer-inside {
   width: 100%;

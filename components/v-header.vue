@@ -31,7 +31,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
 .v-header > * {
   text-align: center;
@@ -51,7 +50,7 @@ export default {
   cursor: pointer;
 }
 .v-header-nav-logo {
-  font-size: 50px;
+  font-size: 40px;
 }
 .v-header-nav-logo:hover {
   cursor: pointer

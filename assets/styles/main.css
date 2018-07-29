@@ -1,6 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Maitree');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400');
 html {
-  font-family: "Maitree";
+  font-family: 'Roboto Mono', sans-serif;
+  /* Maitree */
+}
+body {
+  margin: 0;
 }
 img {
   width: 100%;
@@ -8,7 +12,8 @@ img {
 }
 
 .main-font-size {
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 100;
 }
 .main-header-color {
   background: white
@@ -21,7 +26,7 @@ img {
 }
 .main-search-bar {
   background: #F8F8F8;
-  border: solid 1px;
+  border: none;
   border-color: #e0e0e0;
 }
 .main-posts-max-width {
