@@ -28,6 +28,9 @@ export default {
 
 
 <style>
+.about {
+  margin-top: 20px;
+}
 .about-columns {
   width: 100%;
   max-width: 1000px;

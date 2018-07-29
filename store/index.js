@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
 const LIKES_SETTER_URL = "https://script.google.com/macros/s/AKfycbzTkMsJW5YWAqJZi6uWzQwK76tZ6B2mOGUB4bTA1J9JJeUZVoE/exec"
-const LIKES_GETTER_URL = "https://sheets.googleapis.com/v4/spreadsheets/1xAdSwVYj-oSDe05kTsA_S6DNsnf-Lo0UNLHMIknlfoQ/values/Sheet1?&key=AIzaSyDrkYV_DFaildhf1t4f542h3HKyBJq0YA4"
+const LIKES_GETTER_URL = "https://sheets.googleapis.com/v4/spreadsheets/1xAdSwVYj-oSDe05kTsA_S6DNsnf-Lo0UNLHMIknlfoQ/values/Sheet1?&key=AIzaSyCWnvWbqkWTElnAb1AFljyaV7YQtL3ymqc"
 let que = 0
 let lock = false
 

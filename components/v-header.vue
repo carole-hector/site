@@ -31,7 +31,6 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-bottom: 20px;
 }
 .v-header > * {
   text-align: center;
@@ -39,6 +38,9 @@ export default {
   justify-content: space-around;
   max-width: 350px;
   min-width: 250px;
+}
+.v-header input {
+  background: #F8F8F8
 }
 .v-header-nav-link {
   font-size: 18px
@@ -51,7 +53,7 @@ export default {
   cursor: pointer;
 }
 .v-header-nav-logo {
-  font-size: 50px;
+  font-size: 40px;
 }
 .v-header-nav-logo:hover {
   cursor: pointer

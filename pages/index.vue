@@ -41,6 +41,9 @@ export default {
 </script>
 
 <style>
+.index-container {
+  margin-top: 20px;
+}
 .index-container > h2 {
   text-align: center;
 }
@@ -61,5 +64,15 @@ export default {
   border: solid 1px;
   border-color: #e0e0e0;
   background: white;
+}
+@media only screen and (max-width: 350px) {
+  .index-container {
+    margin-top: 0px;
+  }
+  .index-tube > * {
+    max-width: none;
+    border: none;
+    margin: 0px;
+  }
 }
 </style>
