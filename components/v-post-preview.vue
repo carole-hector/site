@@ -9,7 +9,7 @@
                 <h3>{{ post.title }}</h3>
                 <div>{{ post.description }}</div>
                 <div class="v-post-preview-bottom">
-                  <v-date :date="post.date"/>
+                  <v-date :date="post.date" showTimeSince/>
                   <v-likes-counter :permalink="post.permalink"/>
                 </div>
               </div>

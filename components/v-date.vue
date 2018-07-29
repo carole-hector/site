@@ -1,6 +1,6 @@
 <template>
   <h5 class="v-date">
-    {{ timeSince }} ago
+    {{ timeSince }}
   </h5>
 </template>
 
@@ -11,11 +11,14 @@ export default {
   props: {
     date: {
       type: String
+    },
+    showTimeSince: {
+      type: Boolean
     }
   },
   computed: {
     timeSince() {
-      return distanceInWordsToNow(this.date)
+      return this.showTimeSince? `${distanceInWordsToNow(this.date)} ago` : this.date
     }
   }
 }
