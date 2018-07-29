@@ -1,7 +1,6 @@
 <template>
   <section class="index-container">
       <h2 v-if="$store.state.searchValue">{{capitaliseFirst($store.state.searchValue)}}</h2>
-      <!-- <script async src="https://telegram.org/js/telegram-widget.js?4" data-telegram-post="durov/68" data-width="90%"></script> -->
       <div class="index-tube">
         <div v-for="post in filteredPosts" :key="post.permalink">
           <v-post-preview :post="post"/>
@@ -59,8 +58,15 @@ export default {
   max-width: 320px;
   margin-right: 5px;
   margin-left: 5px;
+  border: solid 1px;
+  border-color: #e0e0e0;
+  background: white;
 }
 .index-tube img {
+  width: 100%;
+  height: 100%;
   max-width: 320px;
+  max-height: 320px;
+  background: #e0e0e0;
 }
 </style>
