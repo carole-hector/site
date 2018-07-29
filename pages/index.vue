@@ -62,11 +62,4 @@ export default {
   border-color: #e0e0e0;
   background: white;
 }
-.index-tube img {
-  width: 100%;
-  height: 100%;
-  max-width: 320px;
-  max-height: 320px;
-  background: #e0e0e0;
-}
 </style>

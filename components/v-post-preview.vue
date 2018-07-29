@@ -44,5 +44,20 @@ export default {
   text-decoration: none;
   color: black
 }
+.v-post-preview-image {
+  width:100%;
+  height:0;
+  padding-top:100%;
+  position:relative;
+  background: #e0e0e0;
+}
+.v-post-preview-image img {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+}
+
+
 </style>
 
