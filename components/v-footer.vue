@@ -1,11 +1,11 @@
 <template>
   <div class="v-footer main-footer-color">
     <div class="v-footer-inside main-posts-max-width">
-      <div @click="$emit('nav','')"><v-home-icon/>Home</div>
-      <div @click="$emit('showSearchBar')"><v-search-icon/>Search</div>
-      <div @click="$emit('nav','sweet')"><v-sweet-icon/>Sweet</div>
-      <div @click="$emit('nav','savoury')"><v-savoury-icon/>Savoury</div>
-      <nuxt-link to="/about"><v-user-icon/>About</nuxt-link>
+      <div @click="$emit('nav','')"><v-home-icon/></div>
+      <div @click="$emit('showSearchBar')"><v-search-icon/></div>
+      <div @click="$emit('nav','sweet')"><v-sweet-icon/></div>
+      <div @click="$emit('nav','savoury')"><v-savoury-icon/></div>
+      <nuxt-link to="/about"><v-user-icon/></nuxt-link>
     </div>
   </div>
 </template>

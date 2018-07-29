@@ -39,6 +39,9 @@ export default {
   max-width: 350px;
   min-width: 250px;
 }
+.v-header input {
+  background: #F8F8F8
+}
 .v-header-nav-link {
   font-size: 18px
 }
