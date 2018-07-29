@@ -3,7 +3,7 @@
           <nuxt-link :to="`posts/${post.permalink}`">
             <div class ="v-post-preview-border">
               <div class="v-post-preview-image">
-                <img :src="require(`@/assets/png/${post.permalink}.png`)"/>
+                <img :src="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
               </div>
               <div class="v-post-preview-padding">
                 <h3>{{ post.title }}</h3>
