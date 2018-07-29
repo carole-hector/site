@@ -2,7 +2,7 @@
 <section class="about">
   <div class="about-columns">
     <div class="about-left">
-      <img :src="require(`@/assets/png/carolehector.png`)"/>
+      <img :src="require(`@/assets/jpg/carolehector.jpg`)"/>
     </div>
     <div class="about-right">
       <div v-html="body"></div>

@@ -5,7 +5,7 @@
         <h1 class="v-post-title">{{ title }}</h1>
       </div>
       <v-likes-counter :permalink="meta.permalink" class="v-post-likes-counter"/>
-      <img :src="require(`@/assets/png/${img}`)"/>
+      <img :src="require(`@/assets/jpg/${img}`)"/>
       <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
     </nuxt-link>
   </div>
@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     img() {
-      return `${this.permalink}.png`
+      return `${this.permalink}.jpg`
     }
   }
 }
