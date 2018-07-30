@@ -31,20 +31,17 @@ export default {
 <style>
 .v-search-bar-container {
   width: 100%;
-  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
-}
-.v-search-bar-container-home {
 }
 .v-search-bar-container > * {
-  min-width: 40px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 .v-search-bar-container input {
   width: 80%;
-  height: 30px;
+  height: 20px;
   border-radius: 8px;
 }
 @media only screen and (max-width: 663px) {

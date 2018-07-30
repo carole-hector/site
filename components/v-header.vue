@@ -27,23 +27,17 @@ export default {
 <style>
 .v-header {
   width: 100%;
-  min-height: 50px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .v-header > * {
   text-align: center;
-  align-items: center;
-  justify-content: space-around;
   max-width: 350px;
   min-width: 250px;
 }
 .v-header input {
   background: #F8F8F8
-}
-.v-header-nav-link {
-  font-size: 18px
 }
 .v-header-left a {
   text-decoration: none;
@@ -61,15 +55,11 @@ export default {
 .v-header-left {
  display: flex;
  flex-wrap: wrap;
+ justify-content: space-around;
 }
 @media only screen and (max-width: 900px) {
   .v-header {
-    display: flex;
-    align-items: center;
     justify-content: center;
-  }
-  .v-header-nav-logo {
-    font-size: 40px;
   }
   .v-header-left {
     display: none;

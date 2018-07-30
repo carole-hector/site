@@ -19,25 +19,19 @@ export default {
 <style>
 .v-footer {
   width: 100%;
-  height: 80px;
-  margin-top: 20px;
   display: flex;
   align: center;
   border-top: solid 1px #e0e0e0;
 }
 .v-footer-inside {
   width: 100%;
-  margin: auto;
+  margin: 8px auto 8px auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .v-footer-inside * {
   margin: auto;
-}
-.v-footer-inside a {
-  color: #000000;
-  text-decoration: none;
 }
 .v-footer-inside > *:hover {
   cursor: pointer;

@@ -1,4 +1,10 @@
 const all = [{
+  permalink: "pepper-shrimp",
+  title: "Trini Pepper Shrimp",
+  description: "Pepper shrimp is the love child of Trinidadian’s Chinese ancestry and traditional Trinidadian flavours.",
+  date: "2018-07-29",
+  tags: ["pepper", "shrimp" ,"trinidad"]
+},{
   permalink: "mushroom-soup",
   title: "Mushroom Soup",
   description: "This victoria sponge is homemade and really nice. Nice fruit finish.",

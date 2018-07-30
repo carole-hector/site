@@ -28,7 +28,7 @@ export default {
     capitaliseFirst(v) {
       return v.charAt(0).toUpperCase() + v.toLowerCase().slice(1);
     },
-    search(p, v) { // if this becomes slow, reduce to tag only search
+    search(p, v) {
       const u = this.capitaliseFirst(v)
       const w = v.toLowerCase()
       function includes(p, u, v, w) {
@@ -57,22 +57,10 @@ export default {
 }
 .index-tube > * {
   margin-bottom: 60px;
-  width: 100%;
-  max-width: 320px;
   margin-right: 5px;
   margin-left: 5px;
   border: solid 1px;
   border-color: #e0e0e0;
   background: white;
-}
-@media only screen and (max-width: 350px) {
-  .index-container {
-    margin-top: 0px;
-  }
-  .index-tube > * {
-    max-width: none;
-    border: none;
-    margin: 0px;
-  }
 }
 </style>

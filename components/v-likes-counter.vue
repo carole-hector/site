@@ -1,6 +1,6 @@
 <template>
   <div class="v-likes-counter-container main-clickable" @click.prevent="incrementLikes">
-    <div v-if="likes"><v-love-icon/></div>
+    <div><v-love-icon/></div>
     <h5>{{ likes }}</h5>
   </div>
 </template>
@@ -20,6 +20,9 @@ export default {
         const thisLikes = Number(likes[this.permalink])
         thisLikes ? null : this.$store.dispatch("addItem", this.permalink)
         return thisLikes
+      }
+      else {
+        return "000"
       }
     }
   },

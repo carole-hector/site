@@ -1,7 +1,7 @@
 <template>
-  <h5 class="v-date">
+  <div class="v-date">
     {{ timeSince }}
-  </h5>
+  </div>
 </template>
 
 <script>
@@ -23,3 +23,9 @@ export default {
   }
 }
 </script>
+<style>
+.v-date {
+  font-size: 12px;
+}
+</style>
+
