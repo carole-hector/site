@@ -33,9 +33,6 @@ export default {
       bodyHtml: this.body,
       permalink: this.meta.permalink,
     }
-  },
-  mounted() {
-    console.log(this.bodyHtml)
   }
 }
 </script>
