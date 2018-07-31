@@ -63,4 +63,14 @@ export default {
   border-color: #e0e0e0;
   background: white;
 }
+@media only screen and (max-width: 340px) {
+.index-container {
+  margin: 0px;
+}
+.index-tube > * {
+  margin: auto;
+  border: none;
+  background: none;
+}
+}
 </style>
