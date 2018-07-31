@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400');
 html {
   font-family: 'Roboto Mono', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
 }
 body {
   margin: 0;
+  background: #F8F8F8;
 }
 img {
   width: 100%;
   height: auto;
 }
-.main-font-size {
-  font-size: 16px;
-  font-weight: 100;
+a {
+  text-decoration: none;
+  color: black
 }
 .main-header-color {
   background: white

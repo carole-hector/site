@@ -7,11 +7,8 @@
 </template>
 
 <script>
-import vpost from "~/components/v-post.vue"
 export default {
-  components: {
-    vpost
-  }
+
 }
 </script>
 

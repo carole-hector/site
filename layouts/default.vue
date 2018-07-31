@@ -2,7 +2,7 @@
   <div class="default">
     <v-search-bar v-if="searchBar" showHome @home="nav('')" class="default-search-bar"/>
     <v-header v-else @nav="nav"/>
-    <nuxt style="margin-bottom: 40px"/>
+    <nuxt style="margin-bottom: 100px" />
     <v-footer @nav="nav" @showSearchBar="showSearchBar"/>
   </div>
 </template>
@@ -46,14 +46,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-body {
-  background: #F8F8F8;
-}
 .default input {
   background: #e0e0e0
 }
 .default-search-bar * {
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 5px;
 }
 </style>
