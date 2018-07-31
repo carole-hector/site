@@ -18,6 +18,7 @@
 import body from "~/static/content/about.md"
 export default {
   name: "about",
+  scrollToTop: true,
   data() {
     return {
       body: body,

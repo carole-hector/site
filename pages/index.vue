@@ -13,6 +13,7 @@
 import all from "~/static/meta/all.js"
 export default {
   name: "index",
+  scrollToTop: true,
   data() {
     return {
       posts: all
@@ -68,7 +69,7 @@ export default {
   margin: 0px;
 }
 .index-tube > * {
-  margin: auto;
+  margin-bottom: 40px;
   border: none;
   background: none;
 }
