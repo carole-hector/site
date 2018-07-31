@@ -1,4 +1,4 @@
-const all = [{
+const meta = [{
   permalink: "pepper-shrimp",
   title: "Trini Pepper Shrimp",
   description: "Pepper shrimp is the love child of Trinidadian’s Chinese ancestry and traditional Trinidadian flavours.",
@@ -25,4 +25,4 @@ const all = [{
   tags: ["sweet", "mushroom" ,"hello"]
 }]
 
-export default all
+export default meta
