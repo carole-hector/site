@@ -40,9 +40,14 @@ export default {
   margin-right: 8px;
 }
 .v-search-bar-container input {
-  width: 80%;
-  height: 20px;
+  width: 150px;
+  height: 30px;
   border-radius: 8px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 18px;
+  font-weight: 100;
 }
 @media only screen and (max-width: 663px) {
   .v-search-bar-container-home {
