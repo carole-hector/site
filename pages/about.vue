@@ -6,10 +6,7 @@
     </div>
     <div class="about-right">
       <div v-html="body"></div>
-      <a class="main-styled-link" href="https://instagram.com/carolehector" target="_blank">Instagram</a>
     </div>
-  </div>
-  <div class="about-contact">
   </div>
 </section>
 </template>
@@ -31,6 +28,7 @@ export default {
 <style>
 .about {
   margin-top: 20px;
+  min-height: 600px;
 }
 .about-columns {
   width: 100%;
@@ -55,5 +53,10 @@ export default {
   display: flex;
   align: center;
   justify-content: space-around;
+}
+@media only screen and (max-width: 420px) {
+  .about {
+    margin-top: 0px;
+  }
 }
 </style>

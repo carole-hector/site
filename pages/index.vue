@@ -1,6 +1,5 @@
 <template>
   <section class="index-container">
-      <h2 v-if="$store.state.searchValue">{{capitaliseFirst($store.state.searchValue)}}</h2>
       <div class="index-tube">
         <div v-for="post in filteredPosts" :key="post.permalink">
           <v-post-preview :post="post"/>

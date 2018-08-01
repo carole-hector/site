@@ -1,7 +1,6 @@
 <template>
   <div class="default">
-    <v-search-bar v-if="searchBar" showHome @home="nav('')" class="default-search-bar"/>
-    <v-header v-else @nav="nav"/>
+    <v-header @nav="nav" :search="searchBar" />
     <nuxt style="margin-bottom: 100px" />
     <v-footer @nav="nav" @showSearchBar="showSearchBar"/>
   </div>
@@ -26,6 +25,7 @@ export default {
       this.searchBar = false
       this.$store.commit('searchValue', v)
       this.$router.replace("/")
+      window.scrollTo(0,0)
     },
     showSearchBar() {
       this.searchBar = true
