@@ -2,15 +2,16 @@
 <div>
    <div class="v-header main-header-color">
       <div class="v-header-left">
-        <nuxt-link class="v-header-nav-link main-hover" to="/about">About</nuxt-link>
+        <nuxt-link class="v-header-nav-link main-hover" to="/about" >About</nuxt-link>
         <div class="v-header-nav-link main-hover" @click="$emit('nav','sweet')">Sweet</div>
         <div class="v-header-nav-link main-hover" @click="$emit('nav','savoury')">Savoury</div>
       </div>
       <div class="v-header-middle">
-        <div class="v-header-nav-logo" @click="$emit('nav','')">Carole Hector</div>
+        <v-search-bar v-if="search"/>
+        <div v-else class="v-header-nav-logo" @click="$emit('nav','')">Carole Hector</div>
       </div>
       <div class="v-header-right">
-        <v-search-bar/>
+        <v-search-bar v-if="!search"/>
       </div>
   </div>
 </div>
@@ -20,6 +21,11 @@
 <script>
 export default {
   name: "v-header",
+  props: {
+    search: {
+      type: Boolean
+    }
+  }
 }
 </script>
 
@@ -27,14 +33,14 @@ export default {
 <style>
 .v-header {
   width: 100%;
+  height: 55px;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 .v-header > * {
   text-align: center;
-  max-width: 350px;
-  min-width: 250px;
+  width: 300px;
 }
 .v-header input {
   background: #F8F8F8
@@ -47,7 +53,7 @@ export default {
   cursor: pointer;
 }
 .v-header-nav-logo {
-  font-size: 40px;
+  font-size: 38px;
 }
 .v-header-nav-logo:hover {
   cursor: pointer
