@@ -2,7 +2,7 @@
   <div class="default">
     <v-header @nav="nav" :search="searchBar" />
     <nuxt style="margin-bottom: 100px" />
-    <v-footer @nav="nav" @showSearchBar="showSearchBar"/>
+    <v-footer @nav="nav" @showSearchBar="showSearchBar" class="default-footer"/>
   </div>
 </template>
 
@@ -51,5 +51,13 @@ html {
 }
 .default-search-bar * {
   margin: 5px;
+}
+.default-footer {
+  display: none;
+}
+@media only screen and (max-width: 900px) {
+  .default-footer {
+    display: block;
+  }
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
   <section class="index-container">
-      <div class="index-tube">
-        <div v-for="post in filteredPosts" :key="post.permalink">
-          <v-post-preview :post="post"/>
-        </div>
+    <div class="index-tube">
+      <div v-for="post in filteredPosts" :key="post.permalink">
+        <v-post-preview :post="post"/>
       </div>
+    </div>
   </section>
 </template>
 
@@ -53,7 +53,7 @@ export default {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .index-tube > * {
   margin-bottom: 60px;

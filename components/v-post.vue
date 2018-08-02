@@ -3,12 +3,15 @@
     <div class="v-post-center">
       <h1 class="v-post-title">{{ title }}</h1>
     </div>
-    <v-likes-counter :permalink="permalink" class="v-post-likes-counter"/>
+    <v-likes-counter :permalink="permalink" class="v-post-likes-counter-top"/>
     <div class="v-post-image">
       <img :src="require(`@/assets/jpg/${permalink}.jpg`)"/>
     </div>
-    <div class="v-post-padding v-post-text" v-html="bodyHtml"></div>
-    <v-date :date="date" style="margin-left: 8px"/>
+    <div class="v-post-body" v-html="bodyHtml"></div>
+    <div class="v-post-bottom">
+      <v-date :date="date"/>
+      <v-likes-counter :permalink="permalink"/>
+    </div>
   </div>
 
 </template>
@@ -40,7 +43,7 @@ export default {
   text-align: left;
   margin-top: 20px;
 }
-.v-post-padding {
+.v-post-body {
   padding: 20px;
 }
 .v-post-center {
@@ -52,25 +55,19 @@ export default {
 .v-post-title {
   margin: auto;
 }
-.v-post-likes-counter {
+.v-post-likes-counter-top {
   margin: auto;
 }
-.v-post a {
-  text-decoration: none;
-  color: black
+.v-post-bottom {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .v-post-image {
   width:100%;
-  height:0;
-  padding-top:100%;
-  position:relative;
+  height: 700px;
   background: #e0e0e0;
-}
-.v-post-image img {
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
 }
 </style>
 

@@ -40,6 +40,7 @@ export default {
   padding-right: 8px;
   font-family: 'Roboto Mono', sans-serif;
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 400;
+  background: #eeeeee;
 }
 </style>
