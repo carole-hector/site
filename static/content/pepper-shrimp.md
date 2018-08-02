@@ -1,8 +1,8 @@
 Pepper shrimp is the love child of Trinidadian’s Chinese ancestry and traditional Trinidadian flavours (thyme, chives, shadon beni, ketchup…). It’s the most delicious homemade shrimp recipe I know - it's sweet, spicy and salty, plus it has the added benefit of actually tasting like a takeaway (with out the immense level of calories or extra money spent).  
   
-_Serves 2_
-_Prep time: 5 minutes_
-_Cooking time: 15 minutes_
+**Serves 2**
+**Prep time: 5 minutes**
+**Cooking time: 15 minutes**
   
 # Ingredients #
 

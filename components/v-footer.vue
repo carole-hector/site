@@ -19,8 +19,6 @@ export default {
 <style>
 .v-footer {
   width: 100%;
-  display: flex;
-  align: center;
   border-top: solid 1px #e0e0e0;
 }
 .v-footer-inside {
@@ -36,17 +34,9 @@ export default {
 .v-footer-inside > *:hover {
   cursor: pointer;
 }
-.v-footer-search {
-    display: none;
-  }
-@media only screen and (max-width: 900px) {
-   .v-footer {
-    position: fixed;
-    bottom: 0pt;
-    left: 0pt;
-  }
-  .v-footer-search {
-    display: block;
-  }
+.v-footer {
+  position: fixed;
+  bottom: 0pt;
+  left: 0pt;
 }
-</style>
+  </style>

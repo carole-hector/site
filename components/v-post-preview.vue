@@ -29,13 +29,14 @@ export default {
 <style>
 .v-post-preview {
   width: 320px;
+  font-weight: 100;
 }
 .v-post-preview-top {
   height: 320px;
   background: #e0e0e0;
 }
 .v-post-preview-middle {
-  height: 150px;
+  height: 180px;
   text-align: left;
   padding: 0 20px 0 20px;
 }
