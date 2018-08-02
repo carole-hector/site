@@ -66,7 +66,9 @@ export default {
 }
 .v-post-image {
   width:100%;
-  height: 700px;
+  height: 100vw;
+  min-height: 320px;
+  max-height: 700px;
   background: #e0e0e0;
 }
 </style>
