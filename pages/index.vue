@@ -53,7 +53,7 @@ export default {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .index-tube > * {
   margin-bottom: 60px;
