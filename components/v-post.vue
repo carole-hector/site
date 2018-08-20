@@ -3,7 +3,6 @@
     <div class="v-post-center">
       <h1 class="v-post-title">{{ title }}</h1>
     </div>
-    <v-likes-counter :permalink="permalink" class="v-post-likes-counter-top"/>
     <div class="v-post-image">
       <img :src="require(`@/assets/jpg/${permalink}.jpg`)"/>
     </div>
@@ -65,6 +64,7 @@ export default {
   justify-content: space-between;
 }
 .v-post-image {
+  margin-top: 20px;
   width:100%;
   height: 100vw;
   min-height: 320px;

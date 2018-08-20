@@ -21,6 +21,9 @@ export default {
       body: body,
     }
   },
+  mounted() {
+    this.$store.state.searchValue = ''
+  }
 }
 </script>
 

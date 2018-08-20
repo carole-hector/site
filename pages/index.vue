@@ -21,7 +21,7 @@ export default {
   computed: {
     filteredPosts() {
       const v = this.$store.state.searchValue
-      return v === "" ? this.posts : this.posts.filter((p) => this.search(p,v))
+      return !Boolean(v) ? this.posts : this.posts.filter((p) => this.search(p,v))
     }
   },
   methods: {

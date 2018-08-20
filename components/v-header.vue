@@ -2,9 +2,12 @@
 <div>
    <div class="v-header main-header-color">
       <div class="v-header-left">
-        <nuxt-link class="v-header-nav-link main-hover" to="/about" >About</nuxt-link>
-        <div class="v-header-nav-link main-hover" @click="$emit('nav','sweet')">Sweet</div>
-        <div class="v-header-nav-link main-hover" @click="$emit('nav','savoury')">Savoury</div>
+        <nuxt-link
+          class="v-header-nav-link main-hover"
+          to="/about" >About
+        </nuxt-link>
+        <div :class="getClass('sweet')" @click="$emit('nav','sweet')">Sweet</div>
+        <div :class="getClass('savoury')" @click="$emit('nav','savoury')">Savoury</div>
       </div>
       <div class="v-header-middle">
         <v-search-bar v-if="search"/>
@@ -24,6 +27,13 @@ export default {
   props: {
     search: {
       type: Boolean
+    }
+  },
+  methods: {
+    getClass(v) {
+      return this.$store.state.searchValue === v
+        ? "v-header-nav-link main-hover v-header-nav-link-selected"
+        : "v-header-nav-link main-hover"
     }
   }
 }
@@ -51,6 +61,9 @@ export default {
 }
 .v-header-nav-link:hover {
   cursor: pointer;
+}
+.v-header-nav-link-selected {
+  border-bottom: solid 2px;
 }
 .v-header-nav-logo {
   font-size: 38px;

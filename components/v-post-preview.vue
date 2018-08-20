@@ -29,7 +29,6 @@ export default {
 <style>
 .v-post-preview {
   width: 320px;
-  font-weight: 100;
 }
 .v-post-preview-top {
   height: 320px;
