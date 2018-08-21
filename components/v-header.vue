@@ -2,19 +2,15 @@
 <div>
    <div class="v-header main-header-color">
       <div class="v-header-left">
-        <nuxt-link
-          class="v-header-nav-link main-hover"
-          to="/about" >About
-        </nuxt-link>
-        <div :class="getClass('sweet')" @click="$emit('nav','sweet')">Sweet</div>
-        <div :class="getClass('savoury')" @click="$emit('nav','savoury')">Savoury</div>
+        <nuxt-link :class="getClass('/about')" to="/about" >About</nuxt-link>
+        <nuxt-link to="/" :class="getClass('sweet')" @click.native="$emit('nav','sweet')">Sweet</nuxt-link>
+        <nuxt-link to="/" :class="getClass('savoury')" @click.native="$emit('nav','savoury')">Savoury</nuxt-link>
       </div>
       <div class="v-header-middle">
-        <v-search-bar v-if="search"/>
-        <div v-else class="v-header-nav-logo" @click="$emit('nav','')">Carole Hector</div>
+        <nuxt-link to="/" class="v-header-nav-logo" @click.native="$emit('nav','')">Carole Hector</nuxt-link>
       </div>
       <div class="v-header-right">
-        <v-search-bar v-if="!search"/>
+        <v-search-bar/>
       </div>
   </div>
 </div>
@@ -31,7 +27,7 @@ export default {
   },
   methods: {
     getClass(v) {
-      return this.$store.state.searchValue === v
+      return this.$store.state.searchValue === v || this.$route.path === v
         ? "v-header-nav-link main-hover v-header-nav-link-selected"
         : "v-header-nav-link main-hover"
     }
@@ -45,12 +41,12 @@ export default {
   width: 100%;
   height: 55px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 .v-header > * {
   text-align: center;
   width: 300px;
+  margin-top: 15px;
 }
 .v-header input {
   background: #F8F8F8

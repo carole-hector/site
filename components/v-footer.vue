@@ -1,10 +1,8 @@
 <template>
   <div class="v-footer main-footer-color">
     <div class="v-footer-inside main-posts-max-width">
-      <div @click="$emit('nav','')"><v-home-icon/></div>
-      <div class="v-footer-search" @click="$emit('showSearchBar')"><v-search-icon/></div>
-      <div @click="$emit('nav','sweet')"><v-sweet-icon/></div>
-      <div @click="$emit('nav','savoury')"><v-savoury-icon/></div>
+      <nuxt-link to="/"><v-home-icon/></nuxt-link>
+      <nuxt-link to="/search" class="v-footer-search"><v-search-icon/></nuxt-link>
       <nuxt-link to="/about"><v-user-icon/></nuxt-link>
     </div>
   </div>

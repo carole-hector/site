@@ -5,7 +5,8 @@
 <script>
 import all from "~/static/meta/all.js"
 export default {
-  name: "index",
+  name: "search",
+  layout: 'search',
   scrollToTop: true,
   data() {
     return {
@@ -16,9 +17,6 @@ export default {
     searchValue() {
       return this.$store.state.searchValue
     }
-  },
-  mounted() {
-    this.$store.state.searchValue = ""
   }
 }
 </script>

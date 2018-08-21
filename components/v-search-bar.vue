@@ -1,7 +1,7 @@
 <template>
   <div class ="v-search-bar-container">
     <v-search-icon color="fill:#e0e0e0"/>
-    <input class="main-search-bar" @input="$router.replace('/')" @blur="$emit('searchBlur')" v-model="search"/>
+    <input class="main-search-bar" v-model="search"/>
   </div>
 </template>
 

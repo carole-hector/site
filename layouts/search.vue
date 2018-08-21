@@ -1,19 +1,14 @@
 <template>
   <div class="default">
-    <v-header @nav="nav" />
+    <v-search-bar style="margin-top: 15px"/>
     <nuxt/>
-    <v-footer @nav="nav" class="default-footer"/>
+    <v-footer class="default-footer"/>
   </div>
 </template>
 
 <script>
 
 export default {
-  methods: {
-    nav(v) {
-      this.$store.commit('searchValue', v)
-    }
-  },
    mounted() {
     this.$store.dispatch("fetchLikes")
   }
@@ -26,6 +21,12 @@ html {
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+}
+.default input {
+  background: #e0e0e0
+}
+.default-search-bar * {
+  margin: 5px;
 }
 .default-footer {
   display: none;

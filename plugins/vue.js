@@ -5,6 +5,7 @@ import vheader from "~/components/v-header.vue"
 import vfooter from "~/components/v-footer.vue"
 import vloveIcon from "~/components/icons/v-love-icon.vue"
 import vhomeIcon from "~/components/icons/v-home-icon.vue"
+import vmainTube from "~/components/v-main-tube.vue"
 import vsweetIcon from "~/components/icons/v-sweet-icon.vue"
 import vuserIcon from "~/components/icons/v-user-icon.vue"
 import vsearchBar from "~/components/v-search-bar.vue"
@@ -20,6 +21,7 @@ Vue.component(vfooter.name, vfooter)
 Vue.component(vloveIcon.name, vloveIcon)
 Vue.component(vuserIcon.name, vuserIcon)
 Vue.component(vhomeIcon.name, vhomeIcon)
+Vue.component(vmainTube.name, vmainTube)
 Vue.component(vsearchBar.name, vsearchBar)
 Vue.component(vsweetIcon.name, vsweetIcon)
 Vue.component(vsearchIcon.name, vsearchIcon)
