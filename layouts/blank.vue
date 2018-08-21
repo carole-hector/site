@@ -1,8 +1,7 @@
 <template>
-  <div class="default">
-    <v-search-bar style="margin-top: 15px"/>
-    <nuxt/>
-    <v-footer class="default-footer"/>
+  <div class="blank">
+    <nuxt style="margin-bottom: 50px"/>
+    <v-footer class="blank-footer"/>
   </div>
 </template>
 
@@ -22,17 +21,12 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.default input {
-  background: #e0e0e0
-}
-.default-search-bar * {
-  margin: 5px;
-}
-.default-footer {
+
+.blank-footer {
   display: none;
 }
 @media only screen and (max-width: 900px) {
-  .default-footer {
+  .blank-footer {
     display: block;
   }
 }

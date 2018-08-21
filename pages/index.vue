@@ -1,5 +1,5 @@
 <template>
-  <v-main-tube :posts="posts" :searchValue="searchValue"/>
+  <v-all-post-preview :posts="posts" :searchValue="searchValue"/>
 </template>
 
 <script>
@@ -16,9 +16,6 @@ export default {
     searchValue() {
       return this.$store.state.searchValue
     }
-  },
-  mounted() {
-    this.$store.state.searchValue = ""
   }
 }
 </script>

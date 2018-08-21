@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "v-main-tube",
+  name: "v-all-post-preview",
   scrollToTop: true,
   props: {
     posts: {

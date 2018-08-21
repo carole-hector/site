@@ -1,7 +1,7 @@
 <template>
   <div class="default">
     <v-header @nav="nav" />
-    <nuxt/>
+    <nuxt style="margin-bottom: 50px"/>
     <v-footer @nav="nav" class="default-footer"/>
   </div>
 </template>

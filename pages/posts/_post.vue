@@ -16,6 +16,9 @@ export default {
       body: body,
       meta: meta
     }
+  },
+  mounted() {
+    this.$store.state.searchValue = null
   }
 }
 </script>

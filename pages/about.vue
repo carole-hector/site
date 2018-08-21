@@ -22,7 +22,7 @@ export default {
     }
   },
   mounted() {
-    this.$store.state.searchValue = ''
+    this.$store.state.searchValue = null
   }
 }
 </script>
@@ -31,7 +31,6 @@ export default {
 <style>
 .about {
   margin-top: 20px;
-  min-height: 600px;
 }
 .about-columns {
   width: 100%;
