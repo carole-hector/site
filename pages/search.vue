@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <v-search-bar style="margin-bottom: 15px; margin-top: 15px"/>
-    <v-all-post-mini :posts="posts" :searchValue="searchValue"/>
-  </div>
+    <div class="search">
+      <nuxt-link class="back-arrow" to="/"><v-back-arrow-icon/></nuxt-link>
+      <v-search-bar class="search-bar" @search="search = $event"/>
+      <v-all-posts mini :posts="posts" :search="search"/>
+    </div>
 </template>
 
 <script>
@@ -13,13 +14,24 @@ export default {
   scrollToTop: true,
   data() {
     return {
-      posts: all
-    }
-  },
-  computed: {
-    searchValue() {
-      return this.$store.state.searchValue
+      posts: all,
+      search: null
     }
   }
 }
 </script>
+
+<style lang="stylus">
+.search {
+  .search-bar {
+    margin: auto;
+    padding-top: 15px;
+  }
+  .back-arrow {
+    position: absolute;
+    top:15px;
+    left:15px;
+  }
+}
+</style>
+

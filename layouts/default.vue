@@ -1,8 +1,8 @@
 <template>
   <div class="default">
-    <v-header @nav="nav" />
+    <v-header @search="search" />
     <nuxt style="margin-bottom: 50px"/>
-    <v-footer @nav="nav" class="default-footer"/>
+    <v-footer @search="search" class="default-footer"/>
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 
 export default {
   methods: {
-    nav(v) {
+    search(v) {
       this.$store.commit('searchValue', v)
     }
   },

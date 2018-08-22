@@ -1,7 +1,14 @@
 <template>
   <div class ="v-search-bar-container">
-    <v-search-icon color="fill:#e0e0e0"/>
-    <input class="main-search-bar" autocapitalize="none" autocorrect="off" v-model="search"/>
+    <nuxt-link to="/search">
+      <v-search-icon color="e0e0e0"/>
+    </nuxt-link>
+    <input
+      class="main-search-bar"
+      autocapitalize="none"
+      autocorrect="off"
+      @input="$emit('search', search)"
+      v-model="search"/>
   </div>
 </template>
 
@@ -10,12 +17,12 @@ export default {
   name: "v-search-bar",
   data() {
     return {
-      search: ""
+      search: null
     }
   },
   watch: {
-    search(searchValue) {
-      this.$store.commit('searchValue', searchValue)
+    search(v) {
+      this.$store.commit('searchValue', v)
     }
   }
 }
@@ -23,7 +30,7 @@ export default {
 
 <style>
 .v-search-bar-container {
-  width: 100%;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;

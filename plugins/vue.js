@@ -4,9 +4,9 @@ import vdate from "~/components/v-date.vue"
 import vheader from "~/components/v-header.vue"
 import vfooter from "~/components/v-footer.vue"
 import vloveIcon from "~/components/icons/v-love-icon.vue"
+import vbackArrowIcon from "~/components/icons/v-back-arrow-icon.vue"
 import vhomeIcon from "~/components/icons/v-home-icon.vue"
-import vallPostPreview from "~/components/v-all-post-preview.vue"
-import vallPostMini from "~/components/v-all-post-mini.vue"
+import vallPosts from "~/components/group/v-all-posts.vue"
 import vsweetIcon from "~/components/icons/v-sweet-icon.vue"
 import vuserIcon from "~/components/icons/v-user-icon.vue"
 import vsearchBar from "~/components/v-search-bar.vue"
@@ -21,10 +21,10 @@ Vue.component(vdate.name, vdate)
 Vue.component(vheader.name, vheader)
 Vue.component(vfooter.name, vfooter)
 Vue.component(vloveIcon.name, vloveIcon)
+Vue.component(vbackArrowIcon.name, vbackArrowIcon)
 Vue.component(vuserIcon.name, vuserIcon)
 Vue.component(vhomeIcon.name, vhomeIcon)
-Vue.component(vallPostPreview.name, vallPostPreview)
-Vue.component(vallPostMini.name, vallPostMini)
+Vue.component(vallPosts.name, vallPosts)
 Vue.component(vsearchBar.name, vsearchBar)
 Vue.component(vsweetIcon.name, vsweetIcon)
 Vue.component(vsearchIcon.name, vsearchIcon)
