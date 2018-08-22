@@ -35,6 +35,12 @@ module.exports = {
       }
     }
   },
+  generate: {
+    routes: [
+      '/posts/potato-salad',
+      '/posts/pepper-shrimp'
+    ]
+  },
   modules: [
     '@nuxtjs/markdownit',
     '@nuxtjs/axios'
