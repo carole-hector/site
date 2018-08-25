@@ -1,10 +1,10 @@
 <template>
-<section class="about">
-    <div class="image">
-      <img :src="require(`@/assets/jpg/carolehector.jpg`)"/>
+    <div class="about">
+      <div class="image">
+        <img :src="require(`@/assets/jpg/carolehector.jpg`)"/>
+      </div>
+      <div class="text" v-html="body"></div>
     </div>
-    <div class="text" v-html="body"></div>
-</section>
 </template>
 
 <script>
@@ -25,26 +25,23 @@ export default {
 
 
 <style lang="stylus">
-
 .about {
-  margin-top: 20px;
+  margin: auto
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .image {
+    margin-top: 20px;
+    width: 300px;
+    height: 300px;
+    background: #e0e0e0
+  }
 
   .text {
-    padding: 10px
+    padding: 0px 15px 15px 15px;
   }
 
-  * {
-    width: 100%;
-    max-width: 700px;
-    margin: auto;
-  }
 }
-
-
-@media only screen and (max-width: 420px) {
-  .about {
-    margin-top: 0px;
-  }
-}
-
 </style>

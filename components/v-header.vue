@@ -54,6 +54,7 @@ export default {
 .v-header {
   width: 100%;
   height: 55px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   justify-content: space-around;
 
@@ -65,6 +66,7 @@ export default {
   }
   .nav-logo {
     font-size: 38px;
+    font-family: 'Waiting for the Sunrise';
   }
   .left {
     display: flex;

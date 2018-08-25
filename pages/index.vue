@@ -1,7 +1,10 @@
 <template>
-<div>
-  <v-all-posts :posts="posts" :search="search"/>
-</div>
+  <div class="index">
+    <div class="banner">
+      <v-carole-mini v-if="!search" class="chip"/>
+    </div>
+    <v-all-posts :posts="posts" :search="search"/>
+  </div>
 </template>
 
 <script>
@@ -21,3 +24,16 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.index {
+  .banner {
+    width: 100%;
+  }
+  .chip {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto
+  }
+}
+</style>

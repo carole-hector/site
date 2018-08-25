@@ -1,7 +1,6 @@
 <template>
   <div class="blank">
-    <nuxt style="margin-bottom: 50px"/>
-    <v-footer class="blank-footer"/>
+    <nuxt/>
   </div>
 </template>
 

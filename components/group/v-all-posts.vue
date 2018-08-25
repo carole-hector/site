@@ -87,7 +87,7 @@ export default {
     margin: 0px;
 
     .tube > * {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       border: none;
       background: none;
     }

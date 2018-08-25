@@ -1,9 +1,9 @@
 <template>
-  <div class="v-footer main-footer-color">
+  <div class="v-footer roboto main-footer-color">
     <div class="v-footer-inside main-posts-max-width">
-      <nuxt-link to="/"><v-home-icon/></nuxt-link>
-      <nuxt-link to="/search" class="v-footer-search"><v-search-icon/></nuxt-link>
-      <nuxt-link to="/about"><v-user-icon/></nuxt-link>
+      <div :class="getClass('/')" ><nuxt-link to="/">All</nuxt-link></div>
+      <div><nuxt-link to="/search" class="v-footer-search"><v-search-icon/></nuxt-link></div>
+      <div :class="getClass('/about')"><nuxt-link to="/about">About</nuxt-link></div>
     </div>
   </div>
 </template>
@@ -11,17 +11,24 @@
 <script>
 export default {
   name: "v-footer",
+  methods: {
+     getClass(v) {
+      return this.$route.path === v
+        ? "v-footer-selected"
+        : null
+    }
+  }
 }
 </script>
 
 <style>
 .v-footer {
   width: 100%;
-  border-top: solid 1px #e0e0e0;
+  padding-bottom: 10px;
 }
 .v-footer-inside {
   width: 100%;
-  margin: 8px auto 8px auto;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -29,12 +36,11 @@ export default {
 .v-footer-inside * {
   margin: auto;
 }
+.v-footer-selected {
+  border-bottom: solid 2px;
+}
 .v-footer-inside > *:hover {
   cursor: pointer;
 }
-.v-footer {
-  position: fixed;
-  bottom: 0pt;
-  left: 0pt;
-}
+
   </style>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:100,400');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,400');
+@import url('https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise');
 
 html {
   font-family: 'Open Sans', sans-serif;
@@ -32,6 +33,9 @@ h3 {
 }
 .main-footer-color {
   background: white
+}
+.main-logo {
+  font-family: 'Waiting for the Sunrise';
 }
 .roboto {
   font-family: 'Roboto Mono';

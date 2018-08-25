@@ -41,7 +41,7 @@ export default {
 }
 .v-search-bar-container input {
   width: 150px;
-  height: 20px;
+  height: 25px;
   border-radius: 8px;
   padding-left: 8px;
   padding-right: 8px;

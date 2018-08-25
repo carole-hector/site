@@ -1,5 +1,5 @@
 <template>
-<div class="savoury">
+<div class="sweet">
   <v-all-posts :posts="filtered" :search="search"/>
 </div>
 </template>
