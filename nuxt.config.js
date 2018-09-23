@@ -38,7 +38,8 @@ module.exports = {
   generate: {
     routes: [
       '/posts/potato-salad',
-      '/posts/pepper-shrimp'
+      '/posts/pepper-shrimp',
+      '/posts/chickpea-curry'
     ]
   },
   modules: [

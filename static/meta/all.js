@@ -1,4 +1,11 @@
-const meta = [{
+const meta = [
+  {
+  permalink: "chickpea-curry",
+  title: "Chickpea, Coconut and Chard Curry",
+  description: "This curry has the unique combination of a guilty yet wholesome treat - it’s easy enough for a midweek meal, but surprisingly luxurious enough for a special night in.",
+  date: "2018-09-23",
+  tags: ["curry", "chickpea" ,"pulses", "savoury", "coconut", "tomato"]
+},{
   permalink: "potato-salad",
   title: "Trini Potato Salad",
   description: "In Trinidad, Potato salad is a classic side dish for nearly any Trini meal, and it’s an essential part of the Sunday table too.",

@@ -1,6 +1,6 @@
 <template>
     <nuxt-link class="v-carole-mini" to="/about">
-        <img class="image" :src="require(`@/assets/jpg/carolehector-preview.jpg`)"/>
+        <img class="image" :src="require(`@/assets/jpg/carolehector.jpg`)"/>
         <div class="text">
           <div>Recipe developer & Leiths trained graduate.</div>
         </div>
