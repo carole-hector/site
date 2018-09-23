@@ -2,11 +2,11 @@
   <div class="v-post-preview">
     <nuxt-link :to="`posts/${post.permalink}`">
       <div class="v-post-preview-top">
-        <img :src="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
+        <img v-lazy="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
       </div>
       <div class="v-post-preview-middle">
         <h3>{{ post.title }}</h3>
-        <div>{{ post.description }}</div>
+        <div>{{ `${post.description.substr(0,110)}...` }}</div>
       </div>
       <div class="v-post-preview-bottom">
         <v-date :date="post.date" showTimeSince/>

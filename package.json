@@ -18,7 +18,8 @@
     "date-fns": "^1.29.0",
     "nuxt": "^1.0.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vue-lazyload": "^1.2.6"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",

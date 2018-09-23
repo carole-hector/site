@@ -1,7 +1,7 @@
 <template>
     <div class="about">
       <div class="image">
-        <img :src="require(`@/assets/jpg/carolehector.jpg`)"/>
+        <img v-lazy="require(`@/assets/jpg/carolehector.jpg`)"/>
       </div>
       <div class="text" v-html="body"></div>
     </div>

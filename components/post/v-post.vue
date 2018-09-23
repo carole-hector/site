@@ -4,7 +4,7 @@
       <h1 class="v-post-title">{{ title }}</h1>
     </div>
     <div class="v-post-image">
-      <img :src="require(`@/assets/jpg/${permalink}.jpg`)"/>
+      <img v-lazy="require(`@/assets/jpg/${permalink}.jpg`)"/>
     </div>
     <div class="v-post-body" v-html="bodyHtml"></div>
     <div class="v-post-bottom">
