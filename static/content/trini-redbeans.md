@@ -1,4 +1,4 @@
-Ideally, this recipe would use dried kidney beans that have been soaked overnight, then cooked for around 45 minutes. I cheat by using canned beans (I’ve always wanted to be the type of person who plans to soak beans overnight, but alas). As a result, this can easily made midweek. Trini red beans is traditionally served for Sunday lunch, it’s the perfect accompaniment to stew chicken and macaroni pie - but I often just eat it with rice and a side of vegetables. 
+Ideally, this recipe would use dried kidney beans that have been soaked overnight, then cooked for around 45 minutes. I cheat by using canned beans (I’ve always wanted to be the type of person who plans to soak beans overnight, but alas). As a result, this can easily be made midweek. Trini red beans is traditionally served for Sunday lunch, it’s the perfect accompaniment to stew chicken and macaroni pie - but I often just eat it with rice and a side of vegetables. 
   
 **Serves 4 as a side dish, or 2 as a main course**   
 **Prep time: 5 minutes**   
