@@ -1,5 +1,12 @@
 const meta = [
   {
+  permalink: "trini-redbeans",
+  title: "Trinidadian Red Beans",
+  description: "Ideally, this recipe would use dried kidney beans that have been soaked overnight, then cooked for around 45 minutes.",
+  date: "2018-09-23",
+  tags: ["trinidadian", "stew" ,"curry", "red beans", "kidney beans", "savoury", "quick"]
+},
+  {
   permalink: "beetroot-horseradish",
   title: "Roast Beetroot, with Horseradish Yoghurt",
   description: "Beetroot and horseradish is an undeniable food match - horseradish cuts through the beetroot’s earthiness, and here, the caraway and cumin brings out the beetroot's gentle sweetness.",
