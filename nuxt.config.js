@@ -1,4 +1,4 @@
-import posts from "~/static/meta/all.js"
+const posts = require("./static/meta/all.js")
 const routes = posts.map(post => `/posts/${post.permalink}`)
 
 module.exports = {

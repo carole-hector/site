@@ -31,4 +31,5 @@ const meta = [
   tags: ["pepper", "shrimp" ,"trinidad", "savoury"]
 }]
 
-export default meta
+module.exports = meta
+
