@@ -35,7 +35,7 @@ h3 {
   background: white
 }
 .main-logo {
-  font-family: 'Source Code Pro';
+  font-family: 'Source Code Pro', monospace;
 }
 .roboto {
   font-family: 'Roboto Mono';
