@@ -2,7 +2,7 @@
     <nuxt-link class="v-carole-mini" to="/about">
         <img class="image" v-lazy="require(`@/assets/jpg/carolehector.jpg`)"/>
         <div class="text">
-          <div>Recipe developer based in London. 🇬🇧🇹🇹</div>
+          <div>Recipe developer and food styling assistant based in London. 🇬🇧🇹🇹</div>
         </div>
     </nuxt-link>
 </template>
