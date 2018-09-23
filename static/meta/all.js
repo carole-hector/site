@@ -5,7 +5,7 @@ const meta = [
   description: "This is not so much a recipe, more a suggestion. I advise you make this when figs are cheap in the shops during late September time. ",
   date: "2018-09-23",
   tags: ["fig", "toast" ,"goats cheese", "cheese", "dinner", "savoury", "quick"]
-}
+},
   {
   permalink: "trini-redbeans",
   title: "Trinidadian Red Beans",
