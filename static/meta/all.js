@@ -3,7 +3,7 @@ const meta = [
   permalink: "courgette-toast",
   title: "Indian Spiced Courgette On Toast",
   description: "A luxurious breakfast, or light dinner - courgette on toast (and all of it’s wonderful variations)...",
-  date: "2018-09-23"
+  date: "2018-09-23",
   tags: ["courgette", "toast" ,"indian", "savoury", "quick", "egg"]
 },{
   permalink: "chickpea-curry",
