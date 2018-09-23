@@ -1,19 +1,16 @@
-const meta = [
-   {
+const meta = [{
   permalink: "fig-toast",
   title: "Fig, Goats Cheese and Thyme on Toast",
   description: "This is not so much a recipe, more a suggestion. I advise you make this when figs are cheap in the shops during late September time. ",
   date: "2018-09-23",
   tags: ["fig", "toast" ,"goats cheese", "cheese", "dinner", "savoury", "quick"]
-},
-  {
+},{
   permalink: "trini-redbeans",
   title: "Trinidadian Red Beans",
   description: "Ideally, this recipe would use dried kidney beans that have been soaked overnight, then cooked for around 45 minutes.",
   date: "2018-09-23",
   tags: ["trinidadian", "stew" ,"curry", "red beans", "kidney beans", "savoury", "quick"]
-},
-  {
+},{
   permalink: "beetroot-horseradish",
   title: "Roast Beetroot, with Horseradish Yoghurt",
   description: "Beetroot and horseradish is an undeniable food match - horseradish cuts through the beetroot’s earthiness, and here, the caraway and cumin brings out the beetroot's gentle sweetness.",
