@@ -1,4 +1,3 @@
-
 Beetroot and horseradish is an undeniable food match since horseradish cuts through the beetroot’s earthiness, and here, the caraway and cumin brings out the beetroot's gentle sweetness. Omit the salsa if you fancy, but it does bring a welcome freshness to the dish. If you want to make this into a meal I would strongly recommend serving it with some smoked mackerel or salmon. 
   
 **Serves 2 as a starter/side or 4 as part of a mezze sharing platter**  
