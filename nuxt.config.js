@@ -1,3 +1,6 @@
+import posts from "~/static/meta/all.js"
+const routes = posts.map(post => `/posts/${post.permalink}`)
+
 module.exports = {
   /*
   ** Headers of the page
@@ -36,11 +39,7 @@ module.exports = {
     }
   },
   generate: {
-    routes: [
-      '/posts/potato-salad',
-      '/posts/pepper-shrimp',
-      '/posts/chickpea-curry'
-    ]
+    routes
   },
   modules: [
     '@nuxtjs/markdownit',
