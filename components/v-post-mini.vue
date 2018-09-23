@@ -1,6 +1,6 @@
 <template>
     <nuxt-link class="v-post-mini" :to="`posts/${post.permalink}`">
-        <img class="image" :src="require(`@/assets/jpg/${post.permalink}-preview.jpg`)"/>
+        <img class="image" :src="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
         <div class="text">
         <div>{{ post.title }}</div>
         <div class="description">{{ `${post.description.substr(0,30)}...` }}</div>

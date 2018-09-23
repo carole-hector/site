@@ -2,7 +2,7 @@
   <div class="v-post-preview">
     <nuxt-link :to="`posts/${post.permalink}`">
       <div class="v-post-preview-top">
-        <img :src="require(`@/assets/jpg/${post.permalink}-preview.jpg`)"/>
+        <img :src="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
       </div>
       <div class="v-post-preview-middle">
         <h3>{{ post.title }}</h3>
