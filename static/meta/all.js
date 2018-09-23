@@ -1,7 +1,7 @@
 const meta = [
   {
   permalink: "beetroot-horseradish",
-  title: "Roast Beetroot, with Horseradish Yoghurt and a Caper Salsa ",
+  title: "Roast Beetroot, with Horseradish Yoghurt",
   description: "Beetroot and horseradish is an undeniable food match - horseradish cuts through the beetroot’s earthiness, and here, the caraway and cumin brings out the beetroot's gentle sweetness.",
   date: "2018-09-23",
   tags: ["beetroot", "yoghurt" ,"salsa", "savoury", "quick"]
