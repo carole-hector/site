@@ -1,9 +1,11 @@
 <template>
     <nuxt-link class="v-post-mini" :to="`posts/${post.permalink}`">
-        <img class="image" v-lazy="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
+        <div>
+          <img class="image" v-lazy="require(`@/assets/jpg/${post.permalink}.jpg`)"/>
+        </div>
         <div class="text">
-        <div>{{ post.title }}</div>
-        <div class="description">{{ `${post.description.substr(0,30)}...` }}</div>
+        <div>{{ truncate(post.title, 40) }}</div>
+        <div class="description">{{ truncate(post.description, 30) }}</div>
         </div>
     </nuxt-link>
 </template>
@@ -13,6 +15,11 @@ export default {
   props: {
     post: {
       type: Object
+    }
+  },
+  methods: {
+    truncate(v, l) {
+      return v.length < l ? v : `${v.substr(0,l)}...`
     }
   }
 }
