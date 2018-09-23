@@ -7,7 +7,7 @@
         <nuxt-link :class="getClass('/savoury')" to="/savoury">Savoury</nuxt-link>
       </div>
       <div class="middle">
-        <nuxt-link to="/" class="nav-logo roboto">Carole Hector</nuxt-link>
+        <nuxt-link to="/" class="nav-logo main-logo roboto">Carole Hector</nuxt-link>
       </div>
       <div class="right">
 
@@ -66,7 +66,6 @@ export default {
   }
   .nav-logo {
     font-size: 38px;
-    font-family: 'Waiting for the Sunrise';
   }
   .left {
     display: flex;
