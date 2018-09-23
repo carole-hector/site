@@ -1,4 +1,10 @@
 const meta = [{
+  permalink: "springonion-toast",
+  title: "Chargrilled Spring Onion and Lemon Ricotta on Toast",
+  description: "Spring onions have a similar flavour to baby leeks (with out the extortionate price tag), and chargrilling them brings out a delicious smoky-sweet flavour. ",
+  date: "2018-09-23",
+  tags: ["spring onion", "toast" ,"cheese", "ricotta", "dinner", "lunch", "savoury", "quick"]
+},{
   permalink: "fig-toast",
   title: "Fig, Goats Cheese and Thyme on Toast",
   description: "This is not so much a recipe, more a suggestion. I advise you make this when figs are cheap in the shops during late September time. ",
