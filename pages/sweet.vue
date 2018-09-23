@@ -6,7 +6,6 @@
 
 <script>
 import all from "~/static/meta/all.js"
-import { filterPosts } from '~/core/utils'
 export default {
   name: "index",
   scrollToTop: true,
@@ -20,7 +19,7 @@ export default {
       return this.$store.state.searchValue
     },
     filtered() {
-      return filterPosts(this.posts, 'sweet')
+      return this.posts.filter(post => post.tags.includes('sweet'))
     }
   }
 }
