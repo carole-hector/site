@@ -22,7 +22,7 @@ export default {
         return thisLikes
       }
       else {
-        return "000"
+        return "0"
       }
     }
   },

@@ -6,7 +6,7 @@
       </div>
       <div class="v-post-preview-middle">
         <h3>{{ post.title }}</h3>
-        <div>{{ `${post.description.substr(0,110)}...` }}</div>
+        <div>{{ `${post.description.substr(0,(130 - post.title.length))}...` }}</div>
       </div>
       <div class="v-post-preview-bottom">
         <v-date :date="post.date" showTimeSince/>
