@@ -1,4 +1,10 @@
 const meta = [{
+  permalink: "curried-eggs-on-toast",
+  title: "Curried Eggs on Toast",
+  description: "The flavour of this sandwich is a mixture reminiscent of coronation chicken (minus the chicken) and devilled eggs.",
+  date: "2019-01-06",
+  tags: ["eggs", "toast" ,"mayonnaise", "dinner", "lunch", "savoury", "quick"]
+},{
   permalink: "springonion-toast",
   title: "Chargrilled Spring Onion and Lemon Ricotta on Toast",
   description: "Spring onions have a similar flavour to baby leeks (with out the extortionate price tag), and chargrilling them brings out a delicious smoky-sweet flavour. ",
