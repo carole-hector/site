@@ -1,4 +1,10 @@
 const meta = [{
+  permalink: "rye-sticky-toffee-pudding",
+  title: "Rye Sticky Toffee Pudding",
+  description: "This cake delivers all the qualities of a sticky toffee pudding, but only uses a single pan and is extremely quick to make.",
+  date: "2010-01-06",
+  tags: ["sticky toffee", "rye" ,"pudding", "sweet", "dessert"]
+},{
   permalink: "springonion-toast",
   title: "Chargrilled Spring Onion and Lemon Ricotta on Toast",
   description: "Spring onions have a similar flavour to baby leeks (with out the extortionate price tag), and chargrilling them brings out a delicious smoky-sweet flavour. ",
