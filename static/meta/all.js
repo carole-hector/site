@@ -1,4 +1,10 @@
 const meta = [{
+  permalink: "rye-sticky-toffee-pudding",
+  title: "Rye Sticky Toffee Pudding",
+  description: "This cake delivers all the qualities of a sticky toffee pudding, but only uses a single pan and is extremely quick to make.",
+  date: "2019-01-06",
+  tags: ["toffee", "sticky toffee pudding" ,"pudding", "sweet", "dessert"]
+},{
   permalink: "curried-eggs-on-toast",
   title: "Curried Eggs on Toast",
   description: "The flavour of this sandwich is a mixture reminiscent of coronation chicken (minus the chicken) and devilled eggs.",
