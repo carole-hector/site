@@ -19,19 +19,15 @@ export default {
   },
   computed: {
     views() {
-      if (this.$store.state.views) {
-        return Number(this.$store.state.views[this.slug])
+      const views = this.$store.state.views
+      if (views) {
+        return Number(views[this.slug]) || this.register(this.slug)
       }
     }
   },
   methods: {
     register(slug) {
       this.$store.dispatch("registerSlug", slug)
-    }
-  },
-  mounted() {
-    if (this.$store.state.views && !this.views) {
-      this.register(this.slug)
     }
   }
 }
