@@ -50,6 +50,9 @@ export default {
         `Cooking time ${this.copy.cookingTime} mins`
       ].join(" | ")
     }
+  },
+  mounted() {
+    this.$store.dispatch("incrementViews", this.slug)
   }
 }
 </script>

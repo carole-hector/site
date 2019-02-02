@@ -1,48 +1,34 @@
 import Vuex from "vuex"
 import { zipObj } from "ramda"
-import { LIKES_GETTER_URL, LIKES_SETTER_URL } from "@/core/constants"
-
-let que = 0
-let lock = false
+import { VIEWS_GETTER_URL, VIEWS_SETTER_URL } from "@/core/constants"
 
 const store = () => {
   return new Vuex.Store({
     state: {
-      likes: null,
+      views: null,
       offline: false
     },
     mutations: {
-      setLikes(state, likes) {
-        state.likes = likes
+      setViews(state, views) {
+        state.views = views
       },
-      incrementLikes(state, slug) {
-        state.likes[slug]++
+      incrementViews(state, slug) {
+        state.views[slug]++
       },
       setOffline(state, boolean) {
         state.offline = boolean
       }
     },
     actions: {
-      async fetchLikes({ commit }) {
-        const { values } = await this.$axios.$get(LIKES_GETTER_URL)
-        commit("setLikes", zipObj(values[0], values[1]))
+      async fetchViews({ commit }) {
+        const { values } = await this.$axios.$get(VIEWS_GETTER_URL)
+        commit("setViews", zipObj(values[0], values[1]))
       },
       async registerSlug(_, slug) {
-        await this.$axios.get(`${LIKES_SETTER_URL}?item=${slug}`)
+        await this.$axios.get(`${VIEWS_SETTER_URL}?item=${slug}`)
       },
-      async incrementLikes({ commit }, slug) {
-        commit("incrementLikes", slug)
-        que++
-        if (!lock) {
-          lock = true
-          while (que) {
-            await this.$axios.get(
-              `${LIKES_SETTER_URL}?item=${slug}&action=increment`
-            )
-            que--
-          }
-          lock = false
-        }
+      async incrementViews(_, slug) {
+        this.$axios.get(`${VIEWS_SETTER_URL}?item=${slug}&action=increment`)
       }
     }
   })
