@@ -9,7 +9,10 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "serve": "serve dist"
+    "serve": "serve dist",
+    "add-recipes": "git checkout -b feature/add-recipes",
+    "publish-recipes": "git add . && git commit -m \"added recipes\" && git push --set-upstream origin feature/add-recipes && git push -f",
+    "reset-recipes": "git reset --hard HEAD && git pull && git checkout master && git branch -d feature/add-recipes && git push origin --delete feature/add-recipes"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.6.3",
