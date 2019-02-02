@@ -12,7 +12,7 @@
         div.card-footer-item
           v-date(:date='date', showTimeSince, showIcon)
         div.card-footer-item
-          v-likes-counter(:slug='slug')
+          v-views-counter(:slug='slug')
     // Mobile
     div.card.is-hidden-tablet
       div.columns.is-mobile.is-gapless.is-marginless
@@ -27,7 +27,7 @@
               div.column.is-narrow
                 v-date(:date='date', showTimeSince, showIcon)
               div.column
-                v-likes-counter(:slug='slug')
+                v-views-counter(:slug='slug')
 </template>
 <script>
 export default {
@@ -37,7 +37,7 @@ export default {
       type: String,
       required: true
     },
-     img: {
+    img: {
       type: String,
       required: true
     },
@@ -53,7 +53,7 @@ export default {
     slug: {
       type: String
     }
-  },
+  }
 }
 </script>
 

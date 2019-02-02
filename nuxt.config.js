@@ -22,7 +22,7 @@ module.exports = {
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa"],
   plugins: [
     { src: "~/plugins/vue.js", ssr: true },
-    { src: "~/plugins/likes.js", ssr: true },
+    { src: "~/plugins/views.js", ssr: true },
     { src: "~/plugins/offline.js", ssr: false }
   ],
   manifest: {
