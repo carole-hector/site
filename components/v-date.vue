@@ -1,31 +1,29 @@
 <template>
-  <div class="v-date">
-    {{ timeSince }}
+  <div class="columns is-mobile is-gapless is-marginless">
+    <span v-if="showIcon" class="column icon is-narrow">
+      <i class="far fa-clock"/>
+    </span>
+    <p class="column">{{ timeSince }}</p>
   </div>
 </template>
 
 <script>
-import distanceInWordsToNow from "date-fns/distance_in_words_to_now"
+import differenceInCalendarDays from "date-fns/difference_in_calendar_days"
 export default {
   name: "v-date",
   props: {
     date: {
       type: String
     },
-    showTimeSince: {
-      type: Boolean
+    showIcon: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {
     timeSince() {
-      return this.showTimeSince? `${distanceInWordsToNow(this.date)} ago` : this.date
+      return `${differenceInCalendarDays(new Date(), this.date)}d`
     }
   }
 }
 </script>
-<style>
-.v-date {
-  font-size: 12px;
-}
-</style>
-

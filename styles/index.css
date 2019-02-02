@@ -1,0 +1,32 @@
+html {
+  --yellow: yellow;
+  background-color: #fafafa !important;
+}
+.padding-12 {
+  padding: 12px !important;
+}
+
+.min-height-80 {
+  min-height: 80px !important;
+}
+
+.width-320 {
+  min-width: 320px !important;
+  max-width: 320px !important;
+}
+
+.has-text-yellow {
+  color: var(--yellow);
+}
+.has-text-pink {
+  color: pink;
+}
+.has-text-green {
+  color: #baed91;
+}
+
+@media only screen and (max-width: 500px) {
+  .padding-8-xs {
+    padding: 8px !important;
+  }
+}
