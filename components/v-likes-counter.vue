@@ -1,67 +1,37 @@
 <template>
-  <div class="v-likes-counter-container main-clickable" @click.prevent="incrementLikes">
-    <div><v-love-icon/></div>
-    <h5>{{ likes }}</h5>
-  </div>
+  <transition name="fade">
+    <div v-if="likes" class="columns is-mobile is-gapless" @click.prevent="incrementLikes">
+      <span class="column icon is-narrow">
+        <i class="far fa-eye"/>
+      </span>
+      <p class="column">{{ likes }}</p>
+    </div>
+  </transition>
 </template>
 
 <script>
 export default {
   name: "v-likes-counter",
   props: {
-    permalink: {
+    slug: {
       type: String
     }
   },
   computed: {
     likes() {
-      const likes = this.$store.state.likes
-      if(likes) {
-        const thisLikes = Number(likes[this.permalink])
-        thisLikes ? null : this.$store.dispatch("addItem", this.permalink)
+      if (this.$store.state.likes) {
+        const thisLikes = Number(this.$store.state.likes[this.slug])
+        thisLikes ? null : this.$store.dispatch("registerSlug", this.slug)
         return thisLikes
-      }
-      else {
-        return "0"
+      } else {
+        return null
       }
     }
   },
   methods: {
     async incrementLikes() {
-      await this.$store.dispatch("incrementItem", this.permalink)
+      await this.$store.dispatch("incrementLikes", this.slug)
     }
   }
 }
-
-
-var functionLock = false;
-var functionCallbacks = [];
-var lockingFunction = function (callback) {
-    if (functionLock) {
-        functionCallbacks.push(callback);
-    } else {
-        $.longRunning(function(response) {
-             while(functionCallbacks.length){
-                 var thisCallback = functionCallbacks.pop();
-                 thisCallback(response);
-             }
-        });
-    }
-}
 </script>
-
-<style>
-.v-likes-counter-container {
-  width: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
-}
-</style>
