@@ -8,7 +8,9 @@
         <div class="navbar-brand">
           <div class="navbar-item">
             <nuxt-link to="/">
-              <img src="~assets/brand.png" alt="Carole Hector" width="112" height="28">
+            <div class="content">
+              <h1>CAROLE HECTOR</h1>
+            </div>  
             </nuxt-link>
           </div>
           <a
@@ -71,19 +73,19 @@ export default {
       isActive: false,
       navLinks: [
         {
-          name: "Recipes",
+          name: "RECIPES",
           path: "/",
           icon: "fa-book-open",
           iconColor: "has-text-green"
         },
         {
-          name: "Sweet",
+          name: "SWEET",
           path: "/search/sweet",
           icon: "fa-cookie-bite",
           iconColor: "has-text-pink"
         },
         {
-          name: "Savoury",
+          name: "SAVOURY",
           path: "/search/savoury",
           icon: "fa-drumstick-bite",
           iconColor: "has-text-warning"

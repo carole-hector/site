@@ -5,8 +5,8 @@
         <div class="intro" :class="itemClass">
           <v-post-preview
             to="/about"
-            title="@CaroleHector"
-            description="Recipe developer and food stylist trained at Leiths."
+            title="About"
+            description="Recipe developer + food stylist assistant."
             img="img/carolehector.jpg"
           />
         </div>
