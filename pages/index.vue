@@ -7,7 +7,7 @@
             to="/about"
             title="@CaroleHector"
             description="Recipe developer and food stylist trained at Leiths."
-            img="img/carolehector.png"
+            img="img/carolehector.jpg"
           />
         </div>
         <div v-for="post in posts" :key="post.slug" :class="itemClass">

@@ -3,7 +3,7 @@
     <div class="columns is-marginless">
       <div class="column is-6">
         <div class="image is-square">
-          <v-image src="/img/carolehector-full.png"/>
+          <v-image src="/img/carolehector.jpg"/>
         </div>
       </div>
       <div class="column">
