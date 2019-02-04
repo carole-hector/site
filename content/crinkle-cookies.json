@@ -7,15 +7,19 @@
   "prepTime": 15,
   "cookingTime": 10,
   "ingredients": [
-    "90g cocoa powder",
-    "300g white sugar",
-    "90g vegetable or sunflower oil",
-    "3 eggs",
-    "1.5 tsp vanilla essence",
-    "195g plain flour",
-    "1.5 tsp baking powder",
-    "3/4 tsp salt",
-    "60g icing sugar"
+    {
+      "ingredients": [
+        "90g cocoa powder",
+        "300g white sugar",
+        "90g vegetable or sunflower oil",
+        "3 eggs",
+        "1.5 tsp vanilla essence",
+        "195g plain flour",
+        "1.5 tsp baking powder",
+        "3/4 tsp salt",
+        "60g icing sugar"
+      ]
+    }
   ],
   "method": [
     "In a medium sized bowl, mix together the cocoa powder, sugar and oil. Beat in eggs one at a time until fully incorporated. Then mix in the vanilla.",
