@@ -13,7 +13,7 @@
           <div class="navbar-item">
             <nuxt-link to="/">
               <h1 class="is-size-6-touch is-size-3-desktop has-text-black">
-                CAROLE HECTOR
+                Carole Hector
               </h1>
             </nuxt-link>
           </div>

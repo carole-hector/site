@@ -12,14 +12,7 @@ html {
 
 .navbar-item {
   letter-spacing: 2.5px !important;
-  font-weight: 400 !important;
-} 
-
-h1 {
-  font-family: "Source Sans Pro", sans-serif !important;
-  font-size: 30px !important;
-  letter-spacing: 7.5px;
-  margin-bottom: 0px !important;
+  font-weight: 100 !important;
 }
 
 .padding-12 {
