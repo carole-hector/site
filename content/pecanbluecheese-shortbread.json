@@ -1,28 +1,26 @@
 {
-    "title": "Pecan and Blue Cheese Shortbread",
-    "description": "This is possibly the easiest shortbread recipe as all you do is mix the ingredients in a bowl, and voila. The great thing about this recipe is that you can play around with the ingredients as you wish. Swap the blue cheese for a hard goats cheese, or a mature cheddar, add hazelnuts instead of pecans, thyme in place of the sage. These biscuits are wonderful as a simple canapé, snack or welcome addition to any cheese board. They’re also the perfect thing to be made in advance as they keep in the fridge (and freezer) wonderfully.",
-    "date": "2018-09-23",
-    "slug": "pecanbluecheese-shortbread",
-    "serves": 35,
-    "prepTime": 10,
-    "cookingTime": 15,
-    "ingredients": [
-        "150g plain flour",
-        "100g unsalted butter, softened",
-        "75g blue cheese, crumbled",
-        "3 tbsp sage, chopped",
-        "50g roasted pecans, chopped",
-        "1 egg yolk"
-    ],
-    "method": [
-        "Mix all the ingredients together in the bowl of a stand mixer with the paddle attachment (or with a large bowl and spoon, or using a handheld whisk), until a dough begins to form a clump.",
-        "Remove the dough and knead on a work surface, for about 30 seconds until smooth. Split the dough into two equal pieces.",
-        "Roll each piece a cylinder (make sure the ends are flat). Then wrap in cling film and place in the fridge for 45 minutes.",
-        "Meanwhile, line a baking sheet with parchment and preheat the oven to 180c/160c fan/gas mark 4.",
-        "Cut the dough into 1 inch thick slices, and bake for 15-20 minutes, until lightly golden and sandy to touch.",
-        "Make ahead: can be made up until step 3, and kept in the fridge for up to three days. Alternatively, you can freeze it for up to three months (just make sure you wrap the shortbread cylinders tightly in a double layer of clingfilm) - defrost overnight, then bake as directed. Or, another great way is to cut the unbaked dough into 1 inch thick slices, then lay them flat on a baking sheet, put them in the freezer and wait until they freeze solid hard - then you can transfer them to a freezer bag (again, for up to three months), and bake as directed."
-    ],
-    "tags": [
-        "savoury"
-    ]
+  "title": "Pecan and Blue Cheese Shortbread",
+  "description": "This is possibly the easiest shortbread recipe as all you do is mix the ingredients in a bowl, and voila. The great thing about this recipe is that you can play around with the ingredients as you wish. Swap the blue cheese for a hard goats cheese, or a mature cheddar, add hazelnuts instead of pecans, thyme in place of the sage. These biscuits are wonderful as a simple canapé, snack or welcome addition to any cheese board. They’re also the perfect thing to be made in advance as they keep in the fridge (and freezer) wonderfully.",
+  "date": "2018-09-23",
+  "slug": "pecanbluecheese-shortbread",
+  "serves": 35,
+  "prepTime": 10,
+  "cookingTime": 15,
+  "ingredients": [
+    "150g plain flour",
+    "100g unsalted butter, softened",
+    "75g blue cheese, crumbled",
+    "3 tbsp sage, chopped",
+    "50g roasted pecans, chopped",
+    "1 egg yolk"
+  ],
+  "method": [
+    "Mix all the ingredients together in the bowl of a stand mixer with the paddle attachment (or with a large bowl and spoon, or using a handheld whisk), until a dough begins to form a clump.",
+    "Remove the dough and knead on a work surface, for about 30 seconds until smooth. Split the dough into two equal pieces.",
+    "Roll each piece a cylinder (make sure the ends are flat). Then wrap in cling film and place in the fridge for 45 minutes.",
+    "Meanwhile, line a baking sheet with parchment and preheat the oven to 180c/160c fan/gas mark 4.",
+    "Cut the dough into 1 inch thick slices, and bake for 15-20 minutes, until lightly golden and sandy to touch.",
+    "Make ahead: can be made up until step 3, and kept in the fridge for up to three days. Alternatively, you can freeze it for up to three months (just make sure you wrap the shortbread cylinders tightly in a double layer of clingfilm) - defrost overnight, then bake as directed. Or, another great way is to cut the unbaked dough into 1 inch thick slices, then lay them flat on a baking sheet, put them in the freezer and wait until they freeze solid hard - then you can transfer them to a freezer bag (again, for up to three months), and bake as directed."
+  ],
+  "tags": ["savoury"]
 }

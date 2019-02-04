@@ -1,9 +1,7 @@
 <template>
   <transition name="fade">
     <div v-if="views" class="columns is-mobile is-gapless">
-      <span class="column icon is-narrow">
-        <i class="far fa-eye"/>
-      </span>
+      <span class="column icon is-narrow"> <i class="far fa-eye" /> </span>
       <p class="column">{{ views }}</p>
     </div>
   </transition>
