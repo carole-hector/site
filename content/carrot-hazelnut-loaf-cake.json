@@ -1,32 +1,30 @@
 {
-    "title": "Carrot, Hazelnut and Caraway Cake",
-    "description": "Loaf cakes are one of my favourite things to bake. More often than not, they’re easy and quick to make, but more importantly, the tins are fairly small so I can justify baking something delicious with little worry it will be wasted. This carrot cake is gently spiced and extremely moist from the ground hazelnuts, whilst the freshness from the caraway and carrots makes it taste almost nourishing. If you’re not a fan of caraway (it's an interesting flavour, but often divides people), then feel free to omit it. ",
-    "date": "2018-09-23",
-    "slug": "carrot-hazelnut-loaf-cake",
-    "serves": 8,
-    "prepTime": 15,
-    "cookingTime": 20,
-    "ingredients": [
-        "150ml vegetable oil",
-        "2 eggs, beaten",
-        "150g carrots, grated (about 2 large carrots)",
-        "1 tbsp milk",
-        "170g self raising flour",
-        "150g soft brown sugar",
-        "50g ground hazelnuts",
-        "2 tsp cinnamon",
-        "1 tsp caraway",
-        "1 tsp olive oil",
-        "1 tsp bicarbonate of soda",
-        "2 tbsp demerara sugar, for the topping"
-    ],
-    "method": [
-        "Preheat the oven to 180c/160c fan/gas mark 4. Grease 2lb loaf tin with butter then line with baking paper.",
-        "In a large bowl, mix together flour, sugar, ground hazlenuts, cinnamon, mixed spice, caraway and bicarbonate of soda.",
-        "Stir through the grated carrots, then pour in the oil and milk, and mix until thoroughly combined.",
-        "Pour the mixture into the prepared loaf tin, sprinkle over the demarara sugar and place in the oven for 50-60 minutes, until a skewer inserted into the centre comes out clean."
-    ],
-    "tags": [
-        "sweet"
-    ]
+  "title": "Carrot, Hazelnut and Caraway Cake",
+  "description": "Loaf cakes are one of my favourite things to bake. More often than not, they’re easy and quick to make, but more importantly, the tins are fairly small so I can justify baking something delicious with little worry it will be wasted. This carrot cake is gently spiced and extremely moist from the ground hazelnuts, whilst the freshness from the caraway and carrots makes it taste almost nourishing. If you’re not a fan of caraway (it's an interesting flavour, but often divides people), then feel free to omit it. ",
+  "date": "2018-09-23",
+  "slug": "carrot-hazelnut-loaf-cake",
+  "serves": 8,
+  "prepTime": 15,
+  "cookingTime": 20,
+  "ingredients": [
+    "150ml vegetable oil",
+    "2 eggs, beaten",
+    "150g carrots, grated (about 2 large carrots)",
+    "1 tbsp milk",
+    "170g self raising flour",
+    "150g soft brown sugar",
+    "50g ground hazelnuts",
+    "2 tsp cinnamon",
+    "1 tsp caraway",
+    "1 tsp olive oil",
+    "1 tsp bicarbonate of soda",
+    "2 tbsp demerara sugar, for the topping"
+  ],
+  "method": [
+    "Preheat the oven to 180c/160c fan/gas mark 4. Grease a 2lb loaf tin with butter/oil then line with baking paper.",
+    "In a large bowl, mix together the flour, sugar, ground hazlenuts, cinnamon, mixed spice, caraway and bicarbonate of soda.",
+    "Stir through the grated carrots, then pour in the oil and milk, and mix until thoroughly combined.",
+    "Pour the mixture into the prepared loaf tin, sprinkle over the demarara sugar and place in the oven for 50-60 minutes, until a skewer inserted into the centre comes out clean."
+  ],
+  "tags": ["sweet"]
 }
