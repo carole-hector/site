@@ -1,14 +1,20 @@
 <template>
   <div>
     <div v-if="isOffline" class="has-background-dark">
-      <div class="container has-text-centered has-text-light has-text-weight-semibold">Offline</div>
+      <div
+        class="container has-text-centered has-text-light has-text-weight-semibold"
+      >
+        Offline
+      </div>
     </div>
-    <nav class="navbar">
+    <nav class="navbar is-uppercase">
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item">
             <nuxt-link to="/">
-              <img src="~assets/brand.png" alt="Carole Hector" width="112" height="28">
+              <h1 class="is-size-6-touch is-size-3-desktop has-text-black">
+                Carole Hector
+              </h1>
             </nuxt-link>
           </div>
           <a
@@ -16,16 +22,15 @@
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
-            :class="{'is-active' : isActive}"
+            :class="{ 'is-active': isActive }"
             @click="isActive = !isActive"
           >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span> <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
         <div class="navbar-end">
-          <div class="navbar-menu" :class="{'is-active' : isActive}">
+          <div class="navbar-menu" :class="{ 'is-active': isActive }">
             <nuxt-link
               v-for="(link, index) in navLinks"
               @click.native="isActive = !isActive"
@@ -34,9 +39,9 @@
               class="navbar-item"
             >
               <span class="icon" :class="link.iconColor">
-                <i class="fas" :class="link.icon"/>
+                <i class="fas" :class="link.icon" />
               </span>
-              <span v-text="link.name"/>
+              <span v-text="link.name" />
             </nuxt-link>
             <div class="navbar-item has-dropdown is-hoverable">
               <a class="navbar-link">More</a>
@@ -48,9 +53,9 @@
                     class="navbar-item"
                   >
                     <span class="icon" :class="link.iconColor">
-                      <i class="fas" :class="link.icon"/>
+                      <i class="fas" :class="link.icon" />
                     </span>
-                    <span v-text="link.name"/>
+                    <span v-text="link.name" />
                   </nuxt-link>
                 </div>
               </div>
@@ -59,7 +64,7 @@
         </div>
       </div>
     </nav>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
@@ -95,12 +100,6 @@ export default {
           path: "/about",
           icon: "fa-user",
           iconColor: "has-text-grey"
-        },
-        {
-          name: "Contact",
-          path: "/about",
-          icon: "fa-phone-square",
-          iconColor: "has-text-grey"
         }
       ]
     }
@@ -112,4 +111,3 @@ export default {
   }
 }
 </script>
-

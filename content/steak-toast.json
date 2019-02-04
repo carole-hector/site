@@ -1,30 +1,28 @@
 {
-    "title": "Steak on Toast",
-    "description": "A beef sandwich is one of those delicious meals that span across cultures, with each one having their own variation. America has the Philly cheesesteak, Portugual the prego, and not to forget the reuben... Here we have a modest but luxurious tasting meal, good for lunch or dinner. I've given a suggestion for the filling below, but ultimately it is entirely up to you. Some roasted garlic mushrooms and blue cheese would be equally delicious.",
-    "date": "2018-09-23",
-    "slug": "steak-toast",
-    "serves": 1,
-    "prepTime": 5,
-    "cookingTime": 20,
-    "ingredients": [
-        "225g sirloin steak",
-        "1 red onion, peeled and sliced",
-        "A few slices of roasted peppers (the jarred variety in oil)",
-        "2 tbsp mayonnaise",
-        "1-2 tbsp wholegrain mustard (or dijon / English mustard)",
-        "A small handful of watercress",
-        "1 slice of bread, toasted ",
-        "Sea salt, to season"
-    ],
-    "method": [
-        "Heat 2 tbsp of olive oil in a small/medium frying pan over a medium heat. Add the sliced red onion and cook for about 20 minutes, until sweet and soft. Stir often.",
-        "Meanwhile, prepare the mustard mayonnaise in a small bowl by combing the wholegrain mustard and the mayonnaise. Add more mustard depending on how hot you like it.",
-        "Once the onions are nearly cooked, pat the steak dry with kitchen paper and season with salt on both sides.",
-        "Heat a frying pan over a very high heat. Once the pan is extremely hot (and almost smoking), add the steak and press it down using a spatula/fish slice in order to get a nice caramelised crust. For a steak that is around 2cm thick, cook it for about 1.5 minutes on each side for rare. For medium rare to medium, cook for about 2 minutes on each side.",
-        "Leave the steak to rest for about 5 minutes. Meanwhile, toast the bread.",
-        "Spread the mustard mayonnaise over the toast then place the caramelised red onions on top. Add the roasted pepper and steak slices, then sprinkle some watercress on top. Serve immediately."
-    ],
-    "tags": [
-        "savoury"
-    ]
+  "title": "Steak on Toast with Caramalised Onions",
+  "description": "A beef sandwich is one of those delicious meals that span across cultures, with each one having their own variation. America has the Philly cheesesteak, Portugual the prego, and not to forget the reuben... Here we have a modest but luxurious tasting meal, good for lunch or dinner. I've given a suggestion for the filling below, but ultimately it is entirely up to you. Some roasted garlic mushrooms and blue cheese would be equally delicious.",
+  "date": "2019-01-31",
+  "slug": "steak-toast",
+  "serves": 1,
+  "prepTime": 5,
+  "cookingTime": 20,
+  "ingredients": [
+    "225g sirloin steak",
+    "1 red onion, peeled and sliced",
+    "A few slices of roasted peppers (the jarred variety in oil)",
+    "2 tbsp mayonnaise",
+    "1-2 tbsp wholegrain mustard (or dijon / English mustard)",
+    "A small handful of watercress",
+    "1 slice of bread, toasted ",
+    "Sea salt, to season"
+  ],
+  "method": [
+    "Heat 2 tbsp of olive oil in a small/medium frying pan over a medium heat. Add the sliced red onion and cook for about 20 minutes, until sweet and soft. Stir often.",
+    "Meanwhile, prepare the mustard mayonnaise in a small bowl by combing the wholegrain mustard and the mayonnaise. Add more mustard depending on how hot you like it.",
+    "Once the onions are nearly cooked, pat the steak dry with kitchen paper and season with salt on both sides.",
+    "Heat a frying pan over a very high heat. Once the pan is extremely hot (and almost smoking), add the steak and press it down using a spatula/fish slice in order to get a nice caramelised crust. For a steak that is around 2cm thick, cook it for about 1.5 minutes on each side for rare. For medium rare to medium, cook for about 2 minutes on each side.",
+    "Leave the steak to rest for about 5 minutes. Meanwhile, toast the bread.",
+    "Spread the mustard mayonnaise over the toast then place the caramelised red onions on top. Add the roasted pepper and steak slices, then sprinkle some watercress on top. Serve immediately."
+  ],
+  "tags": ["savoury"]
 }

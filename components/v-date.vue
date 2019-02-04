@@ -1,7 +1,7 @@
 <template>
   <div class="columns is-mobile is-gapless is-marginless">
     <span v-if="showIcon" class="column icon is-narrow">
-      <i class="far fa-clock"/>
+      <i class="far fa-clock" />
     </span>
     <p class="column">{{ timeSince }}</p>
   </div>
