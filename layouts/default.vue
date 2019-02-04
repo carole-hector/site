@@ -3,14 +3,12 @@
     <div v-if="isOffline" class="has-background-dark">
       <div class="container has-text-centered has-text-light has-text-weight-semibold">Offline</div>
     </div>
-    <nav class="navbar">
+    <nav class="navbar is-uppercase">
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item">
             <nuxt-link to="/">
-            <div class="content">
-              <h1>CAROLE HECTOR</h1>
-            </div>  
+              <h1 class="is-size-6-touch is-size-3-desktop has-text-black">CAROLE HECTOR</h1>
             </nuxt-link>
           </div>
           <a
@@ -73,19 +71,19 @@ export default {
       isActive: false,
       navLinks: [
         {
-          name: "RECIPES",
+          name: "Recipes",
           path: "/",
           icon: "fa-book-open",
           iconColor: "has-text-green"
         },
         {
-          name: "SWEET",
+          name: "Sweet",
           path: "/search/sweet",
           icon: "fa-cookie-bite",
           iconColor: "has-text-pink"
         },
         {
-          name: "SAVOURY",
+          name: "Savoury",
           path: "/search/savoury",
           icon: "fa-drumstick-bite",
           iconColor: "has-text-warning"
@@ -96,12 +94,6 @@ export default {
           name: "About",
           path: "/about",
           icon: "fa-user",
-          iconColor: "has-text-grey"
-        },
-        {
-          name: "Contact",
-          path: "/about",
-          icon: "fa-phone-square",
           iconColor: "has-text-grey"
         }
       ]

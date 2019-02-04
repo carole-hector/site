@@ -10,10 +10,27 @@
         <div class="content">
           <div class="box">
             <h2>About</h2>
-            <p>I’m a London based recipe developer, where I split my time recipe testing for Helen Goh and developing recipes for a new recipe box start up, Halal Fresh.</p>
-            <p>I’m also a food stylist assistant, and have experience assisting on a variety of shoots from still editorials to video commercials. Clients have included: Sainsbury’s, Magazine, Tesco, Schwartz, M&S, Gaggenau, Arla and Delicious Magazine.</p>
-            <p>After studying Philosophy and Economics at LSE, I worked as a baker and cake decorator at Lily Vanilli for 1 year. I then went on to study the Three Term Diploma in Food and Wine at Leiths in 2017. I have experience working in professional kitchens and catering companies, and also catering for private clients.</p>
-            <p>All recipes on here have been created by myself for personal fun. Happy cooking!</p>
+            <p>I’m a London based recipe developer and food styling assistant.</p>
+            <p>
+              I test recipes for
+              <a
+                target="_blank"
+                href="https://www.instagram.com/helen_goh_bakes/?hl=en"
+              >Helen Goh</a> (co-author of Sweet by Ottolenghi) and I also develop recipes for a new food box start up called Halal Fresh.
+            </p>
+            <p>
+              After graduating with a 2.1 in Economics and Philosophy from LSE in 2016, I worked as a baker and cake decorator at
+              <a
+                target="_blank"
+                href="https://lilyvanilli.com/"
+              >Lily Vanilli</a> for a year and then studied the Three Term Diploma in Food and Wine at
+              <a
+                target="_blank"
+                href="https://www.leiths.com/"
+              >Leiths</a> in 2017.
+            </p>
+            <p>I assist on a variety of food shoots from still editorials to video commercials, with various clients including: Sainsbury’s, Tesco, Schwartz, M&S, Gaggenau, Arla and Delicious Magazine.</p>
+            <p>All recipes on here have been created by myself. Happy cooking!</p>
             <h2>Contact</h2>
             <p>
               <span class="icon">
@@ -26,13 +43,12 @@
                 <i class="fas fa-phone"/>
               </span>
               +447545503457
-              </p>
-              <p>
+            </p>
+            <p>
               <span class="icon">
                 <i class="fab fa-instagram"/>
-                </span>
-                 <a href="https://www.instagram.com/carolehector/">@carolehector</a>.
               </span>
+              <a target="_blank" href="https://www.instagram.com/carolehector/">@carolehector</a>
             </p>
           </div>
         </div>

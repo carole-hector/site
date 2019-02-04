@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
 
 html {
   --yellow: yellow;
   background-color: #fafafa !important;
 }
 
-a {
-  letter-spacing: 2.5px !important;
+.navbar-brand h1 {
+  font-family: "Source Sans Pro", sans-serif !important;
+  letter-spacing: 7.5px;
 }
 
+.navbar-item {
+  letter-spacing: 2.5px !important;
+  font-weight: 400 !important;
+} 
+
 h1 {
-  font-family: 'Source Sans Pro', sans-serif !important;
-  font-size: 32px !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+  font-size: 30px !important;
   letter-spacing: 7.5px;
-  margin-bottom: 0px !important
+  margin-bottom: 0px !important;
 }
 
 .padding-12 {

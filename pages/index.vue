@@ -5,8 +5,8 @@
         <div class="intro" :class="itemClass">
           <v-post-preview
             to="/about"
-            title="About"
-            description="Recipe developer + food stylist assistant."
+            title="About me"
+            description="Recipe developer and food styling assistant."
             img="img/carolehector.jpg"
           />
         </div>
