@@ -18,8 +18,8 @@
                 href="https://www.instagram.com/helen_goh_bakes/?hl=en"
                 >Helen Goh</a
               >
-              (co-author of Sweet by Ottolenghi) and I also develop recipes for
-              a new food box start up called Halal Fresh.
+              and I also develop recipes for a new food box start up called
+              Halal Fresh.
             </p>
             <p>
               After graduating with a 2.1 in Economics and Philosophy from LSE
