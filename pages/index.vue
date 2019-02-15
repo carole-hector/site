@@ -6,8 +6,10 @@
           <v-post-preview
             to="/about"
             title="About me"
+            :slug="null"
+            :date="null"
             description="Recipe developer and food styling assistant."
-            img="img/carolehector.jpg"
+            image="carolehector"
           />
         </div>
         <div v-for="post in posts" :key="post.slug" :class="itemClass">
@@ -16,7 +18,8 @@
             :title="post.title"
             :slug="post.slug"
             :date="post.date"
-            :img="`img/${post.slug}.jpg`"
+            :image="post.slug"
+            :description="null"
           />
         </div>
       </div>
@@ -25,15 +28,15 @@
 </template>
 
 <script>
-import meta from "~/content/posts"
+import { slugs } from "~/content/posts"
 export default {
   name: "index",
   scrollToTop: true,
   data() {
     return {
-      posts: meta.slugs.map(slug => require(`~/content/${slug}`)),
+      posts: slugs.map(slug => require(`~/content/${slug}`)),
       itemClass:
-        "column is-one-third-tablet is-one-third-desktop is-full-mobile padding-8-xs"
+        "column is-one-third-tablet is-one-third-desktop is-full-mobile has-padding-8-on-mobile"
     }
   }
 }

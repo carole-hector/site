@@ -38,7 +38,7 @@
               :to="link.path"
               class="navbar-item"
             >
-              <span class="icon" :class="link.iconColor">
+              <span class="icon" :class="link.class">
                 <i class="fas" :class="link.icon" />
               </span>
               <span v-text="link.name" />
@@ -52,7 +52,7 @@
                     :to="link.path"
                     class="navbar-item"
                   >
-                    <span class="icon" :class="link.iconColor">
+                    <span class="icon" :class="link.class">
                       <i class="fas" :class="link.icon" />
                     </span>
                     <span v-text="link.name" />
@@ -79,19 +79,19 @@ export default {
           name: "Recipes",
           path: "/",
           icon: "fa-book-open",
-          iconColor: "has-text-green"
+          class: "has-text-green"
         },
         {
           name: "Sweet",
           path: "/search/sweet",
           icon: "fa-cookie-bite",
-          iconColor: "has-text-pink"
+          class: "has-text-pink"
         },
         {
           name: "Savoury",
           path: "/search/savoury",
           icon: "fa-drumstick-bite",
-          iconColor: "has-text-warning"
+          class: "has-text-warning"
         }
       ],
       dropLinks: [
@@ -99,7 +99,7 @@ export default {
           name: "About",
           path: "/about",
           icon: "fa-user",
-          iconColor: "has-text-grey"
+          class: "has-text-grey"
         }
       ]
     }

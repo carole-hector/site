@@ -5,19 +5,15 @@
       <div class="column is-4 is-hidden-mobile">
         <div class="card">
           <div class="card-image">
-            <figure class="is-square">
-              <v-image :src="img"/>
-            </figure>
+            <figure class="image is-square"><v-image :file="file" /></figure>
           </div>
           <div class="card-content">
             <div class="content">
               <h3>Ingredients</h3>
               <template v-for="(subsection, index) in copy.ingredients">
-                <p
-                  :key="index"
-                  v-if="subsection.name"
-                  class="is-italic"
-                >For the {{subsection.name}}:</p>
+                <p :key="index" v-if="subsection.name" class="is-italic">
+                  For the {{ subsection.name }}:
+                </p>
                 <ul :key="index">
                   <li
                     v-for="ingredient in subsection.ingredients"
@@ -33,14 +29,14 @@
       <div class="column is-paddingless">
         <!-- Mobile -->
         <figure class="is-square is-hidden-tablet">
-          <v-image :src="img"/>
+          <v-image :file="file" />
         </figure>
         <!-- All -->
         <div class="card-content">
           <div class="content">
-            <h2 class="title">{{copy.title}}</h2>
-            <h6>{{subtitle}}</h6>
-            <p v-text="copy.description"/>
+            <h2 class="title">{{ copy.title }}</h2>
+            <h6>{{ subtitle }}</h6>
+            <p v-text="copy.description" />
             <!-- Mobile -->
             <h3 class="is-hidden-tablet">Ingredients</h3>
             <template v-for="(subsection, index) in copy.ingredients">
@@ -48,7 +44,9 @@
                 :key="index"
                 v-if="subsection.name"
                 class="is-italic is-hidden-tablet"
-              >For the {{subsection.name}}:</p>
+              >
+                For the {{ subsection.name }}:
+              </p>
               <ul :key="index" class="is-hidden-tablet">
                 <li
                   v-for="ingredient in subsection.ingredients"
@@ -60,7 +58,7 @@
             <!-- All -->
             <h3>Method</h3>
             <ol>
-              <li v-for="step in copy.method" :key="step" v-text="step"/>
+              <li v-for="step in copy.method" :key="step" v-text="step" />
             </ol>
           </div>
         </div>
@@ -75,8 +73,8 @@ export default {
     slug() {
       return this.$route.params.slug
     },
-    img() {
-      return `/img/${this.slug}.jpg`
+    file() {
+      return this.slug
     },
     copy() {
       return require(`~/content/${this.slug}`)
