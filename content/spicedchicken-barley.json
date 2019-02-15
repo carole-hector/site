@@ -7,19 +7,23 @@
   "prepTime": 10,
   "cookingTime": 45,
   "ingredients": [
-    "1kg chicken drumsticks",
-    "2 celery sticks, sliced",
-    "1 onion, sliced",
-    "2 garlic cloves, chopped",
-    "4-6 carrots (about 500g), peeled and batoned",
-    "1 tbsp cumin",
-    "1/2 tbsp turmeric",
-    "1 tsp cinnamon",
-    "1/2 tbsp smoked paprika",
-    "1 tbsp tomato puree",
-    "250g potato, chopped",
-    "150g cooked pearl barley (or faro, giant cous cous, orzo - or even a can of butterbeans/chickpeas would be delicious and healthy)",
-    "2 chicken stock cubes"
+    {
+      "ingredients": [
+        "1kg chicken drumsticks",
+        "2 celery sticks, sliced",
+        "1 onion, sliced",
+        "2 garlic cloves, chopped",
+        "4-6 carrots (about 500g), peeled and batoned",
+        "1 tbsp cumin",
+        "1/2 tbsp turmeric",
+        "1 tsp cinnamon",
+        "1/2 tbsp smoked paprika",
+        "1 tbsp tomato puree",
+        "250g potato, chopped",
+        "150g cooked pearl barley (or faro, giant cous cous, orzo - or even a can of butterbeans/chickpeas would be delicious and healthy)",
+        "2 chicken stock cubes"
+      ]
+    }
   ],
   "method": [
     "Heat a large pan with 1-2 tbsp of olive oil over a high heat. When the pan is hot, add 2 sliced celery sticks, 1 sliced onion and a pinch of salt then sweat for 15 minutes, until it has begun to soften and sweeten.",

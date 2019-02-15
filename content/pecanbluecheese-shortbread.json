@@ -7,12 +7,16 @@
   "prepTime": 10,
   "cookingTime": 15,
   "ingredients": [
-    "150g plain flour",
-    "100g unsalted butter, softened",
-    "75g blue cheese, crumbled",
-    "3 tbsp sage, chopped",
-    "50g roasted pecans, chopped",
-    "1 egg yolk"
+    {
+      "ingredients": [
+        "150g plain flour",
+        "100g unsalted butter, softened",
+        "75g blue cheese, crumbled",
+        "3 tbsp sage, chopped",
+        "50g roasted pecans, chopped",
+        "1 egg yolk"
+      ]
+    }
   ],
   "method": [
     "Mix all the ingredients together in the bowl of a stand mixer with the paddle attachment (or with a large bowl and spoon, or using a handheld whisk), until a dough begins to form a clump.",

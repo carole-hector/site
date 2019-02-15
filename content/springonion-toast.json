@@ -7,15 +7,19 @@
   "prepTime": 5,
   "cookingTime": 5,
   "ingredients": [
-    "5 spring onions (small)",
-    "1 large piece of bread",
-    "60g ricotta",
-    "1/2 lemon, zested",
-    "1/4 lemon, juiced",
-    "1 tsp olive oil",
-    "1 tsp hazlenut oil (or olive oil)",
-    "A couple of sage leaves, chopped",
-    "Sea salt, to season"
+    {
+      "ingredients": [
+        "5 spring onions (small)",
+        "1 large piece of bread",
+        "60g ricotta",
+        "1/2 lemon, zested",
+        "1/4 lemon, juiced",
+        "1 tsp olive oil",
+        "1 tsp hazlenut oil (or olive oil)",
+        "A couple of sage leaves, chopped",
+        "Sea salt, to season"
+      ]
+    }
   ],
   "method": [
     "Heat a griddle pan to almost smoking, then gently place 5 spring onions (small) on to it. Leave them undisturbed for a couple of minute (to ensure they get nice and even griddle marks), then turn them over and repeat.",

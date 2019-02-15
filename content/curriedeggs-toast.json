@@ -7,15 +7,19 @@
   "prepTime": 10,
   "cookingTime": 8,
   "ingredients": [
-    "4 eggs",
-    "3 tbsp mayonnaise",
-    "1 tsp curry powder",
-    "1 tsp lime zest",
-    "10ml lime juice",
-    "1-3 tsp mango chutney",
-    "2 spring onions, finely chopped",
-    "2 tbsp roughly chopped coriander",
-    "Salt, to season"
+    {
+      "ingredients": [
+        "4 eggs",
+        "3 tbsp mayonnaise",
+        "1 tsp curry powder",
+        "1 tsp lime zest",
+        "10ml lime juice",
+        "1-3 tsp mango chutney",
+        "2 spring onions, finely chopped",
+        "2 tbsp roughly chopped coriander",
+        "Salt, to season"
+      ]
+    }
   ],
   "method": [
     "Bring a medium saucepan full of water up to the boil, gently place the eggs in the pan and boil for 8 minutes.",

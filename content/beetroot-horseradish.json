@@ -7,16 +7,20 @@
   "prepTime": 15,
   "cookingTime": 30,
   "ingredients": [
-    "250g raw beetroot",
-    "1/2 tbsp caraway seeds",
-    "1 tsp cumin powder",
-    "1 tbsp horseradish cream",
-    "150g greek yoghurt",
-    "1 garlic clove, peeled and crushed",
-    "1/2 apple, finely diced",
-    "2 tbsp dill, chopped",
-    "2 tbsp capers, chopped",
-    "Sea salt flakes"
+    {
+      "ingredients": [
+        "250g raw beetroot",
+        "1/2 tbsp caraway seeds",
+        "1 tsp cumin powder",
+        "1 tbsp horseradish cream",
+        "150g greek yoghurt",
+        "1 garlic clove, peeled and crushed",
+        "1/2 apple, finely diced",
+        "2 tbsp dill, chopped",
+        "2 tbsp capers, chopped",
+        "Sea salt flakes"
+      ]
+    }
   ],
   "method": [
     "Preheat the oven to 200c/180c fan/gas mark 6.",

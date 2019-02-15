@@ -7,14 +7,18 @@
   "prepTime": 5,
   "cookingTime": 20,
   "ingredients": [
-    "225g sirloin steak",
-    "1 red onion, peeled and sliced",
-    "A few slices of roasted peppers (the jarred variety in oil)",
-    "2 tbsp mayonnaise",
-    "1-2 tbsp wholegrain mustard (or dijon / English mustard)",
-    "A small handful of watercress",
-    "1 slice of bread, toasted ",
-    "Sea salt, to season"
+    {
+      "ingredients": [
+        "225g sirloin steak",
+        "1 red onion, peeled and sliced",
+        "A few slices of roasted peppers (the jarred variety in oil)",
+        "2 tbsp mayonnaise",
+        "1-2 tbsp wholegrain mustard (or dijon / English mustard)",
+        "A small handful of watercress",
+        "1 slice of bread, toasted ",
+        "Sea salt, to season"
+      ]
+    }
   ],
   "method": [
     "Heat 2 tbsp of olive oil in a small/medium frying pan over a medium heat. Add the sliced red onion and cook for about 20 minutes, until sweet and soft. Stir often.",

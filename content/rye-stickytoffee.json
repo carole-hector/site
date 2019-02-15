@@ -23,9 +23,13 @@
     {
       "name": "sauce",
       "ingredients": [
-        "100g unsalted butter",
-        "150g dark brown sugar",
-        "100ml double cream"
+        {
+          "ingredients": [
+            "100g unsalted butter",
+            "150g dark brown sugar",
+            "100ml double cream"
+          ]
+        }
       ]
     }
   ],

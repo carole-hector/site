@@ -7,20 +7,24 @@
   "prepTime": 10,
   "cookingTime": 30,
   "ingredients": [
-    "6 tbsp vegetable/sunflower oil",
-    "1/2 aubergine, diced",
-    "1 red onion, sliced",
-    "1/2 sweet potato, diced",
-    "1 red pepper, diced ",
-    "1/2 courgette, diced",
-    "8 chestnut mushrooms, cut in half",
-    "4 tbsp natural or greek yoghurt",
-    "2-4 tbsp harissa",
-    "80g feta",
-    "3 tbsp olive oil",
-    "4 sprigs thyme, leaves picked and stalks discarded",
-    "1/2 tbsp za'atar",
-    "120g pearl barley (dry weight)"
+    {
+      "ingredients": [
+        "6 tbsp vegetable/sunflower oil",
+        "1/2 aubergine, diced",
+        "1 red onion, sliced",
+        "1/2 sweet potato, diced",
+        "1 red pepper, diced ",
+        "1/2 courgette, diced",
+        "8 chestnut mushrooms, cut in half",
+        "4 tbsp natural or greek yoghurt",
+        "2-4 tbsp harissa",
+        "80g feta",
+        "3 tbsp olive oil",
+        "4 sprigs thyme, leaves picked and stalks discarded",
+        "1/2 tbsp za'atar",
+        "120g pearl barley (dry weight)"
+      ]
+    }
   ],
   "method": [
     "Preheat the oven to 200c/180c fan/gas mark 6.",

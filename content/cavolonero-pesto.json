@@ -7,13 +7,17 @@
   "prepTime": 5,
   "cookingTime": 15,
   "ingredients": [
-    "50g toasted pine nuts",
-    "50g parmesan (plus extra parmesan to serve)",
-    "1 clove garlic, peeled",
-    "100ml olive oil",
-    "50g cavolo nero",
-    "1 tbsp lemon juice",
-    "1/2-1 chilli"
+    {
+      "ingredients": [
+        "50g toasted pine nuts",
+        "50g parmesan (plus extra parmesan to serve)",
+        "1 clove garlic, peeled",
+        "100ml olive oil",
+        "50g cavolo nero",
+        "1 tbsp lemon juice",
+        "1/2-1 chilli"
+      ]
+    }
   ],
   "method": [
     "Cook the pasta according to packet instructions in generously salted water. Reserve a small cupful of pasta water for later on.",
