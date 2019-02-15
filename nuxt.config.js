@@ -1,4 +1,4 @@
-import posts from "./content/posts"
+import { slugs } from "./content/posts"
 module.exports = {
   head: {
     title: "Carole",
@@ -47,7 +47,7 @@ module.exports = {
     routes: [
       "search/sweet",
       "search/savoury",
-      ...posts.slugs.map(slug => `posts/${slug}`)
+      ...slugs.map(slug => `posts/${slug}`)
     ]
   }
 }
