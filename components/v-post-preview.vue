@@ -1,33 +1,50 @@
-<template lang="pug">
-  nuxt-link(:to='to')
-    // Desktop
-    div.card.is-hidden-mobile
-      div.card-image
-        figure.image.is-square
-          v-image(:file='file')
-      div.card-content.content.is-marginless.min-height-80.has-padding-12.is-medium
-        h6.card-title(v-text='title')
-        p(v-if="description", v-text='description')
-      div.card-footer(v-if="date && slug")
-        div.card-footer-item
-          v-date(:date='date', showTimeSince, showIcon)
-        div.card-footer-item
-          v-views-counter(:slug='slug')
-    // Mobile
-    div.card.is-hidden-tablet
-      div.columns.is-mobile.is-gapless.is-marginless
-        div.column
-          figure.image.is-square
-            v-image(:file='file')
-        div.column
-          div.card-content.content.has-padding-12
-            h6.card-title(v-text='title')
-            p(v-if="description", v-text='description')
-            div.columns.is-mobile.bottom-banner(v-if="date && slug").is-size-7
-              div.column.is-narrow
-                v-date(:date='date', showTimeSince, showIcon)
-              div.column
-                v-views-counter(:slug='slug')
+<template>
+  <nuxt-link :to="to">
+    <!-- Desktop -->
+    <div class="card is-hidden-mobile">
+      <div class="card-image">
+        <figure class="image is-square">
+          <v-image :file="file"/>
+        </figure>
+      </div>
+      <div class="card-content content is-marginless min-height-80 has-padding-12 is-medium">
+        <h6 class="card-title">{{ title }}</h6>
+        <p v-if="description">{{ description }}</p>
+      </div>
+      <div v-if="date && slug" class="card-footer">
+        <div class="card-footer-item">
+          <v-date :date="date" showTimeSince showIcon/>
+        </div>
+        <div class="card-footer-item">
+          <v-views-counter slug="slug"/>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile -->
+    <div class="card is-hidden-tablet">
+      <div class="columns is-mobile is-gapless is-marginless">
+        <div class="column">
+          <figure class="image is-square">
+            <v-image :file="file"/>
+          </figure>
+        </div>
+        <div class="column">
+          <div class="card-content content has-padding-12">
+            <h6 class="card-title">{{ title }}</h6>
+            <p v-if="description">{{ description }}</p>
+            <div v-if="date && slug" class="columns is-mobile bottom-banner">
+              <div class="column is-narrow">
+                <v-date :date="date" showTimeSince showIcon/>
+              </div>
+              <div class="column">
+                <v-views-counter :slug="slug"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nuxt-link>
 </template>
 <script>
 export default {
