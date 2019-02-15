@@ -6,8 +6,6 @@
           <v-post-preview
             to="/about"
             title="About me"
-            :slug="null"
-            :date="null"
             description="Recipe developer and food styling assistant."
             image="carolehector"
           />
@@ -16,10 +14,9 @@
           <v-post-preview
             :to="`posts/${post.slug}`"
             :title="post.title"
-            :slug="post.slug"
+            :views="Number(views[post.slug])"
             :date="post.date"
             :image="post.slug"
-            :description="null"
           />
         </div>
       </div>
@@ -37,6 +34,11 @@ export default {
       posts: slugs.map(slug => require(`~/content/${slug}`)),
       itemClass:
         "column is-one-third-tablet is-one-third-desktop is-full-mobile has-padding-8-on-mobile"
+    }
+  },
+  computed: {
+    views() {
+      return this.$store.state.views || {}
     }
   }
 }
