@@ -21,15 +21,18 @@
     "bulma": "^0.7.2",
     "date-fns": "^1.29.0",
     "nuxt": "^2.3.4",
-    "ramda": "^0.26.1"
+    "nuxt-purgecss": "^0.2.1",
+    "ramda": "^0.26.1",
+    "responsive-loader": "^1.2.0",
+    "sharp": "^0.21.3"
   },
   "devDependencies": {
     "add": "^2.0.6",
-    "serve": "^10.1.1",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0",
     "eslint": "^5.10.0",
     "prettier": "^1.15.3",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "serve": "^10.1.1",
     "yarn": "^1.12.3"
   }
 }
