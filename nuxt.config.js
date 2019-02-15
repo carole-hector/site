@@ -40,8 +40,33 @@ module.exports = {
     ]
   },
   workbox: {
-    globPatterns: ["**/*.{js,css}", "**/img/*"],
-    offlineAssets: [...posts.slugs.map(slug => `/img/${slug}.jpg`)]
+    globPatterns: ["**/*.{js,css}", "**/img/*"]
+  },
+  build: {
+    extractCSS: true,
+    extend(config) {
+      // Find the url-loader rule by regex
+      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/"
+      const rules = config.module.rules
+      const rule = rules.find(rule => rule.test.toString() === REGEX)
+      // Update url-loader's test regex in order to skip png/jpg/gif images
+      rule.test = /\.(svg|webp)$/
+      // Add new rule to config to process png/jpg/gif images with responsive-loader
+      config.module.rules.push({
+        test: /\.(png|jpe?g|gif)$/,
+        loader: "responsive-loader",
+        options: {
+          // Place generated images in the same place as url-loader
+          name: "img/[hash:7]-[width].[ext]",
+          min: 640,
+          max: 1080,
+          steps: 2,
+          placeholder: false,
+          quality: 65,
+          adapter: require("responsive-loader/sharp")
+        }
+      })
+    }
   },
   generate: {
     routes: [
