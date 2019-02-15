@@ -4,8 +4,8 @@
     div.card.is-hidden-mobile
       div.card-image
         figure.image.is-square
-          v-image(:src='img')
-      div.card-content.content.is-marginless.min-height-80.padding-12.is-medium
+          v-image(:file='file')
+      div.card-content.content.is-marginless.min-height-80.has-padding-12.is-medium
         h6.card-title(v-text='title')
         p(v-if="description", v-text='description')
       div.card-footer(v-if="date && slug")
@@ -18,9 +18,9 @@
       div.columns.is-mobile.is-gapless.is-marginless
         div.column
           figure.image.is-square
-            v-image(:src='img')
+            v-image(:file='file')
         div.column
-          div.card-content.content.padding-12
+          div.card-content.content.has-padding-12
             h6.card-title(v-text='title')
             p(v-if="description", v-text='description')
             div.columns.is-mobile.bottom-banner(v-if="date && slug").is-size-7
@@ -37,9 +37,8 @@ export default {
       type: String,
       required: true
     },
-    img: {
-      type: String,
-      required: true
+    image: {
+      type: String
     },
     title: {
       type: String
@@ -52,6 +51,11 @@ export default {
     },
     slug: {
       type: String
+    }
+  },
+  computed: {
+    file() {
+      return this.slug || this.image
     }
   }
 }

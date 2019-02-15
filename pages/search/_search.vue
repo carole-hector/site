@@ -17,13 +17,13 @@
 </template>
 
 <script>
-import meta from "~/content/posts"
+import { slugs } from "~/content/posts"
 export default {
   name: "index",
   scrollToTop: true,
   data() {
     return {
-      posts: meta.slugs.map(slug => require(`~/content/${slug}`)),
+      posts: slugs.map(slug => require(`~/content/${slug}`)),
       item: "column is-one-third-tablet is-one-quarter-desktop is-full-mobile"
     }
   },
