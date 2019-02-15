@@ -15,7 +15,7 @@ html {
   font-weight: 100 !important;
 }
 
-.padding-12 {
+.has-padding-12 {
   padding: 12px !important;
 }
 
@@ -23,14 +23,6 @@ html {
   min-height: 80px !important;
 }
 
-.width-320 {
-  min-width: 320px !important;
-  max-width: 320px !important;
-}
-
-.has-text-yellow {
-  color: var(--yellow);
-}
 .has-text-pink {
   color: pink;
 }
@@ -39,7 +31,7 @@ html {
 }
 
 @media only screen and (max-width: 500px) {
-  .padding-8-xs {
+  .has-padding-8-on-mobile {
     padding: 8px !important;
   }
 }
