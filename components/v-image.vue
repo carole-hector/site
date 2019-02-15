@@ -1,5 +1,5 @@
 <template>
-  <img :srcSet="img.srcSet" :src="img.src" />
+  <img :srcSet="img.srcSet" :src="img.src" :alt="alt"/>
 </template>
 
 <script>
@@ -14,6 +14,9 @@ export default {
   computed: {
     img() {
       return require(`~/assets/img/${this.file}.jpg`)
+    },
+    alt() {
+      return this.file.replace("-", " ")
     }
   }
 }
