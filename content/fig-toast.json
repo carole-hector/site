@@ -6,13 +6,17 @@
   "serves": 1,
   "prepTime": 5,
   "ingredients": [
-    "1 fig, quartered",
-    "30g soft goats cheese",
-    "1 tsp lemon zest",
-    "1 tsp truffle honey",
-    "1.5 tsp olive oil",
-    "1 sprig of thyme, leaves removed",
-    "1 slice of bread, toasted"
+    {
+      "ingredients": [
+        "1 fig, quartered",
+        "30g soft goats cheese",
+        "1 tsp lemon zest",
+        "1 tsp truffle honey",
+        "1.5 tsp olive oil",
+        "1 sprig of thyme, leaves removed",
+        "1 slice of bread, toasted"
+      ]
+    }
   ],
   "method": [
     "Spread 30g of soft goats cheese over a slice of toasted bread.",

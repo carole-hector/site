@@ -7,12 +7,16 @@
   "prepTime": 5,
   "cookingTime": 30,
   "ingredients": [
-    "1 410g can of kidney beans (in water)",
-    "1 onion, chopped",
-    "1 garlic clove, chopped",
-    "1 tbsp of green seasoning ",
-    "200g chopped tomatoes",
-    "Salt, to season"
+    {
+      "ingredients": [
+        "1 410g can of kidney beans (in water)",
+        "1 onion, chopped",
+        "1 garlic clove, chopped",
+        "1 tbsp of green seasoning ",
+        "200g chopped tomatoes",
+        "Salt, to season"
+      ]
+    }
   ],
   "method": [
     "Sweat the onion until sweet and soft, 8-10 minutes. Stir occasionally to prevent the onions catching. In a medium sized sauce pan, sweat the onion until sweet and soft, this will take around 10 minutes. Add a pinch of salt - the salt with help draw moisture out of the onion to let it sweat perfectly.",

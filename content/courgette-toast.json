@@ -7,13 +7,17 @@
   "prepTime": 5,
   "cookingTime": 15,
   "ingredients": [
-    "80g courgette (about 1/2 of one), grated",
-    "1 onion, peeled and chopped",
-    "1 garlic clove, peeled and chopped",
-    "1 tbsp cumin",
-    "1/2 - 1 green chilli, chopped",
-    "2 tbsp chopped ginger",
-    "5g coriander, chopped"
+    {
+      "ingredients": [
+        "80g courgette (about 1/2 of one), grated",
+        "1 onion, peeled and chopped",
+        "1 garlic clove, peeled and chopped",
+        "1 tbsp cumin",
+        "1/2 - 1 green chilli, chopped",
+        "2 tbsp chopped ginger",
+        "5g coriander, chopped"
+      ]
+    }
   ],
   "method": [
     "Heat a medium frying pan with 1-2 tbsp of olive oil over a medium heat. When the pan is hot, add the onion chopped onion until sweet and soft, about 8-10 minutes. Stir occasionally to prevent the onions catching.",

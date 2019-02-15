@@ -7,19 +7,23 @@
   "prepTime": 15,
   "cookingTime": 15,
   "ingredients": [
-    "1 onion, peeled and finely chopped",
-    "2 cloves of garlic, peeled and finely chopped",
-    "1 tbsp vegetable oil (or ghee)",
-    "1 square inch piece of ginger, finely chopped",
-    "1/2 - 1 chilli, finely chopped",
-    "1 tsp ground coriander",
-    "1 tsp ground turmeric",
-    "1 tsp ground cumin",
-    "1 tbsp tomato puree",
-    "200g cherry tomatoes",
-    "1 400g can chickpeas, drained (drained weight 240g)",
-    "1 400ml can of full fat coconut milk",
-    "4 stems of swiss chard"
+    {
+      "ingredients": [
+        "1 onion, peeled and finely chopped",
+        "2 cloves of garlic, peeled and finely chopped",
+        "1 tbsp vegetable oil (or ghee)",
+        "1 square inch piece of ginger, finely chopped",
+        "1/2 - 1 chilli, finely chopped",
+        "1 tsp ground coriander",
+        "1 tsp ground turmeric",
+        "1 tsp ground cumin",
+        "1 tbsp tomato puree",
+        "200g cherry tomatoes",
+        "1 400g can chickpeas, drained (drained weight 240g)",
+        "1 400ml can of full fat coconut milk",
+        "4 stems of swiss chard"
+      ]
+    }
   ],
   "method": [
     "Heat the oil (or ghee) in a large saucepan over a medium heat, then place the chopped onion in it, and cook gently for 5 minutes, or until softened slightly. ",

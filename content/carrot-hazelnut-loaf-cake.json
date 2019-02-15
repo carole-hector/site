@@ -7,18 +7,22 @@
   "prepTime": 15,
   "cookingTime": 20,
   "ingredients": [
-    "150ml vegetable oil",
-    "2 eggs, beaten",
-    "150g carrots, grated (about 2 large carrots)",
-    "1 tbsp milk",
-    "170g self raising flour",
-    "150g soft brown sugar",
-    "50g ground hazelnuts",
-    "2 tsp cinnamon",
-    "1 tsp caraway",
-    "1 tsp olive oil",
-    "1 tsp bicarbonate of soda",
-    "2 tbsp demerara sugar, for the topping"
+    {
+      "ingredients": [
+        "150ml vegetable oil",
+        "2 eggs, beaten",
+        "150g carrots, grated (about 2 large carrots)",
+        "1 tbsp milk",
+        "170g self raising flour",
+        "150g soft brown sugar",
+        "50g ground hazelnuts",
+        "2 tsp cinnamon",
+        "1 tsp caraway",
+        "1 tsp olive oil",
+        "1 tsp bicarbonate of soda",
+        "2 tbsp demerara sugar, for the topping"
+      ]
+    }
   ],
   "method": [
     "Preheat the oven to 180c/160c fan/gas mark 4. Grease a 2lb loaf tin with butter/oil then line with baking paper.",
