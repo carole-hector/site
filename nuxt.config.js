@@ -19,7 +19,7 @@ module.exports = {
     "bulma/css/bulma.css",
     "@fortawesome/fontawesome-free/css/all.css"
   ],
-  modules: ["@nuxtjs/axios", "@nuxtjs/pwa"],
+  modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss"],
   plugins: [
     { src: "~/plugins/vue.js", ssr: true },
     { src: "~/plugins/views.js", ssr: true },
