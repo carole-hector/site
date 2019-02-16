@@ -6,8 +6,8 @@
           <v-post-preview
             :to="`posts/${post.slug}`"
             :title="post.title"
-            :img="`/img/${post.slug}.jpg`"
-            :slug="post.slug"
+            :image="post.slug"
+            :views="Number(views[post.slug])"
             :date="post.date"
           />
         </div>
@@ -31,6 +31,9 @@ export default {
     filtered() {
       const search = this.$route.params.search
       return this.posts.filter(post => post.tags.includes(search))
+    },
+    views() {
+      return this.$store.state.views || {}
     }
   }
 }
