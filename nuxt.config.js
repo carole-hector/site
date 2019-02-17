@@ -16,8 +16,8 @@ module.exports = {
   loading: false,
   css: [
     "~/styles/index.css",
-    "bulma/css/bulma.css",
-    "@fortawesome/fontawesome-free/css/all.css"
+    "~/styles/font-awesome.css",
+    "bulma/css/bulma.css"
   ],
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss"],
   plugins: [
