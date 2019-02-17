@@ -12,6 +12,12 @@ module.exports = {
         content: "width=device-width, initial-scale=1, maximum-scale=2"
       },
       { hid: "description", name: "description", content: "Nuxt.js project" }
+    ],
+    link: [
+      {
+        rel: "preconnect",
+        href: "https://sheets.googleapis.com"
+      }
     ]
   },
   loading: false,
