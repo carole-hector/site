@@ -4,7 +4,7 @@
       <div class="columns is-marginless is-multiline is-mobile">
         <div v-for="(post, index) in filtered" :key="post.slug" :class="item">
           <v-post-preview
-            :to="`posts/${post.slug}`"
+            :to="`/posts/${post.slug}`"
             :title="post.title"
             :image="post.slug"
             :views="Number(views[post.slug])"
