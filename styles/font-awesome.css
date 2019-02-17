@@ -7,7 +7,11 @@ html.wf-active .far {
   font-weight: 400;
 }
 
-html.wf-active .fa,
+html.wf-active .fa {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
 html.wf-active .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
