@@ -20,6 +20,7 @@
     "@nuxtjs/pwa": "^2.6.0",
     "bulma": "^0.7.2",
     "date-fns": "^1.29.0",
+    "lazysizes": "^4.1.6",
     "nuxt": "^2.3.4",
     "nuxt-purgecss": "^0.2.1",
     "ramda": "^0.26.1",

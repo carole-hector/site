@@ -3,7 +3,9 @@
     <!-- Desktop -->
     <div class="card is-hidden-mobile">
       <div class="card-image">
-        <figure class="image is-square"><v-image :file="file" /></figure>
+        <figure class="image is-square">
+          <v-image :file="file" :lazy="lazy" />
+        </figure>
       </div>
       <div
         class="card-content content is-marginless min-height-80 has-padding-12 is-medium"
@@ -11,28 +13,34 @@
         <h6 class="card-title">{{ title }}</h6>
         <p v-if="description">{{ description }}</p>
       </div>
-      <div v-if="date && views" class="card-footer">
+      <div v-if="date || views" class="card-footer">
         <div class="card-footer-item">
           <v-date :date="date" showTimeSince showIcon />
         </div>
-        <div class="card-footer-item"><v-views-counter :views="views" /></div>
+        <div class="card-footer-item">
+          <v-views-counter v-if="views" :views="views" />
+        </div>
       </div>
     </div>
     <!-- Mobile -->
     <div class="card is-hidden-tablet">
       <div class="columns is-mobile is-gapless is-marginless">
         <div class="column">
-          <figure class="image is-square"><v-image :file="file" /></figure>
+          <figure class="image is-square">
+            <v-image :file="file" :lazy="lazy" />
+          </figure>
         </div>
         <div class="column">
           <div class="card-content content has-padding-12">
             <h6 class="card-title">{{ title }}</h6>
             <p v-if="description">{{ description }}</p>
-            <div v-if="date && views" class="columns is-mobile bottom-banner">
+            <div v-if="date || views" class="columns is-mobile bottom-banner">
               <div class="column is-narrow">
                 <v-date :date="date" showTimeSince showIcon />
               </div>
-              <div class="column"><v-views-counter :views="views" /></div>
+              <div class="column">
+                <v-views-counter v-if="views" :views="views" />
+              </div>
             </div>
           </div>
         </div>
@@ -62,6 +70,9 @@ export default {
     },
     views: {
       type: Number
+    },
+    lazy: {
+      type: Boolean
     }
   },
   computed: {
