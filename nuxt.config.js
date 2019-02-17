@@ -12,18 +12,16 @@ module.exports = {
         content: "width=device-width, initial-scale=1, maximum-scale=2"
       },
       { hid: "description", name: "description", content: "Nuxt.js project" }
-    ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    ]
   },
-
   loading: false,
   css: ["~/styles/index.css", "bulma/css/bulma.css"],
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss", "@nuxtjs/sitemap"],
   plugins: [
-    { src: "~/plugins/vue.js", ssr: true },
-    { src: "~/plugins/views.js", ssr: true },
-    { src: "~/plugins/offline.js", ssr: false },
-    { src: "~/plugins/lazysizes.js", ssr: false }
+    "~/plugins/vue.js",
+    "~/plugins/views.js",
+    "~/plugins/offline.client.js",
+    "~/plugins/lazysizes.client.js"
   ],
   manifest: {
     name: "Carole Hector",
@@ -69,7 +67,7 @@ module.exports = {
       const rule = rules.find(rule => rule.test.toString() === REGEX)
       // Update url-loader's test regex in order to skip png/jpg/gif/svg images
       rule.test = /\.(webp)$/
-      // Add new rule process svg images with svg-to-vue-component
+      // Add new rule to process svg images with svg-to-vue-component
       config.module.rules.push({
         test: /\.svg$/,
         use: [
@@ -79,12 +77,11 @@ module.exports = {
           }
         ]
       })
-      // Add new rule process png/jpg/gif images with responsive-loader
+      // Add new rule to process png/jpg/gif images with responsive-loader
       config.module.rules.push({
         test: /\.(png|jpe?g|gif)$/,
         loader: "responsive-loader",
         options: {
-          // Place generated images in the same place as url-loader
           name: "img/[hash:7]-[width].[ext]",
           min: 640,
           max: 1080,
@@ -97,10 +94,6 @@ module.exports = {
     }
   },
   generate: {
-    routes: [
-      "search/sweet",
-      "search/savoury",
-      ...slugs.map(slug => `posts/${slug}`)
-    ]
+    routes
   }
 }
