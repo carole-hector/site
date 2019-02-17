@@ -1,4 +1,7 @@
 import { slugs } from "./content/posts"
+const posts = slugs.map(slug => `posts/${slug}`)
+const routes = ["search/sweet", "search/savoury", ...posts]
+
 module.exports = {
   head: {
     title: "Carole",
@@ -47,6 +50,12 @@ module.exports = {
         type: "image/png"
       }
     ]
+  },
+  sitemap: {
+    path: "/sitemap.xml",
+    hostname: "https://carolehector.netlify.com/",
+    generate: true,
+    routes
   },
   workbox: {
     globPatterns: ["**/*.{js,css}", "**/img/*"]
