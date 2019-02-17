@@ -24,14 +24,21 @@ module.exports = {
   ],
   manifest: {
     name: "Carole Hector",
+    short_name: "Carole Hector",
     lang: "en",
     start_url: "/",
     background_color: "#fafafa",
+    theme_color: "#fff",
     description: "A simply readable recipe site.",
     icons: [
       {
         src: "/img/icon144.png",
         sizes: "144x144",
+        type: "image/png"
+      },
+      {
+        src: "/img/icon192.png",
+        sizes: "192x192",
         type: "image/png"
       }
     ]
