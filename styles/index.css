@@ -1,4 +1,4 @@
-/* https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro?subsets=latin */
+/* https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro?subsets=latin
 @font-face {
   font-family: "Source Sans Pro";
   font-style: normal;
@@ -16,7 +16,7 @@
       format("truetype"),
     url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.svg#SourceSansPro")
       format("svg");
-}
+} */
 
 html {
   --yellow: yellow;
