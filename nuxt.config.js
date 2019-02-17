@@ -21,10 +21,11 @@ module.exports = {
   ],
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss"],
   plugins: [
-    { src: "~/plugins/vue.js", ssr: true },
-    { src: "~/plugins/views.js", ssr: true },
-    { src: "~/plugins/offline.js", ssr: false },
-    { src: "~/plugins/lazysizes.js", ssr: false }
+    "~/plugins/vue.js",
+    "~/plugins/views.js",
+    "~/plugins/offline.client.js",
+    "~/plugins/lazysizes.client.js",
+    "~/plugins/webfont.client.js"
   ],
   manifest: {
     name: "Carole Hector",
@@ -47,7 +48,7 @@ module.exports = {
     extractCSS: true,
     extend(config) {
       // Find the url-loader rule by regex
-      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/"
+      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
       const rules = config.module.rules
       const rule = rules.find(rule => rule.test.toString() === REGEX)
       // Update url-loader's test regex in order to skip png/jpg/gif images
