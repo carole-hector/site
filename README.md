@@ -17,4 +17,4 @@
 
 ### Credit
 
-- Inspired by [@wagerfield](https://github.com/wagerfield/)
+- Inspired by [@wagerfield](https://github.com/wagerfield/nuxtflix)
