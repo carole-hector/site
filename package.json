@@ -16,25 +16,24 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/pwa": "^2.6.0",
-    "@nuxtjs/sitemap": "^0.2.0",
     "bulma": "^0.7.2",
     "date-fns": "^1.29.0",
     "lazysizes": "^4.1.6",
     "nuxt": "^2.4.3",
-    "nuxt-purgecss": "^0.2.1",
-    "ramda": "^0.26.1",
-    "responsive-loader": "^1.2.0",
-    "sharp": "^0.21.3",
-    "svg-to-vue-component": "^0.3.4"
+    "ramda": "^0.26.1"
+
   },
   "devDependencies": {
+    "@nuxtjs/pwa": "^2.6.0",
+    "@nuxtjs/sitemap": "^0.2.0",
     "add": "^2.0.6",
     "eslint": "^5.10.0",
+    "nuxt-purgecss": "^0.2.1",
     "prettier": "^1.15.3",
-    "pug": "^2.0.3",
-    "pug-plain-loader": "^1.0.0",
+    "responsive-loader": "^1.2.0",
     "serve": "^10.1.1",
+    "sharp": "^0.21.3",
+    "svg-to-vue-component": "^0.3.4",
     "yarn": "^1.12.3"
   }
 }
