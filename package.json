@@ -15,7 +15,6 @@
     "publish-recipes": "git add . && git commit -m \"added recipes\" && git push --set-upstream origin feature/add-recipes && git push"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.6.3",
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^2.6.0",
     "bulma": "^0.7.2",
