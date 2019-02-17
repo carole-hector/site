@@ -2,13 +2,14 @@
   <div class="index">
     <div class="container">
       <div class="columns is-marginless is-multiline is-mobile">
-        <div v-for="post in filtered" :key="post.slug" :class="item">
+        <div v-for="(post, index) in filtered" :key="post.slug" :class="item">
           <v-post-preview
             :to="`posts/${post.slug}`"
             :title="post.title"
             :image="post.slug"
             :views="Number(views[post.slug])"
             :date="post.date"
+            :lazy="index > lazyIndex"
           />
         </div>
       </div>
@@ -24,7 +25,8 @@ export default {
   data() {
     return {
       posts: slugs.map(slug => require(`~/content/${slug}`)),
-      item: "column is-one-third-tablet is-one-quarter-desktop is-full-mobile"
+      item: "column is-one-third-tablet is-one-quarter-desktop is-full-mobile",
+      lazyIndex: 4
     }
   },
   computed: {
