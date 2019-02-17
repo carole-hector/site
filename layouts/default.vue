@@ -12,9 +12,8 @@
         <div class="navbar-brand">
           <div class="navbar-item">
             <nuxt-link to="/">
-              <h1 class="is-size-6-touch is-size-3-desktop has-text-black">
-                Carole Hector
-              </h1>
+              <v-image class="is-hidden-touch" file="brand-desktop" />
+              <v-image class="is-hidden-desktop" file="brand-mobile" />
             </nuxt-link>
           </div>
           <a
