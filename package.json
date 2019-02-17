@@ -10,9 +10,7 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "serve": "serve dist",
-    "format": "prettier --write '*.{js,jsx,json,md}' '**/*.{js,jsx,json,vue}'",
-    "add-recipes": "git checkout -b feature/add-recipes && git pull",
-    "publish-recipes": "git add . && git commit -m \"added recipes\" && git push --set-upstream origin feature/add-recipes && git push"
+    "format": "prettier --write '*.{js,jsx,json,md}' '**/*.{js,jsx,json,vue}'"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
