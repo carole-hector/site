@@ -23,7 +23,8 @@ module.exports = {
   plugins: [
     { src: "~/plugins/vue.js", ssr: true },
     { src: "~/plugins/views.js", ssr: true },
-    { src: "~/plugins/offline.js", ssr: false }
+    { src: "~/plugins/offline.js", ssr: false },
+    { src: "~/plugins/lazysizes.js", ssr: false }
   ],
   manifest: {
     name: "Carole Hector",
@@ -61,7 +62,7 @@ module.exports = {
           min: 640,
           max: 1080,
           steps: 2,
-          placeholder: false,
+          placeholder: true,
           quality: 65,
           adapter: require("responsive-loader/sharp")
         }
