@@ -1,31 +1,14 @@
-/* https://google-webfonts-helper.herokuapp.com/fonts/source-sans-pro?subsets=latin */
-@font-face {
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.eot");
-  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
-    url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.woff2")
-      format("woff2"),
-    url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.woff")
-      format("woff"),
-    url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.ttf")
-      format("truetype"),
-    url("~assets/fonts/source-sans-pro/source-sans-pro-v11-latin-regular.svg#SourceSansPro")
-      format("svg");
-}
-
 html {
   --yellow: yellow;
   background-color: #fafafa !important;
 }
 
-.navbar-brand h1 {
-  font-family: "Source Sans Pro", sans-serif !important;
+h1 {
   letter-spacing: 7.5px;
+}
+
+html.wf-active h1 {
+  font-family: "Source Sans Pro", sans-serif !important;
 }
 
 .navbar-item {

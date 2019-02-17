@@ -20,11 +20,12 @@
     "bulma": "^0.7.2",
     "date-fns": "^1.29.0",
     "lazysizes": "^4.1.6",
-    "nuxt": "^2.3.4",
+    "nuxt": "^2.4.3",
     "nuxt-purgecss": "^0.2.1",
     "ramda": "^0.26.1",
     "responsive-loader": "^1.2.0",
-    "sharp": "^0.21.3"
+    "sharp": "^0.21.3",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "add": "^2.0.6",
