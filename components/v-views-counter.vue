@@ -1,7 +1,9 @@
 <template>
   <transition name="fade">
     <div class="columns is-mobile is-gapless">
-      <span class="column icon is-narrow"> <i class="far fa-eye" /> </span>
+      <div class="column is-narrow">
+        <span class="icon"> <v-icon icon="eye" /> </span>
+      </div>
       <p class="column">{{ views }}</p>
     </div>
   </transition>

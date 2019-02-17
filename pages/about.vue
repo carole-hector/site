@@ -42,15 +42,14 @@
             </p>
             <h2>Contact</h2>
             <p>
-              <span class="icon"> <i class="fas fa-envelope" /> </span>
+              <span class="icon"> <v-icon icon="envelope" /> </span>
               carolehector@mail.com
             </p>
             <p>
-              <span class="icon"> <i class="fas fa-phone" /> </span>
-              +447545503457
+              <span class="icon"> <v-icon icon="phone" /> </span> +447545503457
             </p>
             <p>
-              <span class="icon"> <i class="fab fa-instagram" /> </span>
+              <span class="icon"> <v-icon icon="instagram" /> </span>
               <a target="_blank" href="https://www.instagram.com/carolehector/"
                 >@carolehector</a
               >

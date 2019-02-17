@@ -1,8 +1,8 @@
 <template>
   <div class="columns is-mobile is-gapless is-marginless">
-    <span v-if="showIcon" class="column icon is-narrow">
-      <i class="far fa-clock" />
-    </span>
+    <div v-if="showIcon" class="column is-narrow">
+      <span class="icon"> <v-icon icon="clock" /> </span>
+    </div>
     <p class="column">{{ timeSince }}</p>
   </div>
 </template>
