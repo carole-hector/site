@@ -46,9 +46,19 @@ module.exports = {
       const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
       const rules = config.module.rules
       const rule = rules.find(rule => rule.test.toString() === REGEX)
-      // Update url-loader's test regex in order to skip png/jpg/gif images
-      rule.test = /\.(svg|webp)$/
-      // Add new rule to config to process png/jpg/gif images with responsive-loader
+      // Update url-loader's test regex in order to skip png/jpg/gif/svg images
+      rule.test = /\.(webp)$/
+      // Add new rule process svg images with svg-to-vue-component
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: [
+          "vue-loader",
+          {
+            loader: "svg-to-vue-component/loader"
+          }
+        ]
+      })
+      // Add new rule process png/jpg/gif images with responsive-loader
       config.module.rules.push({
         test: /\.(png|jpe?g|gif)$/,
         loader: "responsive-loader",

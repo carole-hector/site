@@ -6,13 +6,8 @@
     data-sizes="auto"
     :alt="alt"
     class="lazyload"
-  >
-  <img
-    v-else
-    :srcset="img.srcSet"
-    :alt="alt"
-    :style="background"
-  >
+  />
+  <img v-else :srcset="img.srcSet" :alt="alt" :style="background" />
 </template>
 
 <script>

@@ -38,8 +38,8 @@
               :to="link.path"
               class="navbar-item"
             >
-              <span class="icon" :class="link.class">
-                <i class="fas" :class="link.icon" />
+              <span class="icon">
+                <v-icon :icon="link.icon" :fill="link.fill" />
               </span>
               <span v-text="link.name" />
             </nuxt-link>
@@ -52,8 +52,8 @@
                     :to="link.path"
                     class="navbar-item"
                   >
-                    <span class="icon" :class="link.class">
-                      <i class="fas" :class="link.icon" />
+                    <span class="icon">
+                      <v-icon :icon="link.icon" :fill="link.fill" />
                     </span>
                     <span v-text="link.name" />
                   </nuxt-link>
@@ -78,28 +78,27 @@ export default {
         {
           name: "Recipes",
           path: "/",
-          icon: "fa-book-open",
-          class: "has-text-green"
+          icon: "book-open",
+          fill: "#baed91"
         },
         {
           name: "Sweet",
           path: "/search/sweet",
-          icon: "fa-cookie-bite",
-          class: "has-text-pink"
+          icon: "cookie-bite",
+          fill: "pink"
         },
         {
           name: "Savoury",
           path: "/search/savoury",
-          icon: "fa-drumstick-bite",
-          class: "has-text-warning"
+          icon: "drumstick-bite",
+          fill: "#ffdd57"
         }
       ],
       dropLinks: [
         {
           name: "About",
           path: "/about",
-          icon: "fa-user",
-          class: "has-text-grey"
+          icon: "user"
         }
       ]
     }
