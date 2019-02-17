@@ -14,11 +14,7 @@ module.exports = {
   },
 
   loading: false,
-  css: [
-    "~/styles/index.css",
-    "~/styles/font-awesome.css",
-    "bulma/css/bulma.css"
-  ],
+  css: ["~/styles/index.css", "bulma/css/bulma.css"],
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss"],
   plugins: [
     { src: "~/plugins/vue.js", ssr: true },
