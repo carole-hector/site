@@ -43,7 +43,7 @@ module.exports = {
     extractCSS: true,
     extend(config) {
       // Find the url-loader rule by regex
-      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/"
+      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
       const rules = config.module.rules
       const rule = rules.find(rule => rule.test.toString() === REGEX)
       // Update url-loader's test regex in order to skip png/jpg/gif images
