@@ -15,6 +15,7 @@
               I test recipes for
               <a
                 target="_blank"
+                rel="noopener"
                 href="https://www.instagram.com/helen_goh_bakes/?hl=en"
                 >Helen Goh</a
               >
@@ -24,12 +25,12 @@
             <p>
               After graduating with a 2.1 in Economics and Philosophy from LSE
               in 2016, I worked as a baker and cake decorator at
-              <a target="_blank" href="https://lilyvanilli.com/"
+              <a target="_blank" rel="noopener" href="https://lilyvanilli.com/"
                 >Lily Vanilli</a
               >
               for a year and then studied the Three Term Diploma in Food and
               Wine at
-              <a target="_blank" href="https://www.leiths.com/">Leiths</a> in
+              <a target="_blank" rel="noopener" href="https://www.leiths.com/">Leiths</a> in
               2017.
             </p>
             <p>
@@ -50,7 +51,7 @@
             </p>
             <p>
               <span class="icon"> <v-icon icon="instagram" /> </span>
-              <a target="_blank" href="https://www.instagram.com/carolehector/"
+              <a target="_blank" rel="noopener" href="https://www.instagram.com/carolehector/"
                 >@carolehector</a
               >
             </p>
