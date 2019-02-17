@@ -24,7 +24,7 @@ module.exports = {
   ],
   manifest: {
     name: "Carole Hector",
-    short_name: "Carole Hector",
+    short_name: "Carole",
     lang: "en",
     start_url: "/",
     background_color: "#fafafa",
@@ -39,6 +39,11 @@ module.exports = {
       {
         src: "/img/icon192.png",
         sizes: "192x192",
+        type: "image/png"
+      },
+      {
+        src: "/img/icon512.png",
+        sizes: "512x512",
         type: "image/png"
       }
     ]
