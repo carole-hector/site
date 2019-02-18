@@ -13,19 +13,19 @@ module.exports = {
       },
       { hid: "description", name: "description", content: "Nuxt.js project" }
     ],
-    link: [
-      {
-        rel: "preconnect",
-        href: "https://sheets.googleapis.com"
-      }
-    ]
+    // link: [
+    //   {
+    //     rel: "preconnect",
+    //     href: "https://sheets.googleapis.com"
+    //   }
+    // ]
   },
   loading: false,
   css: ["~/styles/index.css", "bulma/css/bulma.css"],
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss", "@nuxtjs/sitemap"],
   plugins: [
     "~/plugins/vue.js",
-    "~/plugins/views.js",
+    // "~/plugins/views.js",
     "~/plugins/offline.client.js",
     "~/plugins/lazysizes.client.js"
   ],
