@@ -1,4 +1,5 @@
 import Vue from "vue"
+import LazyHydrate from "vue-lazy-hydration"
 import VDate from "~/components/v-date.vue"
 import VPostPreview from "~/components/v-post-preview.vue"
 import VViewsCounter from "~/components/v-views-counter.vue"
@@ -10,3 +11,4 @@ Vue.component(VPostPreview.name, VPostPreview)
 Vue.component(VViewsCounter.name, VViewsCounter)
 Vue.component(VImage.name, VImage)
 Vue.component(VIcon.name, VIcon)
+Vue.component("LazyHydrate", LazyHydrate)

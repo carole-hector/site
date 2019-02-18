@@ -22,14 +22,16 @@
           />
         </div>
         <div v-for="post in nonFeatured" :key="post.slug" :class="itemClass">
-          <v-post-preview
-            :to="`posts/${post.slug}`"
-            :title="post.title"
-            :views="Number(views[post.slug])"
-            :date="post.date"
-            :image="post.slug"
-            :lazy="true"
-          />
+          <LazyHydrate when-visible>
+            <v-post-preview
+              :to="`posts/${post.slug}`"
+              :title="post.title"
+              :views="Number(views[post.slug])"
+              :date="post.date"
+              :image="post.slug"
+              :lazy="true"
+            />
+          </LazyHydrate>
         </div>
       </div>
     </div>
