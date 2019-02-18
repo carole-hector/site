@@ -22,4 +22,4 @@
 
 ### Credit
 
-- Learnt by example from [@wagerfield](https://github.com/wagerfield/nuxtflix)
+- Learnt many of these things from [@wagerfield](https://github.com/wagerfield/nuxtflix)
