@@ -22,7 +22,21 @@ module.exports = {
   },
   loading: false,
   css: ["~/styles/index.css", "bulma/css/bulma.css"],
-  modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa",
+    "nuxt-purgecss",
+    "@nuxtjs/sitemap",
+    [
+      "nuxt-netlify-http2-server-push",
+      {
+        resources: [
+          { path: "**/*.js", as: "script" },
+          { path: "**/*.css", as: "style" }
+        ]
+      }
+    ]
+  ],
   plugins: [
     "~/plugins/vue.js",
     "~/plugins/views.js",
