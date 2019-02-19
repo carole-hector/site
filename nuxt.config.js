@@ -30,10 +30,7 @@ module.exports = {
     [
       "nuxt-netlify-http2-server-push",
       {
-        resources: [
-          { path: "**/*.js", as: "script" },
-          { path: "**/*.css", as: "style" }
-        ]
+        resources: [{ path: "**/*.jpg", as: "image" }]
       }
     ]
   ],
