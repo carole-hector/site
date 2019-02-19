@@ -89,7 +89,7 @@ module.exports = {
           min: 640,
           max: 1080,
           steps: 2,
-          placeholder: true,
+          placeholder: false,
           quality: 65,
           adapter: require("responsive-loader/sharp")
         }
