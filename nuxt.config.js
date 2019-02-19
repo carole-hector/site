@@ -72,9 +72,6 @@ module.exports = {
     generate: true,
     routes
   },
-  workbox: {
-    globPatterns: ["**/*.{js,css}", "**/img/*"]
-  },
   build: {
     extractCSS: true,
     extend(config) {
