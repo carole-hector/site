@@ -1,13 +1,6 @@
 <template>
-  <img
-    v-if="lazy"
-    :src="img.placeholder"
-    :data-srcset="img.srcSet"
-    data-sizes="auto"
-    :alt="alt"
-    class="lazyload"
-  />
-  <img v-else :srcset="img.srcSet" :alt="alt" :style="background" />
+  <img v-if="lazy" :data-srcset="img.srcSet" data-sizes="auto" :alt="alt" class="lazyload">
+  <img v-else :srcset="img.srcSet" :alt="alt">
 </template>
 
 <script>
@@ -25,12 +18,6 @@ export default {
   computed: {
     img() {
       return require(`~/assets/img/${this.file}.jpg`)
-    },
-    background() {
-      return [
-        `background: url(${this.img.placeholder})`,
-        `no-repeat left center; background-size: cover;`
-      ].join("")
     },
     alt() {
       return this.file.replace("-", " ")
