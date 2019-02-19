@@ -22,7 +22,18 @@ module.exports = {
   },
   loading: false,
   css: ["~/styles/index.css", "bulma/css/bulma.css"],
-  modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss", "@nuxtjs/sitemap"],
+  modules: [
+    "@nuxtjs/axios",
+    "@nuxtjs/pwa",
+    "nuxt-purgecss",
+    "@nuxtjs/sitemap",
+    [
+      "nuxt-netlify-http2-server-push",
+      {
+        resources: [{ path: "_nuxt/img/carolehector-1080.jpg", as: "image" }]
+      }
+    ]
+  ],
   plugins: [
     "~/plugins/vue.js",
     "~/plugins/views.js",
@@ -85,7 +96,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/,
         loader: "responsive-loader",
         options: {
-          name: "img/[hash:7]-[width].[ext]",
+          name: "img/[name]-[width].[ext]",
           min: 640,
           max: 1080,
           steps: 2,
