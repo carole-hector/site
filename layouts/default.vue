@@ -11,10 +11,7 @@
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item">
-            <nuxt-link to="/">
-              <v-image class="is-hidden-touch" file="brand-desktop" />
-              <v-image class="is-hidden-desktop" file="brand-mobile" />
-            </nuxt-link>
+            <nuxt-link to="/"> <v-image file="brand-desktop" /> </nuxt-link>
           </div>
           <a
             role="button"
