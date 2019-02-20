@@ -30,8 +30,10 @@
               >
               for a year and then studied the Three Term Diploma in Food and
               Wine at
-              <a target="_blank" rel="noopener" href="https://www.leiths.com/">Leiths</a> in
-              2017.
+              <a target="_blank" rel="noopener" href="https://www.leiths.com/"
+                >Leiths</a
+              >
+              in 2017.
             </p>
             <p>
               I assist on a variety of food shoots from still editorials to
@@ -51,7 +53,10 @@
             </p>
             <p>
               <span class="icon"> <v-icon icon="instagram" /> </span>
-              <a target="_blank" rel="noopener" href="https://www.instagram.com/carolehector/"
+              <a
+                target="_blank"
+                rel="noopener"
+                href="https://www.instagram.com/carolehector/"
                 >@carolehector</a
               >
             </p>
