@@ -1,7 +1,7 @@
 <template>
   <nuxt-link :to="to">
     <!-- Desktop -->
-    <div class="card is-hidden-mobile">
+    <!-- <div class="card is-hidden-mobile">
       <div class="card-image">
         <figure class="image is-square">
           <v-image :file="file" :lazy="lazy" />
@@ -21,7 +21,7 @@
           <v-views-counter v-if="views" :views="views" />
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- Mobile -->
     <div class="card is-hidden-tablet">
       <div class="columns is-mobile is-gapless is-marginless">
