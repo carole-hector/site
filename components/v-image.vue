@@ -1,6 +1,12 @@
 <template>
-  <img v-if="lazy" :data-srcset="img.srcSet" data-sizes="auto" :alt="alt" class="lazyload">
-  <img v-else :srcset="img.srcSet" :alt="alt">
+  <img
+    v-if="lazy"
+    :data-srcset="img.srcSet"
+    data-sizes="auto"
+    :alt="alt"
+    class="lazyload"
+  />
+  <img v-else :srcset="img.srcSet" :alt="alt" />
 </template>
 
 <script>
