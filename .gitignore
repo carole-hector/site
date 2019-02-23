@@ -9,3 +9,7 @@ yarn-error.log
 
 # Nuxt generate
 dist
+
+# Build
+content/post-previews.json
+static/sw.js

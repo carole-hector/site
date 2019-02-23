@@ -1,6 +1,8 @@
-import { slugs } from "./content/posts"
-const posts = slugs.map(slug => `posts/${slug}`)
-const routes = ["search/sweet", "search/savoury", ...posts]
+import fs from "fs"
+import { pick } from "ramda"
+import { stringify } from "./core/utils"
+import { posts } from "./nuxt/posts"
+import { routes } from "./nuxt/routes"
 
 module.exports = {
   head: {
@@ -64,13 +66,26 @@ module.exports = {
   build: {
     extractCSS: true,
     extend(config) {
-      // Find the url-loader rule by regex
-      const REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
-      const rules = config.module.rules
-      const rule = rules.find(rule => rule.test.toString() === REGEX)
-      // Update url-loader's test regex in order to skip png/jpg/gif/svg images
+      /* Add today's date to new posts */
+      posts.forEach(post => {
+        if (!post.date) {
+          post.date = new Date()
+          fs.writeFileSync(`./content/${post.slug}.json`, stringify(post))
+        }
+      })
+
+      /* Create a lightweight previews file */
+      const previews = posts.map(pick(["date", "slug", "tags", "title"]))
+      fs.writeFileSync("./content/post-previews.json", stringify(previews))
+
+      /* Replace url-loader's default test regex to skip png/jpg/gif/svg files */
+      const DEFAULT_REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
+      const rule = config.module.rules.find(
+        rule => rule.test.toString() === DEFAULT_REGEX
+      )
       rule.test = /\.(webp)$/
-      // Add new rule to process svg images with svg-to-vue-component
+
+      /* Add custom rule to process svg files with svg-to-vue-component */
       config.module.rules.push({
         test: /\.svg$/,
         use: [
@@ -80,7 +95,8 @@ module.exports = {
           }
         ]
       })
-      // Add new rule to process png/jpg/gif images with responsive-loader
+
+      /* Add custom rule to process png/jpg/gif files with responsive-loader */
       config.module.rules.push({
         test: /\.(png|jpe?g|gif)$/,
         loader: "responsive-loader",
