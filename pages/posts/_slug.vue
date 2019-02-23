@@ -69,15 +69,16 @@
 
 <script>
 export default {
+  asyncData({ route }) {
+    const slug = route.params.slug
+    return { post: require(`~/content/${slug}`), slug }
+  },
   computed: {
-    slug() {
-      return this.$route.params.slug
-    },
     file() {
       return this.slug
     },
     copy() {
-      return require(`~/content/${this.slug}`)
+      return this.post
     },
     subtitle() {
       return [
