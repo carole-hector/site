@@ -37,13 +37,14 @@
 </template>
 
 <script>
-import { slugs } from "~/content/posts"
+import POST_PREVIEWS from "~/content/post-previews.json"
+
 export default {
   name: "index",
   scrollToTop: true,
   data() {
     return {
-      posts: slugs.map(slug => require(`~/content/${slug}`)),
+      posts: POST_PREVIEWS,
       itemClass:
         "column is-one-third-tablet is-one-third-desktop is-full-mobile has-padding-8-on-mobile"
     }

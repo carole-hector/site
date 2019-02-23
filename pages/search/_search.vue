@@ -18,13 +18,17 @@
 </template>
 
 <script>
-import { slugs } from "~/content/posts"
+import POST_PREVIEWS from "~/content/post-previews.json"
+
 export default {
   name: "index",
   scrollToTop: true,
+  validate({ params }) {
+    return ["sweet", "savoury"].includes(params.search)
+  },
   data() {
     return {
-      posts: slugs.map(slug => require(`~/content/${slug}`)),
+      posts: POST_PREVIEWS,
       item: "column is-one-third-tablet is-one-quarter-desktop is-full-mobile",
       lazyIndex: 4
     }
