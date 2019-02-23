@@ -10,3 +10,5 @@ export function matches(post, v) {
 export function filterPosts(posts, v) {
   return v ? posts.filter(p => matches(p, v)) : posts
 }
+
+export const stringify = obj => JSON.stringify(obj, null, 2)
