@@ -15,10 +15,6 @@ html {
   min-height: 80px !important;
 }
 
-.image {
-  overflow: hidden;
-}
-
 @media only screen and (max-width: 500px) {
   .has-padding-8-on-mobile {
     padding: 8px !important;
