@@ -7,7 +7,7 @@
             :to="`/posts/${post.slug}`"
             :title="post.title"
             :image="post.slug"
-            :views="Number(views[post.slug])"
+            :views="post.views"
             :date="post.date"
             :lazy="index > lazyIndex"
           />
@@ -37,9 +37,6 @@ export default {
     filtered() {
       const search = this.$route.params.search
       return this.posts.filter(post => post.tags.includes(search))
-    },
-    views() {
-      return this.$store.state.views || {}
     }
   }
 }
