@@ -112,6 +112,9 @@ module.exports = {
       })
     }
   },
+  workbox: {
+    offline: false
+  },
   generate: {
     routes
   }
