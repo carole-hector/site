@@ -27,7 +27,6 @@ module.exports = {
   modules: ["@nuxtjs/axios", "@nuxtjs/pwa", "nuxt-purgecss", "@nuxtjs/sitemap"],
   plugins: [
     "~/plugins/vue.js",
-    "~/plugins/views.js",
     "~/plugins/offline.client.js",
     "~/plugins/lazysizes.client.js"
   ],
