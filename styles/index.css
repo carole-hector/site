@@ -2,10 +2,25 @@ html {
   background-color: #fafafa !important;
 }
 
+/* Lazy load */
+
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+/* Custom element styles */
+
 .navbar-item {
   letter-spacing: 2.5px !important;
   font-weight: 100 !important;
 }
+
+/* Utils */
 
 .has-padding-12 {
   padding: 12px !important;

@@ -1,6 +1,7 @@
 <template>
   <img
     v-if="lazy"
+    src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
     :data-srcset="img.srcSet"
     data-sizes="auto"
     :alt="alt"
