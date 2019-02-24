@@ -13,7 +13,7 @@
 ### Build
 
 - Fast image processing with [Responsive-loader](https://github.com/herrstucki/responsive-loader) and [Sharp](https://github.com/lovell/sharp)
-- Pure CSS styling
+- Pure CSS styling with [Bulma](https://bulma.io/)
 
 ### Accessibility
 
