@@ -11,24 +11,14 @@
             :lazy="false"
           />
         </div>
-        <div v-for="post in featured" :key="post.slug" :class="itemClass">
+        <div v-for="(post, index) in posts" :key="post.slug" :class="itemClass">
           <v-post-preview
             :to="`posts/${post.slug}`"
             :title="post.title"
-            :views="Number(views[post.slug])"
+            :views="post.views"
             :date="post.date"
             :image="post.slug"
-            :lazy="false"
-          />
-        </div>
-        <div v-for="post in nonFeatured" :key="post.slug" :class="itemClass">
-          <v-post-preview
-            :to="`posts/${post.slug}`"
-            :title="post.title"
-            :views="Number(views[post.slug])"
-            :date="post.date"
-            :image="post.slug"
-            :lazy="true"
+            :lazy="!isFeatured(index)"
           />
         </div>
       </div>
@@ -49,15 +39,9 @@ export default {
         "column is-one-third-tablet is-one-third-desktop is-full-mobile has-padding-8-on-mobile"
     }
   },
-  computed: {
-    featured() {
-      return this.posts.slice(0, 2)
-    },
-    nonFeatured() {
-      return this.posts.slice(2)
-    },
-    views() {
-      return this.$store.state.views || {}
+  methods: {
+    isFeatured(index) {
+      return index <= 1
     }
   }
 }
