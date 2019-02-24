@@ -1,33 +1,34 @@
 {
-    "title": "Tomato and Thyme Tart Tatin",
-    "description": "There are few things better than a tart tatin. Traditionally it's served as a dessert with apples however, the acidic savoury nature of the tomatoes is harmonious with the buttery pastry and sticky caramel. It’s extremely easy to make and all you need is an oven proof pan plus some courage to take your caramel to a shade not dissimilar to a dark copper. Serve with a crisp salad, dressed with a nice sharp vinaigrette.",
-    "date": "2019-01-10",
-    "slug": "tomato-tart-tatin",
-    "serves": 4,
-    "prepTime": 5,
-    "cookingTime": 45,
-    "ingredients": [
-        {
-            "ingredients": [
-                "750g cherry tomatoes",
-                "100g caster sugar",
-                "100g unsalted butter",
-                "2 tbsp balsamic vinegar",
-                "3 thyme sprigs, stalks removed and leaves picked",
-                "400g puff pastry"
-            ]
-        }
-    ],
-    "method": [
-        "Turn the grill on high, then when it has preheated grill the tomatoes until blackened all over. This will take around 15-30 minutes.",
-        "When you think the tomatoes are nearly charred enough, start your caramel. In a 25cm oven proof frying pan (or one of a similar size), melt the butter, sugar and balsamic vinegar over a low heat.",
-        "Preheat the oven to 200c/180c fan/gas mark 6.",
-        "Meanwhile, cut out the puff pastry to a circle that is slightly bigger than your frying pan.",
-        "When the caramel has turned a nice dark copper colour, add the charred tomatoes.",
-        "Cover the tomatoes with the puff pastry (tucking the edges up around the tomatoes), and place in the oven for 30 minutes, until golden brown.",
-        "In your strongest hand (i.e. your right hand if you’re right handed), use an oven mitt / tea towel to hold the frying pan. Make sure your wrists and hands are covered, just in case some of the caramel leaks. Place a plate over the frying pan, then with one swift movement flip the frying pan and plate upside over. Serve immediately."
-    ],
-    "tags": [
-        "savoury"
-    ]
+  "title": "Tomato and Thyme Tart Tatin",
+  "description": "There are few things better than a tart tatin. Traditionally it's served as a dessert with apples however, the acidic savoury nature of the tomatoes is harmonious with the buttery pastry and sticky caramel. It’s extremely easy to make and all you need is an oven proof pan plus some courage to take your caramel to a shade not dissimilar to a dark copper. Serve with a crisp salad, dressed with a nice sharp vinaigrette.",
+  "date": "2019-01-10",
+  "slug": "tomato-tart-tatin",
+  "serves": 4,
+  "prepTime": 5,
+  "cookingTime": 45,
+  "ingredients": [
+    {
+      "ingredients": [
+        "750g cherry tomatoes",
+        "100g caster sugar",
+        "100g unsalted butter",
+        "2 tbsp balsamic vinegar",
+        "3 thyme sprigs, stalks removed and leaves picked",
+        "400g puff pastry"
+      ]
+    }
+  ],
+  "method": [
+    "Turn the grill on high, then when it has preheated grill the tomatoes until blackened all over. This will take around 15-30 minutes.",
+    "When you think the tomatoes are nearly charred enough, start your caramel. In a 25cm oven proof frying pan (or one of a similar size), melt the butter, sugar and balsamic vinegar over a low heat.",
+    "Preheat the oven to 200c/180c fan/gas mark 6.",
+    "Meanwhile, cut out the puff pastry to a circle that is slightly bigger than your frying pan.",
+    "When the caramel has turned a nice dark copper colour, add the charred tomatoes.",
+    "Cover the tomatoes with the puff pastry (tucking the edges up around the tomatoes), and place in the oven for 30 minutes, until golden brown.",
+    "In your strongest hand (i.e. your right hand if you’re right handed), use an oven mitt / tea towel to hold the frying pan. Make sure your wrists and hands are covered, just in case some of the caramel leaks. Place a plate over the frying pan, then with one swift movement flip the frying pan and plate upside over. Serve immediately."
+  ],
+  "tags": [
+    "savoury"
+  ],
+  "views": 9
 }

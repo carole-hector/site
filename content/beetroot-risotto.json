@@ -1,40 +1,41 @@
 {
-    "title": "Beetroot and Feta Pearl Barley Risotto",
-    "description": "A vibrant and nourishing risotto, where the usual arborio rice is swapped for pearl barley.",
-    "date": "2019-01-10",
-    "slug": "beetroot-risotto",
-    "serves": 4,
-    "prepTime": 10,
-    "cookingTime": 45,
-    "ingredients": [
-        {
-            "ingredients": [
-                "500g raw beetroot",
-                "2 tbsp olive oil",
-                "1 onion",
-                "1 celery stick",
-                "1 garlic clove",
-                "5 sprigs of thyme",
-                "300g pearl barley",
-                "1l of vegetable stock",
-                "150g feta"
-            ]
-        }
-    ],
-    "method": [
-        "Preheat the oven to 180c/160c fan/gas mark 4.",
-        "Peel, halve and finely chop the onion, and finely dice the celery. Peel and chop the beetroot into 1 inch square chunks.",
-        "Heat a large frying pan with 1-2 tbsp of olive oil over a high heat. When the pan is hot, add the chopped onion and celery. Cook for about 8 minutes, until softened slightly. Stir often.",
-        "Meanwhile, crush the garlic and remove the thyme leaves from the stalk, discarding the stalks.",
-        "Place the beetroot on an oiled baking tray, and place in the oven for around 30 minutes, until the beetroot is cooked through.",
-        "Add the garlic and thyme leaves to the onion, and cook for a further two minutes, stir frequently.",
-        "Boil the kettle for the vegetable stock. Mix together 1 litre of water with 1 vegetable stock cube.",
-        "Add the pearl barley and stir to coat the granules. Add the stock, increase the heat and bring to a boil. Reduce to a simmer then cook for about 30 minutes, until all the liquid as been absorbed and the pearl barley is tender. You may need to add more water/stock if the pearl barley is not cooked.",
-        "Meanwhile, place the cooked beetroot and a pinch of salt into the bowl of a food processor / blender. Blend until smooth, you may need to stop and scrape the bowl down a few times.",
-        "Once the pearl barley is cooked and dry, stir through the beetroot puree. Taste for seasoning.",
-        "Drizzle over some olive oil and serve with crumbled feta on top."
-    ],
-    "tags": [
-        "savoury"
-    ]
+  "title": "Beetroot and Feta Pearl Barley Risotto",
+  "description": "A vibrant and nourishing risotto, where the usual arborio rice is swapped for pearl barley.",
+  "date": "2019-01-10",
+  "slug": "beetroot-risotto",
+  "serves": 4,
+  "prepTime": 10,
+  "cookingTime": 45,
+  "ingredients": [
+    {
+      "ingredients": [
+        "500g raw beetroot",
+        "2 tbsp olive oil",
+        "1 onion",
+        "1 celery stick",
+        "1 garlic clove",
+        "5 sprigs of thyme",
+        "300g pearl barley",
+        "1l of vegetable stock",
+        "150g feta"
+      ]
+    }
+  ],
+  "method": [
+    "Preheat the oven to 180c/160c fan/gas mark 4.",
+    "Peel, halve and finely chop the onion, and finely dice the celery. Peel and chop the beetroot into 1 inch square chunks.",
+    "Heat a large frying pan with 1-2 tbsp of olive oil over a high heat. When the pan is hot, add the chopped onion and celery. Cook for about 8 minutes, until softened slightly. Stir often.",
+    "Meanwhile, crush the garlic and remove the thyme leaves from the stalk, discarding the stalks.",
+    "Place the beetroot on an oiled baking tray, and place in the oven for around 30 minutes, until the beetroot is cooked through.",
+    "Add the garlic and thyme leaves to the onion, and cook for a further two minutes, stir frequently.",
+    "Boil the kettle for the vegetable stock. Mix together 1 litre of water with 1 vegetable stock cube.",
+    "Add the pearl barley and stir to coat the granules. Add the stock, increase the heat and bring to a boil. Reduce to a simmer then cook for about 30 minutes, until all the liquid as been absorbed and the pearl barley is tender. You may need to add more water/stock if the pearl barley is not cooked.",
+    "Meanwhile, place the cooked beetroot and a pinch of salt into the bowl of a food processor / blender. Blend until smooth, you may need to stop and scrape the bowl down a few times.",
+    "Once the pearl barley is cooked and dry, stir through the beetroot puree. Taste for seasoning.",
+    "Drizzle over some olive oil and serve with crumbled feta on top."
+  ],
+  "tags": [
+    "savoury"
+  ],
+  "views": 6
 }
