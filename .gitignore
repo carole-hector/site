@@ -13,3 +13,4 @@ dist
 # Build
 content/post-previews.json
 static/sw.js
+static/sitemap.xml
