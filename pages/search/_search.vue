@@ -19,12 +19,13 @@
 
 <script>
 import POST_PREVIEWS from "~/content/post-previews.json"
+import { SEARCH_PATHS } from "~/nuxt/routes"
 
 export default {
   name: "index",
   scrollToTop: true,
   validate({ params }) {
-    return ["sweet", "savoury"].includes(params.search)
+    return SEARCH_PATHS.includes(params.search)
   },
   data() {
     return {
