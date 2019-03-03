@@ -18,6 +18,8 @@
     "date-fns": "^1.29.0",
     "lazysizes": "^4.1.6",
     "nuxt": "^2.4.3",
+    "nuxt-responsive-loader": "^1.0.2",
+    "nuxt-svg-loader": "^1.0.1",
     "ramda": "^0.26.1"
   },
   "devDependencies": {

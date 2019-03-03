@@ -37,7 +37,9 @@ export default async () => {
       "@nuxtjs/axios",
       "@nuxtjs/pwa",
       "nuxt-purgecss",
-      "@nuxtjs/sitemap"
+      "@nuxtjs/sitemap",
+      "nuxt-svg-loader",
+      "nuxt-responsive-loader"
     ],
     plugins: [
       "~/plugins/vue.js",
@@ -78,7 +80,7 @@ export default async () => {
     },
     build: {
       extractCSS: true,
-      extend(config) {
+      extend() {
         /* Add view count to all posts */
         posts.forEach(post => {
           post.views = Number(views[post.slug])
@@ -94,39 +96,6 @@ export default async () => {
           pick(["date", "slug", "tags", "title", "views"])
         )
         fs.writeFileSync("./content/post-previews.json", stringify(previews))
-
-        /* Replace url-loader's default test regex to skip png/jpg/gif/svg files */
-        const DEFAULT_REGEX = "/\\.(png|jpe?g|gif|svg|webp)$/i"
-        const rule = config.module.rules.find(
-          rule => rule.test.toString() === DEFAULT_REGEX
-        )
-        rule.test = /\.(webp)$/
-
-        /* Add custom rule to process svg files with svg-to-vue-component */
-        config.module.rules.push({
-          test: /\.svg$/,
-          use: [
-            "vue-loader",
-            {
-              loader: "svg-to-vue-component/loader"
-            }
-          ]
-        })
-
-        /* Add custom rule to process png/jpg/gif files with responsive-loader */
-        config.module.rules.push({
-          test: /\.(png|jpe?g|gif)$/,
-          loader: "responsive-loader",
-          options: {
-            name: "img/[hash:7]-[width].[ext]",
-            min: 640,
-            max: 1080,
-            steps: 2,
-            placeholder: false,
-            quality: 65,
-            adapter: require("responsive-loader/sharp")
-          }
-        })
       }
     },
     generate: {

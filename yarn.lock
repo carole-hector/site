@@ -4732,6 +4732,20 @@ nuxt-purgecss@^0.2.1:
     purgecss "^1.1.0"
     purgecss-webpack-plugin "^1.4.0"
 
+nuxt-responsive-loader@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/nuxt-responsive-loader/-/nuxt-responsive-loader-1.0.2.tgz#287f64bcc1578bfb8c44681241af3cf4ffb8f67b"
+  dependencies:
+    responsive-loader "^1.2.0"
+    sharp "^0.21.3"
+
+nuxt-svg-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/nuxt-svg-loader/-/nuxt-svg-loader-1.0.1.tgz#4565f4a390be7c81b1f39197c7a69ea105da1912"
+  dependencies:
+    consola "^2.3.2"
+    svg-to-vue-component "^0.3.1"
+
 nuxt@^2.4.3:
   version "2.4.3"
   resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-2.4.3.tgz#1584fbbaed2bfb4839da2298c00bdcac2d71dcdd"
@@ -6617,6 +6631,17 @@ supports-color@^6.1.0:
 svg-tags@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/svg-tags/-/svg-tags-1.0.0.tgz#58f71cee3bd519b59d4b2a843b6c7de64ac04764"
+
+svg-to-vue-component@^0.3.1:
+  version "0.3.5"
+  resolved "https://registry.yarnpkg.com/svg-to-vue-component/-/svg-to-vue-component-0.3.5.tgz#5d5077181f97fbc87ad87b884e2595db6a84769f"
+  dependencies:
+    joycon "^2.1.2"
+    js-yaml "^3.12.0"
+    loader-utils "^1.1.0"
+    merge-deep "^3.0.2"
+    posthtml "^0.11.3"
+    svgo "^1.1.1"
 
 svg-to-vue-component@^0.3.4:
   version "0.3.4"
