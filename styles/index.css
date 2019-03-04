@@ -1,5 +1,5 @@
 html {
-  background-color: #fafafa !important;
+  /* background-color: #fafafa !important; */
 }
 
 /* Lazy load */
@@ -10,7 +10,7 @@ html {
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity 300ms;
+  transition: opacity 600ms;
 }
 
 /* Custom element styles */
@@ -28,6 +28,23 @@ html {
 
 .min-height-80 {
   min-height: 80px !important;
+}
+
+.card {
+  background-color: whitesmoke !important;
+  border-color: none !important;
+  box-shadow: none !important;
+  border-radius: 5px !important;
+}
+.card-footer {
+  border: none !important;
+}
+.card-footer-item {
+  border: none !important;
+}
+
+.navbar {
+  margin-bottom: -20px;
 }
 
 @media only screen and (max-width: 500px) {
