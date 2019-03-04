@@ -1,7 +1,3 @@
-html {
-  /* background-color: #fafafa !important; */
-}
-
 /* Lazy load */
 
 .lazyload,
@@ -19,6 +15,19 @@ html {
   letter-spacing: 2.5px !important;
   font-weight: 100 !important;
 }
+.card {
+  border-radius: 5px !important;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15) !important;
+}
+.card-footer {
+  border-color: hsl(0, 0%, 96%) !important;
+}
+.card-footer-item {
+  border-color: hsl(0, 0%, 96%) !important;
+}
+.navbar {
+  margin-bottom: -0.7em !important;
+}
 
 /* Utils */
 
@@ -28,23 +37,6 @@ html {
 
 .min-height-80 {
   min-height: 80px !important;
-}
-
-.card {
-  background-color: whitesmoke !important;
-  border-color: none !important;
-  box-shadow: none !important;
-  border-radius: 5px !important;
-}
-.card-footer {
-  border: none !important;
-}
-.card-footer-item {
-  border: none !important;
-}
-
-.navbar {
-  margin-bottom: -20px;
 }
 
 @media only screen and (max-width: 500px) {
