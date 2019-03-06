@@ -6,7 +6,7 @@
           <v-post-preview
             to="/about"
             title="About me"
-            description="Recipe developer and food styling assistant."
+            description="London based recipe developer and food styling assistant."
             image="carolehector"
             :lazy="false"
           />

@@ -1,11 +1,11 @@
 {
   "SLUGS": [
+    "chicken-katsu-burger",
+    "carrot-layer-cake",
     "banana-layer-cake",
     "steak-toast",
-    "carrot-layer-cake",
     "tomato-tart-tatin",
     "crinkle-cookies",
-    "chicken-katsu-burger",
     "rye-stickytoffee",
     "pecanbluecheese-shortbread",
     "spicedchicken-barley",
@@ -14,12 +14,12 @@
     "roastedveg-harissa",
     "carrot-hazelnut-loaf-cake",
     "pumpkin-cheesecake",
-    "beetroot-risotto",
     "chickpeachard-curry",
     "springonion-toast",
     "beetroot-horseradish",
     "fig-toast",
     "courgette-toast",
-    "trini-redbeans"
+    "trini-redbeans",
+    "beetroot-risotto"
   ]
 }
