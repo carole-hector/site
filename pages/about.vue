@@ -12,15 +12,13 @@
               I’m a London based recipe developer and food styling assistant.
             </p>
             <p>
-              I test recipes for
+              I'm the Head Recipe Developer at a recipe box start up called Halal Fresh, and I also test recipes for
               <a
                 target="_blank"
                 rel="noopener"
                 href="https://www.instagram.com/helen_goh_bakes/?hl=en"
                 >Helen Goh</a
-              >
-              and I also develop recipes for a new food box start up called
-              Halal Fresh.
+              >.
             </p>
             <p>
               After graduating with a 2.1 in Economics and Philosophy from LSE

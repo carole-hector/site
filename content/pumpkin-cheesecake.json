@@ -1,10 +1,11 @@
 {
   "title": "Pumpkin Cheesecake with Pecan and Biscoff",
-  "description": "This cheesecake is very light in texture and contains all the delicious flavours of autumn - pumpkin, cinnamon and pecans, plus some biscoff thrown in for good measure. Make this when the leaves are turning and you want something sweet, but aren’t quite ready for the heavy warm ing winter puddings.",
+  "description": "This cheesecake is very light in texture and contains all the delicious flavours of autumn - pumpkin, cinnamon and pecans, plus some biscoff thrown in for good measure. Make this when the leaves are turning and you want something sweet, but aren’t quite ready for the heavy winter puddings.",
   "date": "2018-09-23",
   "slug": "pumpkin-cheesecake",
   "serves": 6,
   "prepTime": 15,
+  "cookingTime": 0,
   "ingredients": [
     {
       "name": "filling",
@@ -30,11 +31,11 @@
     }
   ],
   "method": [
-    "For the cheesecake base, place the digestives and pumpkin seeds into a a food processor (or blender) and pulse until finely ground.",
-    "Melt the butter and mix it together the ground biscuits.",
-    "Firmly press all of this mixture into a 6 inch cake tin with a removable bottom. Chill until hard, around 30 minutes.",
-    "For the filling, mix together the cream cheese with the pumpkin, spices and icing sugar in a large bowl. Use a spatula to mix thoroughly and ensure the mix is homogenous.",
-    "In another bowl and using an electric (or hand held whisk), whip the cream until it is just holds its shape.",
+    "For the cheesecake base, place the digestives and pecans into a food processor (or blender) and pulse until finely ground.",
+    "Melt the butter, then mix it together the ground biscuits.",
+    "Firmly press all of this mixture into a 6 inch cake tin with a removable bottom. Chill in the fridge until hard, around 30 minutes.",
+    "For the filling, in a large bowl add the cream cheese, pumpkin, spices and icing sugar. Use a spatular to mix together until homogoneous.",
+    "In another bowl and using an electric (or hand held whisk), whip the cream until soft peaks form, that is, it should only just hold its shape.",
     "Fold the whipped cream into the cream cheese mixture until completely combined.",
     "Take the cheesecake base out of the fridge and spread the mixture over it, chill for at least 1 hour until set, it should be slightly firm to touch."
   ],
