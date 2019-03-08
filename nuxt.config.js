@@ -78,6 +78,9 @@ export default async () => {
       generate: true,
       routes
     },
+    purgeCSS: {
+      whitelist: ["lazyload", "lazyloading", "lazyloaded"]
+    },
     build: {
       extractCSS: true,
       extend() {
