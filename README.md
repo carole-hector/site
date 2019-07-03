@@ -1,6 +1,6 @@
 # Carole Hector's website
 
-> Nuxt.js project
+> Recipes for sweet and savoury treats
 
 ### Performance
 

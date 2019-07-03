@@ -22,7 +22,7 @@ export default async () => {
           name: "viewport",
           content: "width=device-width, initial-scale=1, maximum-scale=2"
         },
-        { hid: "description", name: "description", content: "Nuxt.js project" }
+        { hid: "description", name: "description", content: "Recipes for sweet and savoury treats" }
       ],
       link: [
         {
