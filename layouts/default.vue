@@ -7,7 +7,7 @@
         Offline
       </div>
     </div>
-    <nav class="navbar is-uppercase">
+    <nav class="navbar">
       <div class="container">
         <div class="navbar-brand">
           <div class="navbar-item">

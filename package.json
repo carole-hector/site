@@ -18,8 +18,6 @@
     "date-fns": "^1.29.0",
     "lazysizes": "^4.1.6",
     "nuxt": "^2.4.3",
-    "nuxt-responsive-loader": "^1.0.2",
-    "nuxt-svg-loader": "^1.0.1",
     "ramda": "^0.26.1"
   },
   "devDependencies": {
@@ -28,10 +26,10 @@
     "add": "^2.0.6",
     "eslint": "^5.10.0",
     "nuxt-purgecss": "^0.2.1",
+    "nuxt-responsive-loader": "^1.0.2",
+    "nuxt-svg-loader": "^1.0.1",
     "prettier": "^1.15.3",
-    "responsive-loader": "^1.2.0",
     "serve": "^10.1.1",
-    "sharp": "^0.21.3",
     "svg-to-vue-component": "^0.3.4",
     "yarn": "^1.12.3"
   }

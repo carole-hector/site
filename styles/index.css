@@ -6,7 +6,7 @@
 }
 .lazyloaded {
   opacity: 1;
-  transition: opacity 600ms;
+  transition: opacity 200ms;
 }
 
 /* Custom element styles */
@@ -16,8 +16,8 @@
   font-weight: 100 !important;
 }
 .card {
-  border-radius: 5px !important;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15) !important;
+  /* border-radius: 5px !important; */
+  /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15) !important; */
 }
 .card-footer {
   border-color: hsl(0, 0%, 96%) !important;
