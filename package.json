@@ -31,6 +31,6 @@
     "prettier": "^1.15.3",
     "serve": "^10.1.1",
     "svg-to-vue-component": "^0.3.4",
-    "yarn": "^1.12.3"
+    "yarn": "^1.22.0"
   }
 }
